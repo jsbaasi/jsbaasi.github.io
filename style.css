@@ -87,17 +87,24 @@ body {
     color: gold;
     margin-top: 5px;
   }
-  
+
   .book-item {
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 100px;
+    width: 120px;
     flex-shrink: 0;
+    background-color: white;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    min-height: 250px;
+    justify-content: space-between;
   }
-  
+
   .book-item p {
-    margin-top: 5px;
-    font-size: 0.9em;
+    margin: 4px 0;
+    font-size: 0.85em;
     text-align: center;
+    line-height: 1.2;
   }
