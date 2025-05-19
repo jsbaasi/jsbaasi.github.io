@@ -7,6 +7,35 @@
   <title>jsbaasi.github.io</title>
   <link rel="stylesheet" href="style.css">
 </head>
+
+
+<script>
+  document.addEventListener("DOMContentLoaded", () => {
+    const allBookElements = [
+      ...document.querySelectorAll(".book-item"),
+      ...document.querySelectorAll(".featured-book")
+    ];
+
+    allBookElements.forEach(item => {
+      const file = item.getAttribute("data-file");
+      const target = item.querySelector(".file-number");
+
+      if (file && target) {
+        fetch(file)
+          .then(res => res.text())
+          .then(num => {
+            target.textContent = num.trim() + "%";
+          })
+          .catch(err => {
+            console.error(`Error loading ${file}:`, err);
+            target.textContent = "N/A";
+          });
+      }
+    });
+  });
+</script>
+
+
 <body>
   <header>
     <nav>
@@ -18,23 +47,25 @@
   </header>
 
   <main class="books-page">
-    <section class="featured-book">
+    <section class="featured-book" data-file="locations/Crime_and_Punishment.mobi.po.txt">
       <img src="covers/crimeandpunishment.jpg" alt="crimeandpunishment" class="featured-img">
       <h2>Crime and Punishment</h2>
       <p>by Fyodor Dostoevsky</p>
-      <!-- Started 7th may -->
-    </section> 
+      <p class="book-metric">Location: <span class="file-number">...</span></p>
+      <!-- Started 7th May -->
+    </section>
 
     <section class="book-carousel">
       <h3>Books I've Read</h3>
       <div class="carousel">
 
-        <div class="book-item">
+        <div class="book-item" data-file="locations/The Technological Republic Hard Power, Soft Belief, and the Future of the West (Alexander C Karp  Nicholas W. Zamiska) (Z-Library).azw3.po.txt">
           <img src="covers/technologicalrepublic.jpg" alt="technologicalrepublic">
           <p><strong>The Technological Republic</strong><br>A Karp & N Zamiska</p>
           <p>Started: 1/5/25</p>
           <p>TTR: 4</p>
           <div class="rating">★★★★★</div>
+          <p class="book-metric">Location: <span class="file-number">...</span></p>
         </div>
 
         <div class="book-item">
