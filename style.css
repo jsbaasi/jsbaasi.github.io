@@ -114,4 +114,32 @@ body {
   color: #444;
   font-size: 0.9em;
   margin-top: 10px;
-}
+  }
+
+  .loading-dots--dot {
+  display: inline-block;
+  width: 8px;
+  height: 8px;
+  margin-right: 6px;
+  vertical-align: middle;
+  border-radius: 50%;
+  background-color: #00ff22;
+  animation: dot-keyframes 1.5s infinite ease-in-out;
+  position: relative;
+  top: -1.025px;
+  }
+
+  @keyframes dot-keyframes {
+    0% {
+      opacity: 0.4;
+      transform: scale(1);
+    }
+    50% {
+      opacity: 1;
+      transform: scale(1.4);
+    }
+    100% {
+      opacity: 0.4;
+      transform: scale(1);
+    }
+  }
