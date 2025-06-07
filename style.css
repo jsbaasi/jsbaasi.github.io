@@ -44,7 +44,8 @@ body {
   }
   
   .featured-book {
-    margin-bottom: 40px;
+    flex: 0 1 300px;
+    margin-bottom: 0;
   }
   
   .featured-img {
@@ -52,6 +53,13 @@ body {
     height: auto;
     border-radius: 10px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  }
+
+  .featured-books-container {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  flex-wrap: wrap;
   }
   
   .book-carousel {
