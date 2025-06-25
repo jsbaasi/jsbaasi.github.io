@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>jsbaasi.github.io</title>
+  <style>
+    * {
+      padding: 0;
+      margin: 0;
+      background: black;
+    }
+    canvas {
+      background: black;
+      display: block;
+      margin: 0 auto;
+    }
+  </style>
+</head>
+
+<body>
+  <!-- The Nav Bar -->
+  <header>
+    <nav>
+      <a href="../../index.html">Home</a>
+      <a href="../../books.html">Books</a>
+      <a href="../../projects.html">Projects</a>
+      <a href="../../games.html">Games</a>
+    </nav>
+    <h1>Flag Guesser</h1>
+  </header>
+  <!-- ================================= -->
+  <canvas id="myCanvas" width="600" height="500"></canvas>
+
+  <script>
+    // script goes here apparently xd
+    const canvas = document.getElementById("myCanvas");
+    const ctx = canvas.getContext("2d");
+    let x = canvas.width / 2;
+    let y = canvas.height - 30;
+    let dx = 2;
+    let dy = -2;
+    function draw() {
+      ctx.clearRect(0,0, canvas.width, canvas.height);
+      ctx.beginPath();
+      ctx.arc(x,y,10,0,Math.PI * 2);
+      ctx.fillStyle = "#0095DD";
+      ctx.fill();
+      ctx.closePath();
+      x += dx;
+      y += dy;
+    }
+    setInterval(draw, 10)
+    ctx.beginPath();
+    ctx.rect(20,40,50,50);
+    ctx.fillStyle = "#FF0000";
+    ctx.fill();
+    ctx.closePath();
+
+    ctx.beginPath();
+    ctx.arc(240, 160, 20, 0, Math.PI *2, false);
+    ctx.fillStyle = "green";
+    ctx.fill();
+    ctx.closePath();
+
+    ctx.beginPath();
+    ctx.rect(160, 10, 100, 40);
+    ctx.strokeStyle = "rgb(0 0 255 / 50%)";
+    ctx.stroke();
+    ctx.closePath();
+
+
+
+
+  </script>
+</body>
+</html>

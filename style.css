@@ -151,3 +151,23 @@ body {
       transform: scale(1);
     }
   }
+
+  .game-list {
+  list-style-type: none;
+  padding: 0;
+  margin-top: 20px;
+}
+
+.game-list li {
+  margin: 10px 0;
+  font-size: 1.2em;
+}
+
+.game-list a {
+  text-decoration: none;
+  color: #2196f3;
+}
+
+.game-list a:hover {
+  text-decoration: underline;
+}
