@@ -1,13 +1,6 @@
-<!-- ★☆ -->
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>jsbaasi.github.io</title>
-  <link rel="stylesheet" href="style.css">
-</head>
-
+---
+layout: default
+---
 
 <script>
   document.addEventListener("DOMContentLoaded", () => {
@@ -35,168 +28,146 @@
   });
 </script>
 
-<!-- <section class="featured-book">
-  <h2>Nothing ATM</h2>
-  <p>by N/A</p>
-  <p class="book-metric">Location: <span class="file-number">N/A</span></p>
-</section> -->
+<books class="books-page">
+  <div class="featured-books-container">
 
-<body>
-  <header>
-    <nav>
-      <a href="index.html">Home</a>
-      <a href="books.html">Books</a>
-      <a href="projects.html">Projects</a>
-      <a href="games.html">Games</a>
-    </nav>
-    <h1>What I'm Reading</h1>
-  </header>
+    <section class="featured-book" data-file="locations/Howling_Dark_-_Christopher_Ruocchio.epub.po.txt">
+      <img src="covers/howlingdark.jpg" alt="howlingdark" class="featured-img">
+      <h2>Howling Dark</h2>
+      <p>by Christopher Ruocchio</p>
+      <p class="book-metric">
+        <span class="loading-dots--dot"></span>
+        Location: <span class="file-number">...</span>
+      </p>
+    </section>
 
+  </div>
 
-  <books class="books-page">
-    <div class="featured-books-container">
+  <section class="book-carousel">
+    <h3>Books I've Read</h3>
+    <div class="carousel">
 
-      <section class="featured-book" data-file="locations/Howling_Dark_-_Christopher_Ruocchio.epub.po.txt">
-        <img src="covers/howlingdark.jpg" alt="howlingdark" class="featured-img">
-        <h2>Howling Dark</h2>
-        <p>by Christopher Ruocchio</p>
-        <p class="book-metric">
-          <span class="loading-dots--dot"></span>
-          Location: <span class="file-number">...</span>
-        </p>
-        <!-- Started 21st January -->
-      </section>
+      <div class="book-item" data-file="locations/Empire_of_Silence_-_Christopher_Ruocchio.epub.po.txt">
+        <img src="covers/empireofsilence.jpg" alt="empireofsilence" class="featured-img">
+        <p><strong>Empire of Silence</strong><br>Christopher Ruocchio</p>
+        <p>Started: 4/1/26</p>
+        <p>TTR: 17</p>
+        <div class="rating">4</div>
+        <p class="book-metric">Location: <span class="file-number">...</span></p>
+      </div>
+
+      <div class="book-item" data-file="locations/The Eye of the World - Robert Jordan.epub.po.txt">
+        <img src="covers/eyeoftheworld.jpg" alt="eyeoftheworld" class="featured-img">
+        <p><strong>The Eye of the World</strong><br>Robert Jordan</p>
+        <p>Started: 16/12/25</p>
+        <p>TTR: 19</p>
+        <div class="rating">5</div>
+        <p class="book-metric">Location: <span class="file-number">...</span></p>
+      </div>
+
+      <div class="book-item" data-file="locations/The_Shining_-_Stephen_King.epub.po.txt">
+        <img src="covers/theshining.jpg" alt="theshining" class="featured-img">
+        <p><strong>The Shining</strong><br>Stephen King</p>
+        <p>Started: 10/12/25</p>
+        <p>TTR: 5</p>
+        <div class="rating">4½</div>
+        <p class="book-metric">Location: <span class="file-number">...</span></p>
+      </div>
+
+      <div class="book-item" data-file="locations/The_Sword_of_Kaigen_by_M_L_Wang_A_Theonite_War_Companion_Novel.epub.po.txt">
+        <img src="covers/swordofkaigen.jpg" alt="swordofkaigen" class="featured-img">
+        <p><strong>Sword of Kaigen</strong><br>M.L. Wang</p>
+        <p>Started: 19/11/25</p>
+        <p>TTR: 20</p>
+        <div class="rating">1½</div>
+        <p class="book-metric">Location: <span class="file-number">...</span></p>
+      </div>
+
+      <div class="book-item" data-file="locations/It_by_Stephen_King.epub.po.txt">
+        <img src="covers/it.jpg" alt="it" class="featured-img">
+        <p><strong>IT</strong><br>Stephen King</p>
+        <p>Started: 27/9/25</p>
+        <p>TTR: 20</p>
+        <div class="rating">5</div>
+        <p class="book-metric">Location: <span class="file-number">...</span></p>
+      </div>
+
+      <div class="book-item" data-file="locations/worthdyingfor.epub.po.txt">
+        <img src="covers/worthdyingfor.jpg" alt="worthdyingfor">
+        <p><strong>Worth Dying For</strong><br>Tim Marshall</p>
+        <p>Started: 25/6/25</p>
+        <p>TTR: 15</p>
+        <div class="rating">4</div>
+        <p class="book-metric">Location: <span class="file-number">...</span></p>
+      </div>
+
+      <div class="book-item" data-file="locations/theblindwatchmaker.epub.po.txt">
+        <img src="covers/theblindwatchmaker.jpg" alt="theblindwatchmaker">
+        <p><strong>The Blind Watchmaker</strong><br>Richard Dawkins</p>
+        <p>Started: 7/6/25</p>
+        <p>TTR: 17</p>
+        <div class="rating">4</div>
+        <p class="book-metric">Location: <span class="file-number">...</span></p>
+      </div>
+
+      <div class="book-item" data-file="locations/Crime_and_Punishment.mobi.po.txt">
+        <img src="covers/crimeandpunishment.jpg" alt="crimeandpunishment">
+        <p><strong>Crime and Punishment</strong><br>Fyodor Dostoevsky</p>
+        <p>Started: 7/5/25</p>
+        <p>TTR: 16</p>
+        <div class="rating">3½</div>
+        <p class="book-metric">Location: <span class="file-number">...</span></p>
+      </div>
+
+      <div class="book-item" data-file="locations/The Technological Republic Hard Power, Soft Belief, and the Future of the West (Alexander C Karp  Nicholas W. Zamiska) (Z-Library).azw3.po.txt">
+        <img src="covers/technologicalrepublic.jpg" alt="technologicalrepublic">
+        <p><strong>The Technological Republic</strong><br>A Karp & N Zamiska</p>
+        <p>Started: 1/5/25</p>
+        <p>TTR: 4</p>
+        <div class="rating">5</div>
+        <p class="book-metric">Location: <span class="file-number">...</span></p>
+      </div>
+
+      <div class="book-item">
+        <img src="covers/theoriesofinternationalpolitics.jpg" alt="theoriesofinternationalpolitics">
+        <p><strong>Theories of International Politics AND ZOMBIES</strong><br>Daniel Drezner</p>
+        <p>Started: 28/4/25</p>
+        <p>TTR: 3</p>
+        <div class="rating">4</div>
+      </div>
+
+      <div class="book-item">
+        <img src="covers/forbiddennation.jpg" alt="forbiddennation">
+        <p><strong>Forbidden Nation: A History of Taiwan</strong><br>Jonathan Manthorpe</p>
+        <p>Started: 24/4/25</p>
+        <p>TTR: 4</p>
+        <div class="rating">5</div>
+      </div>
+
+      <div class="book-item">
+        <img src="covers/1984.jpg" alt="1984">
+        <p><strong>1984</strong><br>George Orwell</p>
+        <p>Started: 18/4/25</p>
+        <p>TTR: 5</p>
+        <div class="rating">5</div>
+      </div>
+
+      <div class="book-item">
+        <img src="covers/abriefhistoryofthemiddleeast.jpg" alt="abriefhistoryofthemiddleeast">
+        <p><strong>A Brief History of The Middle East</strong><br>Christopher Catherwood</p>
+        <p>Started: 29/3/25</p>
+        <p>TTR: 20</p>
+        <div class="rating">5</div>
+      </div>
+
+      <div class="book-item">
+        <img src="covers/windandtruth.jpg" alt="windandtruth">
+        <p><strong>Wind and Truth</strong><br>Brandon Sanderson</p>
+        <p>Started: 27/2/25</p>
+        <p>TTR: 30</p>
+        <div class="rating">3</div>
+      </div>
 
     </div>
-
-    <section class="book-carousel">
-      <h3>Books I've Read</h3>
-      <div class="carousel">
-
-        <div class="book-item" data-file="locations/Empire_of_Silence_-_Christopher_Ruocchio.epub.po.txt">
-          <img src="covers/empireofsilence.jpg" alt="empireofsilence" class="featured-img">
-          <p><strong>Empire of Silence</strong><br>Christopher Ruocchio</p>
-          <p>Started: 4/1/26</p>
-          <p>TTR: 17</p>
-          <div class="rating">4</div>
-          <p class="book-metric">Location: <span class="file-number">...</span></p>
-        </div>
-
-        <div class="book-item" data-file="locations/The Eye of the World - Robert Jordan.epub.po.txt">
-          <img src="covers/eyeoftheworld.jpg" alt="eyeoftheworld" class="featured-img">
-          <p><strong>The Eye of the World</strong><br>Robert Jordan</p>
-          <p>Started: 16/12/25</p>
-          <p>TTR: 19</p>
-          <div class="rating">5</div>
-          <p class="book-metric">Location: <span class="file-number">...</span></p>
-        </div>
-
-        <div class="book-item" data-file="locations/The_Shining_-_Stephen_King.epub.po.txt">
-          <img src="covers/theshining.jpg" alt="theshining" class="featured-img">
-          <p><strong>The Shining</strong><br>Stephen King</p>
-          <p>Started: 10/12/25</p>
-          <p>TTR: 5</p>
-          <div class="rating">4½</div>
-          <p class="book-metric">Location: <span class="file-number">...</span></p>
-        </div>
-        
-        <div class="book-item" data-file="locations/The_Sword_of_Kaigen_by_M_L_Wang_A_Theonite_War_Companion_Novel.epub.po.txt">
-          <img src="covers/swordofkaigen.jpg" alt="swordofkaigen" class="featured-img">
-          <p><strong>Sword of Kaigen</strong><br>M.L. Wang</p>
-          <p>Started: 19/11/25</p>
-          <p>TTR: 20</p>
-          <div class="rating">1½</div>
-          <p class="book-metric">Location: <span class="file-number">...</span></p>
-        </div>
-
-        <div class="book-item" data-file="locations/It_by_Stephen_King.epub.po.txt">
-          <img src="covers/it.jpg" alt="it" class="featured-img">
-          <p><strong>IT</strong><br>Stephen King</p>
-          <p>Started: 27/9/25</p>
-          <p>TTR: 20</p>
-          <div class="rating">5</div>
-          <p class="book-metric">Location: <span class="file-number">...</span></p>
-        </div>
-
-        <div class="book-item" data-file="locations/worthdyingfor.epub.po.txt">
-          <img src="covers/worthdyingfor.jpg" alt="worthdyingfor">
-          <p><strong>Worth Dying For</strong><br>Tim Marshall</p>
-          <p>Started: 25/6/25</p>
-          <p>TTR: 15</p>
-          <div class="rating">4</div>
-          <p class="book-metric">Location: <span class="file-number">...</span></p>
-        </div>
-        
-        <div class="book-item" data-file="locations/theblindwatchmaker.epub.po.txt">
-          <img src="covers/theblindwatchmaker.jpg" alt="theblindwatchmaker">
-          <p><strong>The Blind Watchmaker</strong><br>Richard Dawkins</p>
-          <p>Started: 7/6/25</p>
-          <p>TTR: 17</p>
-          <div class="rating">4</div>
-          <p class="book-metric">Location: <span class="file-number">...</span></p>
-        </div>
-
-        <div class="book-item" data-file="locations/Crime_and_Punishment.mobi.po.txt">
-          <img src="covers/crimeandpunishment.jpg" alt="crimeandpunishment">
-          <p><strong>Crime and Punishment</strong><br>Fyodor Dostoevsky</p>
-          <p>Started: 7/5/25</p>
-          <p>TTR: 16</p>
-          <div class="rating">3½</div>
-          <p class="book-metric">Location: <span class="file-number">...</span></p>
-        </div>
-
-        <div class="book-item" data-file="locations/The Technological Republic Hard Power, Soft Belief, and the Future of the West (Alexander C Karp  Nicholas W. Zamiska) (Z-Library).azw3.po.txt">
-          <img src="covers/technologicalrepublic.jpg" alt="technologicalrepublic">
-          <p><strong>The Technological Republic</strong><br>A Karp & N Zamiska</p>
-          <p>Started: 1/5/25</p>
-          <p>TTR: 4</p>
-          <div class="rating">5</div>
-          <p class="book-metric">Location: <span class="file-number">...</span></p>
-        </div>
-
-        <div class="book-item">
-          <img src="covers/theoriesofinternationalpolitics.jpg" alt="theoriesofinternationalpolitics">
-          <p><strong>Theories of International Politics AND ZOMBIES</strong><br>Daniel Drezner</p>
-          <p>Started: 28/4/25</p>
-          <p>TTR: 3</p>
-          <div class="rating">4</div>
-        </div>
-
-        <div class="book-item">
-          <img src="covers/forbiddennation.jpg" alt="forbiddennation">
-          <p><strong>Forbidden Nation: A History of Taiwan</strong><br>Jonathan Manthorpe</p>
-          <p>Started: 24/4/25</p>
-          <p>TTR: 4</p>
-          <div class="rating">5</div>
-        </div>
-
-        <div class="book-item">
-          <img src="covers/1984.jpg" alt="1984">
-          <p><strong>1984</strong><br>George Orwell</p>
-          <p>Started: 18/4/25</p>
-          <p>TTR: 5</p>
-          <div class="rating">5</div>
-        </div>
-
-        <div class="book-item">
-          <img src="covers/abriefhistoryofthemiddleeast.jpg" alt="abriefhistoryofthemiddleeast">
-          <p><strong>A Brief History of The Middle East</strong><br>Christopher Catherwood</p>
-          <p>Started: 29/3/25</p>
-          <p>TTR: 20</p>
-          <div class="rating">5</div>
-        </div>
-
-        <div class="book-item">
-          <img src="covers/windandtruth.jpg" alt="windandtruth">
-          <p><strong>Wind and Truth</strong><br>Brandon Sanderson</p>
-          <p>Started: 27/2/25</p>
-          <p>TTR: 30</p>
-          <div class="rating">3</div>
-        </div>
-
-      </div>
-    </section>
-  </books>
-
-</body>
-</html>
+  </section>
+</books>
