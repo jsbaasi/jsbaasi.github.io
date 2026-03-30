@@ -4,114 +4,130 @@
         "Howling_Dark_-_Christopher_Ruocchio.epub.po": {
             "title": "Howling Dark",
             "author": "Christopher Ruocchio",
-            "started": "01/02/26",
-            "ttr": null,
-            "rating": null
+            "started": "2026-02-01T14:07:39",
+            "rating": null,
+            "finished": null,
+            "duration": null
         },
         "Empire_of_Silence_-_Christopher_Ruocchio.epub.po": {
             "title": "Empire of Silence",
             "author": "Christopher Ruocchio",
-            "started": "4/1/26",
-            "ttr": 17,
-            "rating": "4"
+            "started": "2026-01-04T20:26:41",
+            "rating": "4",
+            "finished": "2026-01-21T20:32:31",
+            "duration": "17d 0h 5m"
         },
         "The Eye of the World - Robert Jordan.epub.po": {
             "title": "The Eye of the World",
             "author": "Robert Jordan",
-            "started": "16/12/25",
-            "ttr": 19,
-            "rating": "5"
+            "started": "2025-12-16T19:58:27",
+            "rating": "5",
+            "finished": "2026-01-04T19:02:33",
+            "duration": "18d 23h 4m"
         },
         "The_Shining_-_Stephen_King.epub.po": {
             "title": "The Shining",
             "author": "Stephen King",
-            "started": "10/12/25",
-            "ttr": 5,
-            "rating": "4\u00bd"
+            "started": "2025-12-10T13:21:16",
+            "rating": "4\u00bd",
+            "finished": "2025-12-15T15:11:48",
+            "duration": "5d 1h 50m"
         },
         "The_Sword_of_Kaigen_by_M_L_Wang_A_Theonite_War_Companion_Novel.epub.po": {
             "title": "Sword of Kaigen",
             "author": "M.L. Wang",
-            "started": "19/11/25",
-            "ttr": 20,
-            "rating": "1\u00bd"
+            "started": "2025-11-19T11:04:54",
+            "rating": "1\u00bd",
+            "finished": "2025-12-09T12:08:11",
+            "duration": "20d 1h 3m"
         },
         "It_by_Stephen_King.epub.po": {
             "title": "IT",
             "author": "Stephen King",
-            "started": "27/9/25",
-            "ttr": 20,
-            "rating": "5"
+            "started": "2025-09-27T13:23:59",
+            "rating": "5",
+            "finished": "2025-10-17T20:58:56",
+            "duration": "20d 7h 34m"
         },
         "worthdyingfor.epub.po": {
             "title": "Worth Dying For",
             "author": "Tim Marshall",
-            "started": "25/6/25",
-            "ttr": 15,
-            "rating": "4"
+            "started": "2025-06-25T18:26:00",
+            "rating": "4",
+            "finished": "2025-07-10T22:41:06",
+            "duration": "15d 4h 15m"
         },
         "theblindwatchmaker.epub.po": {
             "title": "The Blind Watchmaker",
             "author": "Richard Dawkins",
-            "started": "7/6/25",
-            "ttr": 17,
-            "rating": "4"
+            "started": "2025-06-07T20:45:57",
+            "rating": "4",
+            "finished": "2025-06-24T16:36:09",
+            "duration": "16d 19h 50m"
         },
         "Crime_and_Punishment.mobi.po": {
             "title": "Crime and Punishment",
             "author": "Fyodor Dostoevsky",
-            "started": "7/5/25",
-            "ttr": 16,
-            "rating": "3\u00bd"
+            "started": "2025-05-07T14:42:15",
+            "rating": "3\u00bd",
+            "finished": "2025-05-23T22:18:36",
+            "duration": "16d 7h 36m"
         },
         "The Technological Republic Hard Power, Soft Belief, and the Future of the West (Alexander C Karp  Nicholas W. Zamiska) (Z-Library).azw3.po": {
             "title": "The Technological Republic",
             "author": "A Karp & N Zamiska",
-            "started": "1/5/25",
-            "ttr": 4,
-            "rating": "5"
+            "started": "2025-05-01T12:09:51",
+            "rating": "5",
+            "finished": "2025-05-05T17:27:42",
+            "duration": "4d 5h 17m"
         },
         "theoriesofinternationalpolitics": {
             "title": "Theories of International Politics AND ZOMBIES",
             "author": "Daniel Drezner",
-            "started": "28/4/25",
-            "ttr": 3,
-            "rating": "4"
+            "started": "2025-04-28T14:58:28",
+            "rating": "4",
+            "finished": "2025-05-01T21:28:48",
+            "duration": "3d 6h 30m"
         },
         "forbiddennation": {
             "title": "Forbidden Nation: A History of Taiwan",
             "author": "Jonathan Manthorpe",
-            "started": "24/4/25",
-            "ttr": 4,
-            "rating": "5"
+            "started": "2025-04-24T13:27:48",
+            "rating": "5",
+            "finished": "2025-04-28T18:36:34",
+            "duration": "4d 5h 8m"
         },
         "1984": {
             "title": "1984",
             "author": "George Orwell",
-            "started": "18/4/25",
-            "ttr": 5,
-            "rating": "5"
+            "started": "2025-04-18T19:43:14",
+            "rating": "5",
+            "finished": "2025-04-23T12:18:30",
+            "duration": "4d 16h 35m"
         },
         "abriefhistoryofthemiddleeast": {
             "title": "A Brief History of The Middle East",
             "author": "Christopher Catherwood",
-            "started": "29/3/25",
-            "ttr": 20,
-            "rating": "5"
+            "started": "2025-03-29T13:37:23",
+            "rating": "5",
+            "finished": "2025-04-18T17:05:50",
+            "duration": "20d 3h 28m"
         },
         "windandtruth": {
             "title": "Wind and Truth",
             "author": "Brandon Sanderson",
-            "started": "27/2/25",
-            "ttr": 30,
-            "rating": "3"
+            "started": "2025-02-27T11:15:16",
+            "rating": "3",
+            "finished": "2025-03-29T22:36:17",
+            "duration": "30d 11h 21m"
         },
         "9780765334343.epub.po": {
             "title": "The Great Hunt",
             "author": "Robert Jordan",
-            "started": "30/03/26",
-            "ttr": null,
-            "rating": null
+            "started": "2026-03-30T14:36:42",
+            "rating": null,
+            "finished": null,
+            "duration": null
         }
     }
 }
