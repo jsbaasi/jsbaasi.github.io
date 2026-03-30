@@ -45,7 +45,7 @@ layout: default
         {% assign b = book[1] %}
         {% if book[0] != current_key %}
         <div class="book-item" data-file="{{ book[0] }}">
-          <img src="covers/{{ b.cover }}" alt="{{ b.title }}" class="featured-img">
+          <img src="covers/{{ book[0] }}.jpg" alt="{{ b.title }}" class="featured-img">
           <p><strong>{{ b.title }}</strong><br>{{ b.author }}</p>
           {% if b.started %}<p>Started: {{ b.started }}</p>{% endif %}
           {% if b.ttr %}<p>TTR: {{ b.ttr }}</p>{% endif %}
