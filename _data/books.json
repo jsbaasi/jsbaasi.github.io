@@ -1,125 +1,132 @@
 {
-  "current" : "Howling_Dark_-_Christopher_Ruocchio.epub.po",
-  "books": {
-  "Howling_Dark_-_Christopher_Ruocchio.epub.po": {
-    "title": "Howling Dark",
-    "author": "Christopher Ruocchio",
-    "cover": "howlingdark.jpg",
-    "started": "",
-    "ttr": null,
-    "rating": null
-  },
-  "Empire_of_Silence_-_Christopher_Ruocchio.epub.po": {
-    "title": "Empire of Silence",
-    "author": "Christopher Ruocchio",
-    "cover": "empireofsilence.jpg",
-    "started": "4/1/26",
-    "ttr": 17,
-    "rating": "4"
-  },
-  "The Eye of the World - Robert Jordan.epub.po": {
-    "title": "The Eye of the World",
-    "author": "Robert Jordan",
-    "cover": "eyeoftheworld.jpg",
-    "started": "16/12/25",
-    "ttr": 19,
-    "rating": "5"
-  },
-  "The_Shining_-_Stephen_King.epub.po": {
-    "title": "The Shining",
-    "author": "Stephen King",
-    "cover": "theshining.jpg",
-    "started": "10/12/25",
-    "ttr": 5,
-    "rating": "4½"
-  },
-  "The_Sword_of_Kaigen_by_M_L_Wang_A_Theonite_War_Companion_Novel.epub.po": {
-    "title": "Sword of Kaigen",
-    "author": "M.L. Wang",
-    "cover": "swordofkaigen.jpg",
-    "started": "19/11/25",
-    "ttr": 20,
-    "rating": "1½"
-  },
-  "It_by_Stephen_King.epub.po": {
-    "title": "IT",
-    "author": "Stephen King",
-    "cover": "it.jpg",
-    "started": "27/9/25",
-    "ttr": 20,
-    "rating": "5"
-  },
-  "worthdyingfor.epub.po": {
-    "title": "Worth Dying For",
-    "author": "Tim Marshall",
-    "cover": "worthdyingfor.jpg",
-    "started": "25/6/25",
-    "ttr": 15,
-    "rating": "4"
-  },
-  "theblindwatchmaker.epub.po": {
-    "title": "The Blind Watchmaker",
-    "author": "Richard Dawkins",
-    "cover": "theblindwatchmaker.jpg",
-    "started": "7/6/25",
-    "ttr": 17,
-    "rating": "4"
-  },
-  "Crime_and_Punishment.mobi.po": {
-    "title": "Crime and Punishment",
-    "author": "Fyodor Dostoevsky",
-    "cover": "crimeandpunishment.jpg",
-    "started": "7/5/25",
-    "ttr": 16,
-    "rating": "3½"
-  },
-  "The Technological Republic Hard Power, Soft Belief, and the Future of the West (Alexander C Karp  Nicholas W. Zamiska) (Z-Library).azw3.po": {
-    "title": "The Technological Republic",
-    "author": "A Karp & N Zamiska",
-    "cover": "technologicalrepublic.jpg",
-    "started": "1/5/25",
-    "ttr": 4,
-    "rating": "5"
-  },
-  "theoriesofinternationalpolitics": {
-    "title": "Theories of International Politics AND ZOMBIES",
-    "author": "Daniel Drezner",
-    "cover": "theoriesofinternationalpolitics.jpg",
-    "started": "28/4/25",
-    "ttr": 3,
-    "rating": "4"
-  },
-  "forbiddennation": {
-    "title": "Forbidden Nation: A History of Taiwan",
-    "author": "Jonathan Manthorpe",
-    "cover": "forbiddennation.jpg",
-    "started": "24/4/25",
-    "ttr": 4,
-    "rating": "5"
-  },
-  "1984": {
-    "title": "1984",
-    "author": "George Orwell",
-    "cover": "1984.jpg",
-    "started": "18/4/25",
-    "ttr": 5,
-    "rating": "5"
-  },
-  "abriefhistoryofthemiddleeast": {
-    "title": "A Brief History of The Middle East",
-    "author": "Christopher Catherwood",
-    "cover": "abriefhistoryofthemiddleeast.jpg",
-    "started": "29/3/25",
-    "ttr": 20,
-    "rating": "5"
-  },
-  "windandtruth": {
-    "title": "Wind and Truth",
-    "author": "Brandon Sanderson",
-    "cover": "windandtruth.jpg",
-    "started": "27/2/25",
-    "ttr": 30,
-    "rating": "3"
-  }
-}
+    "current": "Robert_Jordan_-_The_Wheel_of_Time_2_-_The_Great_Hunt.epub.po",
+    "books": {
+        "Howling_Dark_-_Christopher_Ruocchio.epub.po": {
+            "title": "Howling Dark",
+            "author": "Christopher Ruocchio",
+            "cover": "howlingdark.jpg",
+            "started": "",
+            "ttr": null,
+            "rating": null
+        },
+        "Empire_of_Silence_-_Christopher_Ruocchio.epub.po": {
+            "title": "Empire of Silence",
+            "author": "Christopher Ruocchio",
+            "cover": "empireofsilence.jpg",
+            "started": "4/1/26",
+            "ttr": 17,
+            "rating": "4"
+        },
+        "The Eye of the World - Robert Jordan.epub.po": {
+            "title": "The Eye of the World",
+            "author": "Robert Jordan",
+            "cover": "eyeoftheworld.jpg",
+            "started": "16/12/25",
+            "ttr": 19,
+            "rating": "5"
+        },
+        "The_Shining_-_Stephen_King.epub.po": {
+            "title": "The Shining",
+            "author": "Stephen King",
+            "cover": "theshining.jpg",
+            "started": "10/12/25",
+            "ttr": 5,
+            "rating": "4\u00bd"
+        },
+        "The_Sword_of_Kaigen_by_M_L_Wang_A_Theonite_War_Companion_Novel.epub.po": {
+            "title": "Sword of Kaigen",
+            "author": "M.L. Wang",
+            "cover": "swordofkaigen.jpg",
+            "started": "19/11/25",
+            "ttr": 20,
+            "rating": "1\u00bd"
+        },
+        "It_by_Stephen_King.epub.po": {
+            "title": "IT",
+            "author": "Stephen King",
+            "cover": "it.jpg",
+            "started": "27/9/25",
+            "ttr": 20,
+            "rating": "5"
+        },
+        "worthdyingfor.epub.po": {
+            "title": "Worth Dying For",
+            "author": "Tim Marshall",
+            "cover": "worthdyingfor.jpg",
+            "started": "25/6/25",
+            "ttr": 15,
+            "rating": "4"
+        },
+        "theblindwatchmaker.epub.po": {
+            "title": "The Blind Watchmaker",
+            "author": "Richard Dawkins",
+            "cover": "theblindwatchmaker.jpg",
+            "started": "7/6/25",
+            "ttr": 17,
+            "rating": "4"
+        },
+        "Crime_and_Punishment.mobi.po": {
+            "title": "Crime and Punishment",
+            "author": "Fyodor Dostoevsky",
+            "cover": "crimeandpunishment.jpg",
+            "started": "7/5/25",
+            "ttr": 16,
+            "rating": "3\u00bd"
+        },
+        "The Technological Republic Hard Power, Soft Belief, and the Future of the West (Alexander C Karp  Nicholas W. Zamiska) (Z-Library).azw3.po": {
+            "title": "The Technological Republic",
+            "author": "A Karp & N Zamiska",
+            "cover": "technologicalrepublic.jpg",
+            "started": "1/5/25",
+            "ttr": 4,
+            "rating": "5"
+        },
+        "theoriesofinternationalpolitics": {
+            "title": "Theories of International Politics AND ZOMBIES",
+            "author": "Daniel Drezner",
+            "cover": "theoriesofinternationalpolitics.jpg",
+            "started": "28/4/25",
+            "ttr": 3,
+            "rating": "4"
+        },
+        "forbiddennation": {
+            "title": "Forbidden Nation: A History of Taiwan",
+            "author": "Jonathan Manthorpe",
+            "cover": "forbiddennation.jpg",
+            "started": "24/4/25",
+            "ttr": 4,
+            "rating": "5"
+        },
+        "1984": {
+            "title": "1984",
+            "author": "George Orwell",
+            "cover": "1984.jpg",
+            "started": "18/4/25",
+            "ttr": 5,
+            "rating": "5"
+        },
+        "abriefhistoryofthemiddleeast": {
+            "title": "A Brief History of The Middle East",
+            "author": "Christopher Catherwood",
+            "cover": "abriefhistoryofthemiddleeast.jpg",
+            "started": "29/3/25",
+            "ttr": 20,
+            "rating": "5"
+        },
+        "windandtruth": {
+            "title": "Wind and Truth",
+            "author": "Brandon Sanderson",
+            "cover": "windandtruth.jpg",
+            "started": "27/2/25",
+            "ttr": 30,
+            "rating": "3"
+        },
+        "Robert_Jordan_-_The_Wheel_of_Time_2_-_The_Great_Hunt.epub.po": {
+            "title": "placeholder",
+            "author": "placeholder",
+            "started": "30/03/2026",
+            "ttr": null,
+            "rating": null
+        }
+    }
 }
