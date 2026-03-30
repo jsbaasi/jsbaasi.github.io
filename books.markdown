@@ -48,7 +48,7 @@ layout: default
           <img src="covers/{{ book[0] }}.jpg" alt="{{ b.title }}" class="featured-img">
           <p><strong>{{ b.title }}</strong><br>{{ b.author }}</p>
           {% if b.started %}<p>Started: {{ b.started | date: "%d/%m/%y - %H:%M" }}</p>{% endif %}
-          {% if b.duration %}<p>TTR: {{ b.duration }}</p>{% endif %}
+          {% if b.ttr %}<p>TTR: {{ b.ttr }}</p>{% endif %}
           {% if b.rating %}<div class="rating">{{ b.rating }}</div>{% endif %}
           <p class="book-metric">Location: <span class="file-number">...</span></p>
         </div>
