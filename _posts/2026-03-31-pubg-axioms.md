@@ -9,7 +9,7 @@ permalink: /pubg-axioms/
 - Turn the wheels when driving over the apex of a hill/bump
 - Aim for centre of mass
 - Play death-match and warm-up spray on training range
-- Make sure to take buildings when advancing ground otherwise you have no control
+- Take buildings when advancing ground otherwise you have no control
 - Hear audio cues before pushing people
 - Do not over-peek or stand in the same place for too long - be dynamic
 - Do not face-check cornered players, bait/confuse before challenging
