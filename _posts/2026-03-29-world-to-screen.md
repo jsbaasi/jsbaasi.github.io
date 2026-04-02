@@ -37,6 +37,10 @@ left vector x direction vector to get the up vector actually perpendicular as cu
 ixj = k
 kxi = j
 
-Great resource on the overall OpenGL [pipeline][OpenGL-transform]
+projection matrix transformation is geometrically: objects within a frustum getting pulled in and normalised to [-1, 1], stuff further away becomes smaller.
+
+view space > projection matrix multiplication > clip space > de-homogonize > ndc
+
+Good resource on the overall OpenGL [pipeline][OpenGL-transform]
 
 [OpenGL-transform]: https://www.songho.ca/opengl/gl_transform.html

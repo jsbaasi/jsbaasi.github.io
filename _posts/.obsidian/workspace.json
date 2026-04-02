@@ -4,21 +4,21 @@
     "type": "split",
     "children": [
       {
-        "id": "8686a4188091f7b9",
+        "id": "06a5a2b6b60b328f",
         "type": "tabs",
         "children": [
           {
-            "id": "118bc75c95b26f43",
+            "id": "16e8cf988479964a",
             "type": "leaf",
             "state": {
-              "type": "split-diff-view",
+              "type": "markdown",
               "state": {
-                "aFile": "_posts/.obsidian/app.json",
-                "bFile": "_posts/.obsidian/app.json",
-                "aRef": ""
+                "file": "2026-03-29-world-to-screen.md",
+                "mode": "source",
+                "source": false
               },
-              "icon": "diff",
-              "title": "Diff: app.json  (Working Tree)"
+              "icon": "lucide-file",
+              "title": "2026-03-29-world-to-screen"
             }
           }
         ]
@@ -78,7 +78,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 200
   },
   "right": {
     "id": "5a6dcbc59dcf485c",
@@ -180,7 +180,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 200
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -194,7 +194,7 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "aca1eea42ea3eae9",
+  "active": "16e8cf988479964a",
   "lastOpenFiles": [
     "2026-03-29-world-to-screen.md",
     "2026-03-31-pubg-axioms.md",
