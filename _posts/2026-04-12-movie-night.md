@@ -11,10 +11,9 @@ A movie night is a framework for watching movies. Enjoyment of a movie should no
 
 What makes a successful (in the fullest sense) movie night:
 - everyone *wants* to watch a movie with each other, e.g. participants as nodes and inclusion as edges form a complete graph
-- everyone has a *willing* and *reasonable*$_1$ agreement to watch *the movie*
+- everyone has a *willing* and *reasonable*$_1$ agreement to watch *the movie*, alternatively participants are aware about who is low-agreement
 - if on Discord, someone is *volunteering* to stream *the movie* 
 - participants are *receptive* of any distractions/interruptions during the runtime of the movie night and *accommodate*$_2$
-- participants are 
 
 Some good predictors of an unsuccessful movie night:
 - movie night is suggested by a time-waster$_3$. 
@@ -26,8 +25,7 @@ Some signs of an unsuccessful movie night during runtime (be honest/transparent 
 - participants are not receptive of disruptions or framework concerns from other participants
 
 Some signs of an unsuccessful movie night after completion (helpful for fast feedback loop):
-- everyone is quiet
-- natural elation of movie night being over, leading to hyperbolic/fawning of the movie. Successful movie nights would result in accurate and critical reviews of the movie instead
+- no critical review, either silence or hyperbolic/fawning from elation of the framework terminating.
 
 $_1$ - participants have made the informed decision to watch the proposed movie, and are mindful of the time it will take and any other activities they will go in lieu of. The reasoning behind the decision can be articulated to other participants. "because everyone else wants to watch it", "I'm getting bored choosing", "just put something on" are some examples of reasoning that do not meet this criteria
 $_2$ - This mostly falls on the streamer, pausing/restarting when needed
