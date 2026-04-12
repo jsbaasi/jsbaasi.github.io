@@ -11,10 +11,14 @@
             "id": "da38985f182ee4e7",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {},
+              "type": "markdown",
+              "state": {
+                "file": "2026-04-12-movie-night.md",
+                "mode": "source",
+                "source": false
+              },
               "icon": "lucide-file",
-              "title": "New tab"
+              "title": "2026-04-12-movie-night"
             }
           }
         ]
@@ -190,7 +194,7 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "aca1eea42ea3eae9",
+  "active": "da38985f182ee4e7",
   "lastOpenFiles": [
     "2026-04-12-movie-night.md",
     "2026-03-31-pubg-axioms.md",
