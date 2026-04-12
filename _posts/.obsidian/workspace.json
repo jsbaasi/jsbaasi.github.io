@@ -4,21 +4,17 @@
     "type": "split",
     "children": [
       {
-        "id": "435f60e2efcc3fa1",
+        "id": "0b62ddb98d6cf3cb",
         "type": "tabs",
         "children": [
           {
-            "id": "fa9d685e0fffc684",
+            "id": "da38985f182ee4e7",
             "type": "leaf",
             "state": {
-              "type": "split-diff-view",
-              "state": {
-                "aFile": "_layouts/post.html",
-                "bFile": "_layouts/post.html",
-                "aRef": ""
-              },
-              "icon": "diff",
-              "title": "Diff: post.html  (Working Tree)"
+              "type": "empty",
+              "state": {},
+              "icon": "lucide-file",
+              "title": "New tab"
             }
           }
         ]
@@ -194,7 +190,7 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "fa9d685e0fffc684",
+  "active": "aca1eea42ea3eae9",
   "lastOpenFiles": [
     "2026-04-12-movie-night.md",
     "2026-03-31-pubg-axioms.md",
