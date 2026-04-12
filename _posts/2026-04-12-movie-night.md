@@ -11,12 +11,12 @@ A movie night is a framework for watching movies. Enjoyment of a movie should no
 
 What makes a successful (in the fullest sense) movie night:
 - everyone *wants* to watch a movie with each other, e.g. participants as nodes and inclusion as edges form a complete graph
-- everyone has a *willing* and *reasonable*$_1$ agreement to watch *the movie*, alternatively participants are aware about who is low-agreement
+- everyone has a *willing* and *reasonable*[^1]agreement to watch *the movie*, alternatively participants are aware about who is low-agreement
 - if on Discord, someone is *volunteering* to stream *the movie* 
-- participants are *receptive* of any distractions/interruptions during the runtime of the movie night and *accommodate*$_2$
+- participants are *receptive* of any distractions/interruptions during the runtime of the movie night and *accommodate*[^2]
 
 Some good predictors of an unsuccessful movie night:
-- movie night is suggested by a time-waster$_3$. 
+- movie night is suggested by a time-waster[^3] 
 - movie night is suggested (not even a movie!) late in the evening, it's very hard to achieve full, informed participation in such a short span of time. 2100hrs leaves enough time to complete a movie before bedtime so becomes a hard deadline for meeting movie-night criteria, 2000hrs for suggesting a movie-night
 - participants are attempting to coerce someone to stream the movie. Results in the streamer not meeting the runtime criteria of the movie night, only the bare minimum of a movie stream that can be viewed by others
 
@@ -27,6 +27,6 @@ Some signs of an unsuccessful movie night during runtime (be honest/transparent 
 Some signs of an unsuccessful movie night after completion (helpful for fast feedback loop):
 - no critical review, either silence or hyperbolic/fawning from elation of the framework terminating.
 
-$_1$ - participants have made the informed decision to watch the proposed movie, and are mindful of the time it will take and any other activities they will go in lieu of. The reasoning behind the decision can be articulated to other participants. "because everyone else wants to watch it", "I'm getting bored choosing", "just put something on" are some examples of reasoning that do not meet this criteria
-$_2$ - This mostly falls on the streamer, pausing/restarting when needed
-$_3$ - They have historically suggested a movie-night, but haven't accommodated the planning of movie night past vague movie suggestions and pushy behaviour
+[^1] - participants have made the informed decision to watch the proposed movie, and are mindful of the time it will take and any other activities they will go in lieu of. The reasoning behind the decision can be articulated to other participants. "because everyone else wants to watch it", "I'm getting bored choosing", "just put something on" are some examples of reasoning that do not meet this criteria
+[^2] - This mostly falls on the streamer, pausing/restarting when needed
+[^3] - They have historically suggested a movie-night, but haven't accommodated the planning of movie night past vague movie suggestions and pushy behaviour
