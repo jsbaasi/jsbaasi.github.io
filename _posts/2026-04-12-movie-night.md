@@ -12,6 +12,8 @@ What makes a successful (in the fullest sense) movie night:
 - everyone has a *reasonable*$_1$ agreement to watch *the movie*
 
 Some tells that are good predictors of an unsuccessful movie night:
-- movie night is suggested (not even a movie!) late in the evening, it's very hard to achieve full, informed participation in such a short span of time. 2100hrs leaves enough time to 
+- movie night is suggested by a time-waster$_2$. 
+- movie night is suggested (not even a movie!) late in the evening, it's very hard to achieve full, informed participation in such a short span of time. 2100hrs leaves enough time to complete a movie before bedtime so becomes a hard deadline for meeting movie-night criteria, 2000hrs for suggesting a movie-night
 
 $_1$ - participants have made the informed decision to watch the proposed movie. The reasoning behind the decision can be articulated to other participants. "because everyone else wants to watch it", "I'm getting bored choosing", "just put something on" are some examples of reasoning that do not meet this criteria 
+$_2$ - They have historically committed to a movie-night, but haven't facilitaOR haven't facilitated anything other than harassing potential participants
