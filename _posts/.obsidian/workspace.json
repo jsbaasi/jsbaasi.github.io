@@ -4,21 +4,21 @@
     "type": "split",
     "children": [
       {
-        "id": "5213216f40e75e9b",
+        "id": "435f60e2efcc3fa1",
         "type": "tabs",
         "children": [
           {
-            "id": "09584327611357ea",
+            "id": "fa9d685e0fffc684",
             "type": "leaf",
             "state": {
-              "type": "markdown",
+              "type": "split-diff-view",
               "state": {
-                "file": "2026-04-12-movie-night.md",
-                "mode": "source",
-                "source": false
+                "aFile": "_layouts/post.html",
+                "bFile": "_layouts/post.html",
+                "aRef": ""
               },
-              "icon": "lucide-file",
-              "title": "2026-04-12-movie-night"
+              "icon": "diff",
+              "title": "Diff: post.html  (Working Tree)"
             }
           }
         ]
@@ -194,10 +194,10 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "4f3f1fbcf9c2e8ac",
+  "active": "fa9d685e0fffc684",
   "lastOpenFiles": [
-    "2026-03-31-pubg-axioms.md",
     "2026-04-12-movie-night.md",
+    "2026-03-31-pubg-axioms.md",
     "2026-04-09-ts-hard.md",
     "2026-04-08-rehabilitating-my-shoulders.md",
     "Untitled.md",
