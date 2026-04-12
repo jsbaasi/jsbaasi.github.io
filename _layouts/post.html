@@ -11,11 +11,24 @@ layout: default
     list-style-type: disc;
     margin-bottom: 0.25rem;
   }
-  sup {
-    font-size: 0.75em;
-    vertical-align: super;
+  .post-header {
+    max-width: 700px;
+    margin: 2rem auto 1rem;
+    padding: 0 1rem;
+  }
+  .post-title {
+    margin-bottom: 0.25rem;
+  }
+  .post-date {
+    color: #888;
+    font-size: 0.9rem;
   }
 </style>
+
+<div class="post-header">
+  <h1 class="post-title">{{ page.title }}</h1>
+  <p class="post-date">{{ page.date | date: "%B %d, %Y" }}</p>
+</div>
 
 <div class="post-content" style="max-width: 700px; margin: 0 auto; padding: 0 1rem;">
   {{ content }}

@@ -27,6 +27,6 @@ Some signs of an unsuccessful movie night during runtime (be honest/transparent 
 Some signs of an unsuccessful movie night after completion (helpful for fast feedback loop):
 - no critical review, either silence or hyperbolic/fawning from elation of the framework terminating.
 
-[^1]: - participants have made the informed decision to watch the proposed movie, and are mindful of the time it will take and any other activities they will go in lieu of. The reasoning behind the decision can be articulated to other participants. "because everyone else wants to watch it", "I'm getting bored choosing", "just put something on" are some examples of reasoning that do not meet this criteria
-[^2]: - This mostly falls on the streamer, pausing/restarting when needed
-[^3]: - They have historically suggested a movie-night, but haven't accommodated the planning of movie night past vague movie suggestions and pushy behaviour
+[^1]: Participants have made the informed decision to watch the proposed movie, and are mindful of the time it will take and any other activities they will go in lieu of. The reasoning behind the decision can be articulated to other participants. "because everyone else wants to watch it", "I'm getting bored choosing", "just put something on" are some examples of reasoning that do not meet this criteria
+[^2]: This mostly falls on the streamer, pausing/restarting when needed
+[^3]: They have historically suggested a movie-night, but haven't accommodated the planning of movie night past vague movie suggestions and pushy behaviour
