@@ -5,7 +5,7 @@ date:   2026-03-29 19:33:05 +0100
 categories: maths opengl graphics programming
 permalink: /world-to-screen/
 ---
-matrix multiplication is row by column 
+matrix multiplication is row by column
 
 if k x i = j and j is 0,1,0 then you use right hand rule to determine basis vectors and their directions
 
