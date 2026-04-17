@@ -4,21 +4,17 @@
     "type": "split",
     "children": [
       {
-        "id": "0b62ddb98d6cf3cb",
+        "id": "8686a4188091f7b9",
         "type": "tabs",
         "children": [
           {
-            "id": "da38985f182ee4e7",
+            "id": "118bc75c95b26f43",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "2026-04-12-movie-night.md",
-                "mode": "source",
-                "source": false
-              },
+              "type": "empty",
+              "state": {},
               "icon": "lucide-file",
-              "title": "2026-04-12-movie-night"
+              "title": "New tab"
             }
           }
         ]
@@ -78,7 +74,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200
+    "width": 300
   },
   "right": {
     "id": "5a6dcbc59dcf485c",
@@ -163,23 +159,12 @@
               "icon": "lucide-list",
               "title": "Outline of 2026-03-31-pubg-axioms"
             }
-          },
-          {
-            "id": "aca1eea42ea3eae9",
-            "type": "leaf",
-            "state": {
-              "type": "git-view",
-              "state": {},
-              "icon": "git-pull-request",
-              "title": "Source Control"
-            }
           }
-        ],
-        "currentTab": 5
+        ]
       }
     ],
     "direction": "horizontal",
-    "width": 200
+    "width": 300
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -189,17 +174,19 @@
       "daily-notes:Open today's daily note": false,
       "templates:Insert template": false,
       "command-palette:Open command palette": false,
-      "bases:Create new base": false,
-      "obsidian-git:Open Git source control": false
+      "bases:Create new base": false
     }
   },
-  "active": "da38985f182ee4e7",
+  "active": "118bc75c95b26f43",
   "lastOpenFiles": [
+    "2026-04-17.md",
     "2026-04-12-movie-night.md",
-    "2026-03-31-pubg-axioms.md",
     "2026-04-09-ts-hard.md",
     "2026-04-08-rehabilitating-my-shoulders.md",
-    "Untitled.md",
-    "2026-03-29-world-to-screen.md"
+    "Untitled.canvas",
+    "Untitled 1.canvas",
+    "2026-03-31-pubg-axioms.md",
+    "2026-03-29-world-to-screen.md",
+    "Untitled.md"
   ]
 }
