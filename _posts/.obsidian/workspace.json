@@ -164,8 +164,19 @@
               "icon": "lucide-list",
               "title": "Outline of 2026-03-31-pubg-axioms"
             }
+          },
+          {
+            "id": "cdc1d06dbeabe8a0",
+            "type": "leaf",
+            "state": {
+              "type": "git-view",
+              "state": {},
+              "icon": "git-pull-request",
+              "title": "Source Control"
+            }
           }
-        ]
+        ],
+        "currentTab": 5
       }
     ],
     "direction": "horizontal",
@@ -173,6 +184,7 @@
   },
   "left-ribbon": {
     "hiddenItems": {
+      "obsidian-excalidraw-plugin:New drawing": false,
       "switcher:Open quick switcher": false,
       "graph:Open graph view": false,
       "canvas:Create new canvas": false,
@@ -184,7 +196,7 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "4f3f1fbcf9c2e8ac",
+  "active": "96ed83c60ff102b6",
   "lastOpenFiles": [
     "Untitled.canvas",
     "2026-04-17-gitops.md",
