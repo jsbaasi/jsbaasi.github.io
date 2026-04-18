@@ -33,8 +33,7 @@
               "title": "Drawing 2026-04-18 11.17.40.excalidraw"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -211,10 +210,10 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "2461cb2cb94b3ee8",
+  "active": "96ed83c60ff102b6",
   "lastOpenFiles": [
-    "2026-04-17-gitops.md",
     "Excalidraw/Drawing 2026-04-18 11.17.40.excalidraw.md",
+    "2026-04-17-gitops.md",
     "Excalidraw",
     "Untitled.canvas",
     "templates/post_template.md",
