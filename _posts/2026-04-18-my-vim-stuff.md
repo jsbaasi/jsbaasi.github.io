@@ -8,3 +8,4 @@ permalink: /my-vim-stuff/
 I use lazyvim.
 - `:Noice` to see full error message bubbles
 - `:messages` to see lazyvim editor messages (not sure)
+- if there's lsp errors that are a bit confusing, maybe the working directory for the lsp is not set correctly. use  `:cd` to correct this
