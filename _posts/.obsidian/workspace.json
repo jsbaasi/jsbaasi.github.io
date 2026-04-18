@@ -20,8 +20,21 @@
               "icon": "lucide-file",
               "title": "2026-04-17-gitops"
             }
+          },
+          {
+            "id": "2461cb2cb94b3ee8",
+            "type": "leaf",
+            "state": {
+              "type": "excalidraw",
+              "state": {
+                "file": "Excalidraw/Drawing 2026-04-18 11.17.40.excalidraw.md"
+              },
+              "icon": "excalidraw-icon",
+              "title": "Drawing 2026-04-18 11.17.40.excalidraw"
+            }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -198,10 +211,12 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "96ed83c60ff102b6",
+  "active": "2461cb2cb94b3ee8",
   "lastOpenFiles": [
-    "Untitled.canvas",
     "2026-04-17-gitops.md",
+    "Excalidraw/Drawing 2026-04-18 11.17.40.excalidraw.md",
+    "Excalidraw",
+    "Untitled.canvas",
     "templates/post_template.md",
     "gitops.md",
     "2026-04-08-rehabilitating-my-shoulders.md",
