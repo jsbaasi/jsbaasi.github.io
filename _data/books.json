@@ -1,5 +1,5 @@
 {
-    "current": "9780765334343.epub.po",
+    "current": "9780356517025.epub.po",
     "books": {
         "Howling_Dark_-_Christopher_Ruocchio.epub.po": {
             "title": "Howling Dark",
@@ -128,6 +128,14 @@
             "rating": null,
             "finished": null,
             "ttr": null
+        },
+        "9780356517025.epub.po": {
+            "title": "The Dragon Reborn",
+            "author": "Robert Jordan",
+            "started": "20/04/26",
+            "finished": null,
+            "ttr": null,
+            "rating": null
         }
     }
 }
