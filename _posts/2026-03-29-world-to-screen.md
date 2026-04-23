@@ -41,6 +41,8 @@ projection matrix transformation is geometrically: objects within a frustum gett
 
 view space > projection matrix multiplication > clip space > de-homogonize > ndc
 
+projection matrix + w divide sends each 3d point to the 2d location where the ray from that 3d point to the camera origin crosses a plane perpendicular to the view axis then rescales to ndc (-1, 1)
+
 Good resource on the overall OpenGL [pipeline][OpenGL-transform]
 
 [OpenGL-transform]: https://www.songho.ca/opengl/gl_transform.html
