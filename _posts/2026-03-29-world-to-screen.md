@@ -66,7 +66,8 @@ OR keeping the rows contiguous
 $$
 a,b,c,d || e,f,g,h || i,j,k,l || m,n,o,p
 $$
-glm maths library mimics glsl vec/matrix maths, [some info here](https://www.c-jump.com/bcc/common/Talk3/Math/GLM/GLM.html) and thus the api for manipulating objects is column major, e.g. mat\[]
+glm maths library mimics glsl vec/matrix maths, [some info here](https://www.c-jump.com/bcc/common/Talk3/Math/GLM/GLM.html) and thus the api for manipulating objects is column major, e.g. mat\[0]\[3] is the same as mat.first_column.w
+
 Good resource on the overall OpenGL [pipeline][OpenGL-transform]
 
 [OpenGL-transform]: https://www.songho.ca/opengl/gl_transform.html
