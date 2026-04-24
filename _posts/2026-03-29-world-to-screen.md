@@ -44,8 +44,28 @@ view space > projection matrix multiplication > clip space > de-homogonize > ndc
 projection matrix + w divide sends each 3d point to the 2d location where the ray from that 3d point to the camera origin crosses a plane perpendicular to the view axis (-z in the case of opengl) then rescales to ndc (-1, 1)
 
 # row-major vs column-major
-column-ma
+column-major (opengl and vulkan default) is better for shaders and row-major (directx default) is better for cpu cache line apparently
 
+$$
+\begin{vmatrix}
+a&b&c&d
+\\
+e&f&g&h
+\\
+i&j&k&l
+\\
+m&n&o&p
+\end{vmatrix}
+$$
+
+it's a way to decide which way we want to flatten our matrix into a 1d memory array, keeping the columns contiguous
+$$
+a,e,i,m || b,f,j,n || c,g,k,o || d,h,l,p
+$$
+OR keeping the rows contiguous
+$$
+a,b,c,d || e,f,g,h || i,j,k,l || m,n,o,p
+$$
 Good resource on the overall OpenGL [pipeline][OpenGL-transform]
 
 [OpenGL-transform]: https://www.songho.ca/opengl/gl_transform.html
