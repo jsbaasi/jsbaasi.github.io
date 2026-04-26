@@ -6,7 +6,7 @@ categories: maths opengl graphics programming
 permalink: /world-to-screen/
 ---
 # Pre-amble
-## Terms to parse differently than expected
+## Terms to parse differently than expected (maybe)
 `Space` - a set of co-ordinate axes. A point will need a change-of-basis transformation to move from one distinct space to another.
 `Origin` - (0,0,0) in a co-ordinate space
 `Creator` - the entity that made the choices on the following matters:
@@ -18,9 +18,16 @@ permalink: /world-to-screen/
 `Translation` - could be used to mean moving between spaces but this write-up it only means moving an object's position, done through matrix multiplication ONLY by using homogeneous co-ordinates
 `NDC` - these letters parse to abbreviation normalised device co-ordinates
 `Clip` - the space where we decide what's inside/outside of our field of view. When used for it's common meaning e.g. clipping a hedge, the word will be accompanied by quotation marks
-`View` - used interchangeably to the view space and view as in what's in your vision
-## Recommended reading
-I recommend 3blue1brown videos on linear algebra, your goal is to get an intuitive understanding of matrices, vectors and common transformations so you can imagine some of the transformations below in your head and work through your own problems
+`View` - used interchangeably to mean view space, the space titled view and view, as in what's in your vision
+## Recommended pre/post actions
+### Pre
+I recommend 3blue1brown videos on linear algebra, your goal is to get an intuitive understanding of matrices, vectors and common transformations so you can imagine some of the transformations below in your head.
+
+Skim the 3 https://learnopengl.com/Getting-started chapters `Transformations` to `Camera` to see some of the pictures
+
+https://www.songho.ca/opengl/files/gl_camera02.gif this is a visualisation of world-to-view, haven't found one for projection _yet_
+### Post
+Implement something that touches upon every stage of this imaginary world to monitor pipeline. Camera implementation as is implemented in the OpenGL online book. Alternatively using a library like SDL or raylib to skip learning the OpenGL API for the GPU as it's quite explicit to speak and isn't relevant to the world-to-screen pipeline ideas.
 # Intro
 I learnt some of this stuff as part of an esp I made for assault cube, source can be found at [achack](https://github.com/jsbaasi/achack). I thought it would be helpful for myself to condense some of my linear algebra learnings into this write-up, targeting 3d-space-to-2d-screen transformations that a game developer may use.
 
@@ -80,6 +87,7 @@ This one is a bit trickier but we can arrive to the optimised version that every
 ### W
 - $z$ is needed for deciding what order the objects are seen in e.g. which object is at the front so all objects that are obscured by it don't need to be drawn, saving time in our draw loop && for perspective divide, so if we want to do this in one operation we need to save the $z$ value somehow
 - We use this row of the transformation to save the z value for the perspective divide later. So this final row is just $0,0,1,0$
+I recommend thinking through the above motivations and then looking at this [derivation](https://www.songho.ca/opengl/gl_projectionmatrix.html) of the projection matrices (orthogonal and perspective)
 # NDC space
 Normalised device co-ordinates. By being here we have carried forward all the above transformations to our objects that make them look 2d down the forward axis. Being normalised means we're understandable by all hardware/graphics APIs, so we can pass off our work to a library at this point but as we've come so far we might as well make the next jump to screen space and decide where exactly to draw the pixel.
 ## (no need to derive) the transformation from Clip space to NDC space
