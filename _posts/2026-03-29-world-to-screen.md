@@ -25,9 +25,9 @@ Hopefully others find this useful but, disclaimer, I am not a mathematician or a
 Our journey begins with objects in their own "space". For each object, it lives in a space whose axes describe the object as being at the origin point (0,0,0).
 
 Simple so far.
-# World space
+# Model space to World space
 Each object goes through a change-of-basis + translation to be put into the world space. It is now in a space with other objects.
-# View space
+# World space to View space
 A camera now comes into the mix, it's also an object in world space. We need to pick a point to view space from, this point is where we'll put the camera. Next we ask ourselves, how do we note where the camera is looking?
 
 We can do with 3 basis vectors. One to describe what up and down means for the camera, one to describe what left and right means for the camera, and one to describe what forwards and backwards means for the camera. $\hat{i}$, $\hat{j}$, $\hat{k}$. 
@@ -39,8 +39,18 @@ If we don't care about roll (like fps games), then we set $\vec{up}$ to $\begin{
 - euler angles if you're starting your working out from your self, deciding what yaw, pitch and roll you have (angles rotated around the world space basis vectors) then generating the bases vectors through trigonometry from those angles
 - quaternions, which I don't know much about
 - maybe some others?
-# Clip space
-We now have to decide what's in our field of view, and if you're doing perspective projection (objects further away are )
+## Deriving the transformation matrix for world-to-view
+
+# View space to Clip space
+We now have to decide:
+1. what's in our field of view
+2. if you're doing perspective projection (objects further away are smaller) as opposed to orthogonal projection (objects are same size everywhere) then what is the dimensions of each object when we've applied our perspective projection to it.
+## 1.
+We do this by geometrically describing a box (if orthogonal) or frustum (if perspective) in the direction that the camera is facing. Objects outside of this projection are "clipped". Practically this means we compare whether the position components of the object meet the following $-w <= x,y,z <= w$ criteria after the projection matrix multiplication
+## 2.
+We do this by geometrically describing a frustum. Objects within this frustum gets mapped to a cube co-ordinate space constrained at [-1, 1]. Thus, objects at the back of the frustum will under-go a greater compression compared to objects that are closer to the front.
+
+## Deriving the 
 # NDC space
 # Screen space
 Great, we made it.
