@@ -5,6 +5,15 @@ date:   2026-03-29 19:33:05 +0100
 categories: maths opengl graphics programming
 permalink: /world-to-screen/
 ---
+# Pre-amble
+# Terms to parse differently than expected
+`Space` - a set of co-ordinate axes. A point will need a change-of-basis transformation to move from one distinct space to another.
+`Origin` - (0,0,0) in a co-ordinate space
+
+I recommend 3blue1brown videos on linear algebra, your goal is to get an intuitive understanding of matrices, vectors and common transformations so you can imagine some of the transformations below in your head and work through your own problems
+# Model space
+Our journey begins with objects in their own "space". For each object, it lives in a space whose axes puts the object at the origin point, and other objects arrayed around it.
+
 matrix multiplication is row by column
 
 if k x i = j and j is 0,1,0 then you use right hand rule to determine basis vectors and their directions
