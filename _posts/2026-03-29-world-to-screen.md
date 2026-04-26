@@ -57,9 +57,13 @@ We do this by geometrically describing a box (if orthogonal) or frustum (if pers
 We do this by geometrically describing a frustum. Objects within this frustum gets mapped to a cube co-ordinate space constrained at [-1, 1]. Thus, objects at the back of the frustum will under-go a greater compression compared to objects that are closer to the front.
 
 ## Deriving the transformation matrix for view-to-clip
-This one is a bit trickier but we can arrive to the optimised version that everyone has agreed on by summarising our motivations:
-- imagine a ray travelling from the 3d point to the camera (origin point in the view space). where this ray crosses the near plane (the screen essentially) will determine the relationship between $x,y$ and $z$ e.g. for $x$: $$\frac{x_{view}}{z_{view}}=\frac{x_{ndc}}{near}$$$$x_{ndc}=\frac{x_{view}}{z_{view}}=\frac{}{near}$$
-- objects at the far/left/bottom boundaries of the projection will be mapped to -1 on the respective axis && objects at the near/left/bottom boundaries of the projection will be mapped to -1 on the respective axis. 
+This one is a bit trickier but we can arrive to the optimised version that everyone has agreed on by summarising our motivations for each of the components:
+### X and Y
+- imagine a ray travelling from the 3d point to the camera (origin point in the view space). where this ray crosses the near plane (the screen essentially) will determine the relationship between $x,y$ and $z$ e.g. for $x$: $$\frac{x_{view}}{z_{view}}=\frac{x_{ndc}}{near}$$$$x_{ndc}=\frac{near*x_{view}}{z_{view}}$$
+- objects at the far/left/bottom boundaries of the projection will be mapped to -1 on the respective axis && objects at the near/left/bottom boundaries of the projection will be mapped to -1 on the respective axis in NDC space
+- We have split projection transform and perspective divide, so if we do have formulae for view > NDC then factor out the divide-by-z to get the transformation between view > clip then we can arrive at NDC at our choosing by perspective dividing (one reason we do this is that we can check if an object is outside of clip space at this point)
+- We can encapsulate all of this information by modelling it as finding the equation of a line.
+- raw a graph with NDC axis, -1 to 1 and view axis, far and near. With the 2 points (-1, near) and (1, far) we can substitute in the above relationship between $x,y$ and $z$ to get an equation between the two. THEN we re-arrange so we have a common denominator of z. WE have all agreed to perspective divide after the projection transform (what we are doing now) so we factor out the divide-by-z and are left with an equation for 
 # NDC space
 # Screen space
 Great, we made it.
