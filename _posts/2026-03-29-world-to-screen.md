@@ -77,9 +77,10 @@ This decides our $x,y$ components of projection transform
 - $z$ is needed for deciding what order the objects are seen in e.g. which object is at the front so all objects that are obscured by it don't need to be drawn, saving time in our draw loop && for perspective divide, so if we want to do this in one operation we need to save the $z$ value somehow
 - We use this row of the transformation to save the z value for the perspective divide later. So this final row is just $0,0,1,0$
 # NDC space
+Normalised device co-ordinates. By being here we have carried forward all the above transformations to our objects that make them look 2d down the forward axis. Being normalised means we're understandable by all hardware/graphics APIs, so we can pass off our work to a library at this point but as we've come so far we can decide where exactly to draw the pixel 
 
 # Clip space to NDC space
-View > clip > NDC transformations are setup so we just perspective divide at this point and set our w
+View > clip > NDC transformations are setup so we just perspective divide at this point and narrow to 3-dimensional if we would like to stay in the NDC space forever.  Huge commitment
 # Screen space
 Great, we made it.
 
