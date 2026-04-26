@@ -57,10 +57,9 @@ We do this by geometrically describing a box (if orthogonal) or frustum (if pers
 We do this by geometrically describing a frustum. Objects within this frustum gets mapped to a cube co-ordinate space constrained at [-1, 1]. Thus, objects at the back of the frustum will under-go a greater compression compared to objects that are closer to the front.
 
 ## Deriving the transformation matrix for view-to-clip
-This one is a bit trickier but we can arrive to it by summarising our motivations:
-- objects at the far/left/bottom boundaries of the projection will be mapped to -1 on the respective axis
-- objects at the near/left/bottom boundaries of the projection will be mapped to -1 on the respective axis
-- 
+This one is a bit trickier but we can arrive to the optimised version that everyone has agreed on by summarising our motivations:
+- imagine a ray travelling from the 3d point to the camera (origin point in the view space). where this ray crosses the near plane (the screen essentially) will determine the relationship between $x,y$ and $z$ e.g. for $x$: $$\frac{x_{view}}{z_{view}}=\frac{x_{ndc}}{near}$$$$x_{ndc}=\frac{x_{view}}{z_{view}}=\frac{}{near}$$
+- objects at the far/left/bottom boundaries of the projection will be mapped to -1 on the respective axis && objects at the near/left/bottom boundaries of the projection will be mapped to -1 on the respective axis. 
 # NDC space
 # Screen space
 Great, we made it.
