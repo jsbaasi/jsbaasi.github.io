@@ -40,7 +40,13 @@ If we don't care about roll (like fps games), then we set $\vec{up}$ to $\begin{
 - quaternions, which I don't know much about
 - maybe some others?
 ## Deriving the transformation matrix for world-to-view
+We have the basis vectors of the camera and it's position within the world space.
 
+In the view space the camera is at the centre, thus we can imagine to move the camera itself from the world space to view space we first translated it to the origin, then rotated it to face whichever axis we determined to be the forward vector (this is sometimes opposite, where the camera is rotated to face the opposite direction of where it's looking at)
+
+We need homogenous co-ordinates to describe a translation in a matrix multiplication, otherwise we'd need to do two operations. Your choice whether you want to go to the fourth dimension or more maths.
+
+So the final matrix will be the opposite of it's current position THEN the opposite of the rotation the camera had. So when other objects are transformed by this matrix, they are translated away to the same distance and rotated to keep the same orientation relative to whatever rotations the camera had.
 # View space to Clip space
 We now have to decide:
 1. what's in our field of view
@@ -50,7 +56,11 @@ We do this by geometrically describing a box (if orthogonal) or frustum (if pers
 ## 2.
 We do this by geometrically describing a frustum. Objects within this frustum gets mapped to a cube co-ordinate space constrained at [-1, 1]. Thus, objects at the back of the frustum will under-go a greater compression compared to objects that are closer to the front.
 
-## Deriving the 
+## Deriving the transformation matrix for view-to-clip
+This one is a bit trickier but we can arrive to it by summarising our motivations:
+- objects at the far/left/bottom boundaries of the projection will be mapped to -1 on the respective axis
+- objects at the near/left/bottom boundaries of the projection will be mapped to -1 on the respective axis
+- 
 # NDC space
 # Screen space
 Great, we made it.
