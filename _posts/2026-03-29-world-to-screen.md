@@ -6,13 +6,15 @@ categories: maths opengl graphics programming
 permalink: /world-to-screen/
 ---
 # Pre-amble
-# Terms to parse differently than expected
+## Terms to parse differently than expected
 `Space` - a set of co-ordinate axes. A point will need a change-of-basis transformation to move from one distinct space to another.
 `Origin` - (0,0,0) in a co-ordinate space
-
+## Recommended reading
 I recommend 3blue1brown videos on linear algebra, your goal is to get an intuitive understanding of matrices, vectors and common transformations so you can imagine some of the transformations below in your head and work through your own problems
+# Intro
+I learnt some of this stuff as part of an esp I made for assault cube, source can be found at [achack](https://github.com/jsbaasi/achack). I thought it would be helpful for myself to condense some of my linear algebra learnings into this write-up. Hopefully others find this useful but, disclaimer, I am not a mathematician or a graphics programmer, just some dude. If you have any comments/questions or would like to discuss something please reach me through `jsbaasi at stormblessed dot fr` or `jsbaasi` on Discord.
 # Model space
-Our journey begins with objects in their own "space". For each object, it lives in a space whose axes puts the object at the origin point, and other objects arrayed around it.
+Our journey begins with objects in their own "space". For each object, it lives in a space whose axes puts the object at the origin point (0,0,0) and other objects around it described as offsets essentially.
 
 matrix multiplication is row by column
 
