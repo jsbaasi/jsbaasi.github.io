@@ -34,8 +34,13 @@ We can do with 3 basis vectors. One to describe what up and down means for the c
 
 For example, I have placed my camera at (3,3,3). It is looking at the origin. It's forward vector will be origin - (3,3,3) which is (-3,-3,-3). These forward, up, right vectors are special and known as basis vectors. They are stored as unit vectors for convention I guess, so must be normalised. Forward becomes 
  $$\vec{forward} = \frac{1}{\sqrt27} \begin{pmatrix} -3 \\ -3 \\ -3 \end{pmatrix}$$
-If we don't care about roll (like fps games), then we set $\vec{up}$ to $\begin{pmatrix} 0 \\ 1 \\ 0 \end{pmatrix}$, calculate the cross-product between $\vec{forward}$ and $\vec{up}$ to get 
+If we don't care about roll (like fps games), then we set $\vec{up}$ to $\begin{pmatrix} 0 \\ 1 \\ 0 \end{pmatrix}$, calculate the cross-product between $\vec{forward}$ and $\vec{up}$ to get $\vec{right}$ if we're in right-handed convention or $\vec{left}$ otherwise. Then calculate the cross product between $\vec{right}$ and $\vec{forward}$ to set the real $\vec{up}$ and not just some vector that occupies the up plane. We can generate these bases from:
+- the point we're looking at as I have worked through above, if you're decided on what you want the camera to look at
+- euler angles if you're starting your working out from your self, deciding what yaw, pitch and roll you have (angles rotated around the world space basis vectors) then generating the bases vectors through trigonometry from those angles
+- quaternions, which I don't know much about
+- maybe some others?
 # Clip space
+We now have to decide what's in our field of view, and if you're doing perspective projection (objects further away are )
 # NDC space
 # Screen space
 Great, we made it.
