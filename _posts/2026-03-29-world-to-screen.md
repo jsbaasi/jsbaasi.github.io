@@ -57,7 +57,7 @@ We do this by geometrically describing a box (if orthogonal) or frustum (if pers
 We do this by geometrically describing a frustum. Objects within this frustum gets mapped to a cube co-ordinate space constrained at [-1, 1]. Thus, objects at the back of the frustum will under-go a greater compression compared to objects that are closer to the front.
 
 ## Deriving the transformation matrix for view-to-clip
-This one is a bit trickier but we can arrive to the optimised version that everyone has agreed on by summarising our motivations for each of the components, working row by row of the final matrix, setting 0s where there's no relationship *between* the components
+This one is a bit trickier but we can arrive to the optimised version that everyone has agreed on by summarising our motivations for each of the components, working row by row of the final matrix, setting 0s where there's no relationship *between* the components.
 ### X and Y
 - Need to determine relationship between x,y and z because of our requirement that objects further away will be smaller
 - Need to constrain $left< x < right$ and $bottom < y < top$ based on the values we chose for our projection
@@ -69,8 +69,11 @@ This one is a bit trickier but we can arrive to the optimised version that every
 - Substitute in the above relationship between $x,y$ and $z$ to get the intercept constant for the line equation. Re-arrange so we have a common denominator of z.
 This decides our $x,y$ components of projection transform
 ### Z
-- $z$ has no relationship on $x,y$, just constraints placed by the frustum/box so the $(z_{view},z_{ndc})$ relation, mapping $(near,-1)$ and $(far,1)$
-- We can't use $x,y$ slots, as there's no relation, b 
+- $z$ has no relationship on $x,y$ to work in, just constraints placed by the frustum/box so the $(z_{view},z_{ndc})$ relation, mapping $(near,-1)$ and $(far,1)$.
+- Again we model it as a graph problem and substitute in the above points
+- We have 2 variables in our equation and we can't use $x,y$ slots, as there's no relation, but $w$ is always 1 in view space so we can use that slot as a hack. I don't think it means anything geometrically but correct me if wrong. This is what I mean by "optimised" version, there is decisions baked into this method that are counter-intuitive to suggest but can be recognised as optimal after understanding
+### W
+- We use this slot to save the z value, to make the operation reversible for reasons that are unknown to me
 # NDC space
 # Screen space
 Great, we made it.
