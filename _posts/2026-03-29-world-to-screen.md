@@ -5,6 +5,20 @@ date:   2026-03-29 19:33:05 +0100
 categories: maths opengl graphics programming
 permalink: /world-to-screen/
 ---
+## Table of Contents
+- [Pre-amble](#pre-amble)
+  - [Terms to parse differently than expected (maybe)](#terms-to-parse-differently-than-expected-maybe)
+  - [Recommended pre/post actions](#recommended-prepost-actions)
+- [Intro](#intro)
+- [Model space](#model-space)
+- [Model space to World space](#model-space-to-world-space)
+- [World space to View space](#world-space-to-view-space)
+  - [Deriving the transformation matrix for world-to-view](#deriving-the-transformation-matrix-for-world-to-view)
+- [View space to Clip space](#view-space-to-clip-space)
+  - [Deriving the transformation matrix for view-to-clip](#deriving-the-transformation-matrix-for-view-to-clip)
+- [NDC space](#ndc-space)
+  - [The transformation from Clip space to NDC space](#no-need-to-derive-the-transformation-from-clip-space-to-ndc-space)
+- [Screen space](#screen-space)
 # Pre-amble
 ## Terms to parse differently than expected (maybe)
 `Space` - a set of co-ordinate axes. A point will need a change-of-basis transformation to move from one distinct space to another.
@@ -21,13 +35,21 @@ permalink: /world-to-screen/
 `View` - used interchangeably to mean view space, the space titled view and view, as in what's in your vision
 ## Recommended pre/post actions
 ### Pre
-I recommend 3blue1brown videos on linear algebra, your goal is to get an intuitive understanding of matrices, vectors and common transformations so you can imagine some of the transformations below in your head.
+I recommend 3blue1brown videos on linear algebra, your goal is to get an intuitive understanding of matrices, vectors and common transformations so you can imagine some of the transformations below in your head. Think of the below:
+- what does a matrix mean
+- matrix multiplication, vector multiplication
+- determinant of matrix
+- change-of-basis
+- dot product
+- cross product
 
 Skim the 3 https://learnopengl.com/Getting-started chapters `Transformations` to `Camera` to see some of the pictures
 
 https://www.songho.ca/opengl/files/gl_camera02.gif this is a visualisation of world-to-view, haven't found one for projection _yet_
 ### Post
-Implement something that touches upon every stage of this imaginary world to monitor pipeline. Camera implementation as is implemented in the OpenGL online book. Alternatively using a library like SDL or raylib to skip learning the OpenGL API for the GPU as it's quite explicit to speak and isn't relevant to the world-to-screen pipeline ideas.
+Implement something that touches upon every stage of this imaginary world to monitor pipeline. Camera implementation as is implemented in the OpenGL online book. Alternatively using a library like SDL or raylib to skip learning the OpenGL API for the GPU as it's quite explicit to speak and isn't relevant to the world-to-screen pipeline ideas. Here's mine https://github.com/jsbaasi/camcpu that is buggy (doesn't clip) at the time of writing.
+
+Overall [pipeline][OpenGL-transform] as described by songho website
 # Intro
 I learnt some of this stuff as part of an esp I made for assault cube, source can be found at [achack](https://github.com/jsbaasi/achack). I thought it would be helpful for myself to condense some of my linear algebra learnings into this write-up, targeting 3d-space-to-2d-screen transformations that a game developer may use.
 
@@ -88,14 +110,14 @@ This one is a bit trickier but we can arrive to the optimised version that every
 - $z$ is needed for deciding what order the objects are seen in e.g. which object is at the front so all objects that are obscured by it don't need to be drawn, saving time in our draw loop && for perspective divide, so if we want to do this in one operation we need to save the $z$ value somehow
 - We use this row of the transformation to save the z value for the perspective divide later. So this final row is just $0,0,1,0$
 I recommend thinking through the above motivations and then looking at this [derivation](https://www.songho.ca/opengl/gl_projectionmatrix.html) of the projection matrices (orthogonal and perspective)
-# NDC space
+# Clip space to NDC space
 Normalised device co-ordinates. By being here we have carried forward all the above transformations to our objects that make them look 2d down the forward axis. Being normalised means we're understandable by all hardware/graphics APIs, so we can pass off our work to a library at this point but as we've come so far we might as well make the next jump to screen space and decide where exactly to draw the pixel.
 ## (no need to derive) the transformation from Clip space to NDC space
 View > clip > NDC transformations are setup so we just perspective divide at this point and narrow to 3-dimensions if we want to stay.  Huge commitment
 # Screen space
 Great, we made it.
 ## transformation from NDC space to Screen space
-
+- It's a range map from `[-1,1]` to e.g. `[0,799]` if you have 800 pixel width/height. Do this for both $x$ and $y$.
 
 
 
@@ -151,8 +173,8 @@ view space > projection matrix multiplication > clip space > de-homogonize > ndc
 
 projection matrix + w divide sends each 3d point to the 2d location where the ray from that 3d point to the camera origin crosses a plane perpendicular to the view axis (-z in the case of opengl) then rescales to ndc (-1, 1)
 
-# row-major vs column-major
-column-major (opengl and vulkan default) is better for shaders and row-major (directx default) is better for cpu cache line apparently
+# Row-major vs Column-major
+Column-major (opengl and vulkan default) is better for shaders and row-major (directx default) is better for cpu cache line apparently
 
 $$
 \begin{vmatrix}
@@ -174,8 +196,8 @@ OR keeping the rows contiguous
 $$
 a,b,c,d || e,f,g,h || i,j,k,l || m,n,o,p
 $$
-glm maths library mimics glsl vec/matrix maths, [some info here](https://www.c-jump.com/bcc/common/Talk3/Math/GLM/GLM.html) and thus the api for manipulating objects is column major, e.g. mat\[0]\[3] is the same as mat.first_column.w
+glm maths library mimics glsl vec/matrix maths, [some info here](https://www.c-jump.com/bcc/common/Talk3/Math/GLM/GLM.html) and thus the api for manipulating objects is column major, e.g. mat\[0]\[3] is the same as my_matrix.first_column.w_component
 
-Good resource on the overall OpenGL [pipeline][OpenGL-transform]
+Good resource on the overall OpenGL 
 
 [OpenGL-transform]: https://www.songho.ca/opengl/gl_transform.html
