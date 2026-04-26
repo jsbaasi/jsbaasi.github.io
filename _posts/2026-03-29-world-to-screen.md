@@ -57,7 +57,7 @@ We do this by geometrically describing a box (if orthogonal) or frustum (if pers
 We do this by geometrically describing a frustum. Objects within this frustum gets mapped to a cube co-ordinate space constrained at [-1, 1]. Thus, objects at the back of the frustum will under-go a greater compression compared to objects that are closer to the front.
 
 ## Deriving the transformation matrix for view-to-clip
-This one is a bit trickier but we can arrive to the optimised version that everyone has agreed on by summarising our motivations for each of the components:
+This one is a bit trickier but we can arrive to the optimised version that everyone has agreed on by summarising our motivations for each of the components, working row by row of the final matrix, setting 0s where there's no relationship *between* the components
 ### X and Y
 - Need to determine relationship between x,y and z because of our requirement that objects further away will be smaller
 - Need to constrain $left< x < right$ and $bottom < y < top$ based on the values we chose for our projection
@@ -69,7 +69,8 @@ This one is a bit trickier but we can arrive to the optimised version that every
 - Substitute in the above relationship between $x,y$ and $z$ to get the intercept constant for the line equation. Re-arrange so we have a common denominator of z.
 This decides our $x,y$ components of projection transform
 ### Z
-- $z$ has no relationship on $x,y$, just 
+- $z$ has no relationship on $x,y$, just constraints placed by the frustum/box so the $(z_{view},z_{ndc})$ relation, mapping $(near,-1)$ and $(far,1)$
+- We can't use $x,y$ slots, as there's no relation, b 
 # NDC space
 # Screen space
 Great, we made it.
