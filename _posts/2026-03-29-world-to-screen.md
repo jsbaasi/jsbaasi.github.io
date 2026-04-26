@@ -51,6 +51,7 @@ So the final matrix will be the opposite of it's current position THEN the oppos
 We now have to decide:
 1. what's in our field of view
 2. if you're doing perspective projection (objects further away are smaller) as opposed to orthogonal projection (objects are same size everywhere) then what is the dimensions of each object when we've applied our perspective projection to it.
+3. what co-ordinate conventions we are living by e.g. if it's OpenGL we look down $-z$, but conventionally $z_{near}$ and $z_{far}$ are given as positive values so we must negate $z$ at some point
 ## 1.
 We do this by geometrically describing a box (if orthogonal) or frustum (if perspective) in the direction that the camera is facing. Objects outside of this projection are "clipped". Practically this means we compare whether the position components of the object meet the following $-w <= x,y,z <= w$ criteria after the projection matrix multiplication
 ## 2.
@@ -73,8 +74,12 @@ This decides our $x,y$ components of projection transform
 - Again we model it as a graph problem and substitute in the above points
 - We have 2 variables in our equation and we can't use $x,y$ slots, as there's no relation, but $w$ is always 1 in view space so we can use that slot as a hack. I don't think it means anything geometrically but correct me if wrong. This is what I mean by "optimised" version, there is decisions baked into this method that are counter-intuitive to suggest but can be recognised as optimal after understanding
 ### W
-- We use this slot to save the z value, to make the operation reversible for reasons that are unknown to me
+- $z$ is needed for deciding what order the objects are seen in e.g. which object is at the front so all objects that are obscured by it don't need to be drawn, saving time in our draw loop && for perspective divide, so if we want to do this in one operation we need to save the $z$ value somehow
+- We use this row of the transformation to save the z value for the perspective divide later. So this final row is just $0,0,1,0$
 # NDC space
+
+# Clip space to NDC space
+View > clip > NDC transformations are setup so we just perspective divide at this point and set our w
 # Screen space
 Great, we made it.
 
