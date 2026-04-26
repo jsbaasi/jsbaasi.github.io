@@ -32,7 +32,9 @@ A camera now comes into the mix, it's also an object in world space. We need to 
 
 We can do with 3 basis vectors. One to describe what up and down means for the camera, one to describe what left and right means for the camera, and one to describe what forwards and backwards means for the camera. $\hat{i}$, $\hat{j}$, $\hat{k}$. 
 
-For example, I have placed my camera at (3,3,3). It is looking at the origin. I 
+For example, I have placed my camera at (3,3,3). It is looking at the origin. It's forward vector will be origin - (3,3,3) which is (-3,-3,-3). These forward, up, right vectors are special and known as basis vectors. They are stored as unit vectors for convention I guess, so must be normalised. Forward becomes 
+ $$\vec{forward} = \frac{1}{\sqrt27} \begin{pmatrix} -3 \\ -3 \\ -3 \end{pmatrix}$$
+If we don't care about roll (like fps games), then we set $\vec{up}$ to $\begin{pmatrix} 0 \\ 1 \\ 0 \end{pmatrix}$, calculate the cross-product between $\vec{forward}$ and $\vec{up}$ to get 
 # Clip space
 # NDC space
 # Screen space
