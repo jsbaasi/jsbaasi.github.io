@@ -9,12 +9,22 @@ permalink: /world-to-screen/
 ## Terms to parse differently than expected
 `Space` - a set of co-ordinate axes. A point will need a change-of-basis transformation to move from one distinct space to another.
 `Origin` - (0,0,0) in a co-ordinate space
+`Creator` - the entity that made the choices on which co-ordinate convention to use (opengl vs directx), where to put items relative to each other, what field-of-view angle to use for view objects, where to 
 ## Recommended reading
 I recommend 3blue1brown videos on linear algebra, your goal is to get an intuitive understanding of matrices, vectors and common transformations so you can imagine some of the transformations below in your head and work through your own problems
 # Intro
-I learnt some of this stuff as part of an esp I made for assault cube, source can be found at [achack](https://github.com/jsbaasi/achack). I thought it would be helpful for myself to condense some of my linear algebra learnings into this write-up. Hopefully others find this useful but, disclaimer, I am not a mathematician or a graphics programmer, just some dude. If you have any comments/questions or would like to discuss something please reach me through `jsbaasi at stormblessed dot fr` or `jsbaasi` on Discord.
+I learnt some of this stuff as part of an esp I made for assault cube, source can be found at [achack](https://github.com/jsbaasi/achack). I thought it would be helpful for myself to condense some of my linear algebra learnings into this write-up, targeting 3d-space-to-2d-screen transformations that a game developer may use.
+
+Hopefully others find this useful but, disclaimer, I am not a mathematician or a graphics programmer, just some dude. If you have any comments/questions/corrections or would like to just talk, please reach me through `jsbaasi at stormblessed dot fr` or `jsbaasi` on Discord.
 # Model space
-Our journey begins with objects in their own "space". For each object, it lives in a space whose axes puts the object at the origin point (0,0,0) and other objects around it described as offsets essentially.
+Our journey begins with objects in their own "space". For each object, it lives in a space whose axes puts the object at the origin point (0,0,0)  
+
+Simple so far.
+# World space
+Each object goes through a change-of-basis + translation to be put into the world space. The creator 
+and other objects around it described as offsets essentially. Crucially, objects maintain their relationships with each other e.g. if object orange is 5 units away, then it will still be 5 units away in any co-ordinate space with respect to whatever orientation the space has decided. If it's 5 units to the left, then travel 5 units down the vector that describes left in that space.
+Then 
+# View space
 
 matrix multiplication is row by column
 
