@@ -1,5 +1,6 @@
 [
   "templater-obsidian",
   "obsidian-git",
-  "obsidian-excalidraw-plugin"
+  "obsidian-excalidraw-plugin",
+  "automatic-table-of-contents"
 ]

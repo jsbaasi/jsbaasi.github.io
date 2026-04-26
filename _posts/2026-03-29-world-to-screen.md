@@ -1,25 +1,14 @@
 ---
 layout: post
-title:  "World to Screen"
-date:   2026-03-29 19:33:05 +0100
+title: World to Screen
+date: 2026-03-29 19:33:05 +0100
 categories: maths opengl graphics programming
 permalink: /world-to-screen/
 ---
-## Table of Contents
-- [Pre-amble](#pre-amble)
-  - [Terms to parse differently than expected (maybe)](#terms-to-parse-differently-than-expected-maybe)
-  - [Recommended pre/post actions](#recommended-prepost-actions)
-- [Intro](#intro)
-- [Model space](#model-space)
-- [Model space to World space](#model-space-to-world-space)
-- [World space to View space](#world-space-to-view-space)
-  - [Deriving the transformation matrix for world-to-view](#deriving-the-transformation-matrix-for-world-to-view)
-- [View space to Clip space](#view-space-to-clip-space)
-  - [Deriving the transformation matrix for view-to-clip](#deriving-the-transformation-matrix-for-view-to-clip)
-- [NDC space](#ndc-space)
-  - [The transformation from Clip space to NDC space](#no-need-to-derive-the-transformation-from-clip-space-to-ndc-space)
-- [Screen space](#screen-space)
-- [Row-major vs Column-major](row-major-vs-column-major)
+
+```table-of-contents
+
+```
 # Pre-amble
 ## Terms to parse differently than expected (maybe)
 `Space` - a set of co-ordinate axes. A point will need a change-of-basis transformation to move from one distinct space to another.
@@ -114,11 +103,11 @@ This one is a bit trickier but we can arrive to the optimised version that every
 I recommend thinking through the above motivations and then looking at this [derivation](https://www.songho.ca/opengl/gl_projectionmatrix.html) of the projection matrices (orthogonal and perspective)
 # Clip space to NDC space
 Normalised device co-ordinates. By being here we have carried forward all the above transformations to our objects that make them look 2d down the forward axis. Being normalised means we're understandable by all hardware/graphics APIs, so we can pass off our work to a library at this point but as we've come so far we might as well make the next jump to screen space and decide where exactly to draw the pixel.
-## (no need to derive) the transformation from Clip space to NDC space
+## transformation for clip-to-ndc
 View > clip > NDC transformations are setup so we just perspective divide at this point and narrow to 3-dimensions if we want to stay.  Huge commitment
 # Screen space
 Great, we made it.
-## transformation from NDC space to Screen space
+## transformation for ndc-to-screen
 - It's a range map from `[-1,1]` to e.g. `[0,799]` if you have 800 pixel width/height. Do this for both $x$ and $y$.
 # Conclusion
 | Model space |
