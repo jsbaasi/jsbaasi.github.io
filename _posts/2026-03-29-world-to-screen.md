@@ -10,10 +10,10 @@ permalink: /world-to-screen/
 `Space` - a set of co-ordinate axes. A point will need a change-of-basis transformation to move from one distinct space to another.
 `Origin` - (0,0,0) in a co-ordinate space
 `Creator` - the entity that made the choices on the following matters:
-- which co-ordinate convention to use (opengl vs directx)
+- which co-ordinate convention to use (opengl vs directx), and thus which directions each of the conventional vectors, $\hat{i}$, $\hat{j}$, $\hat{k}$, will represent
 - where the origin point is in the world space
 - where to put items relative to each other
-- what field-of-view angle to use for viewing objects
+- what field-of-view angle to use for our perspective viewing on objects
 - where to define the near + far + left + right + top + bottom for the perspective frustum
 ## Recommended reading
 I recommend 3blue1brown videos on linear algebra, your goal is to get an intuitive understanding of matrices, vectors and common transformations so you can imagine some of the transformations below in your head and work through your own problems
@@ -28,7 +28,32 @@ Simple so far.
 # World space
 Each object goes through a change-of-basis + translation to be put into the world space. It is now in a space with other objects.
 # View space
-A camera now comes into the mix, it's also an object in world space. We need to pick a point to view space from, this point is where we'll put the camera. The camera has also got some orientation attached to it, 
+A camera now comes into the mix, it's also an object in world space. We need to pick a point to view space from, this point is where we'll put the camera. Next we ask ourselves, how do we note where the camera is looking?
+
+We can do with 3 basis vectors. One to describe what up and down means for the camera, one to describe what left and right means for the camera, and one to describe what forwards and backwards means for the camera. $\hat{i}$, $\hat{j}$, $\hat{k}$. 
+
+For example, I have placed my camera at (3,3,3). It is looking at the origin. I 
+# Clip space
+# NDC space
+# Screen space
+Great, we made it.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 matrix multiplication is row by column
 
