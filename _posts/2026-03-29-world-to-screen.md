@@ -15,6 +15,7 @@ permalink: /world-to-screen/
 - where to put items relative to each other
 - what field-of-view angle to use for our perspective viewing on objects
 - where to define the near + far + left + right + top + bottom for the perspective frustum
+`Translation` - could be used to mean moving between spaces but this write-up it only means moving an object's position, done through matrix multiplication ONLY by using homogeneous co-ordinates
 ## Recommended reading
 I recommend 3blue1brown videos on linear algebra, your goal is to get an intuitive understanding of matrices, vectors and common transformations so you can imagine some of the transformations below in your head and work through your own problems
 # Intro
@@ -58,7 +59,7 @@ We do this by geometrically describing a box (if orthogonal) or frustum (if pers
 We do this by geometrically describing a frustum. Objects within this frustum gets mapped to a cube co-ordinate space constrained at [-1, 1]. Thus, objects at the back of the frustum will under-go a greater compression compared to objects that are closer to the front.
 
 ## Deriving the transformation matrix for view-to-clip
-This one is a bit trickier but we can arrive to the optimised version that everyone has agreed on by summarising our motivations for each of the components, working row by row of the final matrix, setting 0s where there's no relationship *between* the components.
+This one is a bit trickier but we can arrive to the optimised version that everyone has agreed on by summarising our motivations for each of the components, working row by row of the final matrix, setting 0s where there's no relationship *between* the components. Obviously you can decide your own route of getting from view to clip to NDC. Such an exercise may help you understand the decisions that were made as opposed to e.g. dropping to 3 dimensions after the translation in world-to-view transformation or not being in 4 dimensions at all and having to do translation in a separate operation.
 ### X and Y
 - Need to determine relationship between x,y and z because of our requirement that objects further away will be smaller
 - Need to constrain $left< x < right$ and $bottom < y < top$ based on the values we chose for our projection
@@ -68,7 +69,7 @@ This one is a bit trickier but we can arrive to the optimised version that every
 - We can encapsulate all of this information by modelling it as finding the equation of a line.
 - E.g. for $x$ draw a graph with $x_{ndc}$ axis, -1 to 1 and $x_{view}$ axis, far and near. With the 2 points (-1, near) and (1, far) we can determine the gradient
 - Substitute in the above relationship between $x,y$ and $z$ to get the intercept constant for the line equation. Re-arrange so we have a common denominator of z.
-This decides our $x,y$ components of projection transform
+	This decides our $x,y$ components of projection transform
 ### Z
 - $z$ has no relationship on $x,y$ to work in, just constraints placed by the frustum/box so the $(z_{view},z_{ndc})$ relation, mapping $(near,-1)$ and $(far,1)$.
 - Again we model it as a graph problem and substitute in the above points
