@@ -19,6 +19,7 @@ permalink: /world-to-screen/
 - [NDC space](#ndc-space)
   - [The transformation from Clip space to NDC space](#no-need-to-derive-the-transformation-from-clip-space-to-ndc-space)
 - [Screen space](#screen-space)
+- [Row-major vs Column-major](row-major-vs-column-major)
 # Pre-amble
 ## Terms to parse differently than expected (maybe)
 `Space` - a set of co-ordinate axes. A point will need a change-of-basis transformation to move from one distinct space to another.
@@ -49,7 +50,7 @@ https://www.songho.ca/opengl/files/gl_camera02.gif this is a visualisation of wo
 ### Post
 Implement something that touches upon every stage of this imaginary world to monitor pipeline. Camera implementation as is implemented in the OpenGL online book. Alternatively using a library like SDL or raylib to skip learning the OpenGL API for the GPU as it's quite explicit to speak and isn't relevant to the world-to-screen pipeline ideas. Here's mine https://github.com/jsbaasi/camcpu that is buggy (doesn't clip) at the time of writing.
 
-Overall [pipeline][OpenGL-transform] as described by songho website
+Look at other explanations of the world-to-screen pipeline to form your own _perspective_. Overall [pipeline][OpenGL-transform] as described by Song Ho Ahn, brilliant resources from them.
 # Intro
 I learnt some of this stuff as part of an esp I made for assault cube, source can be found at [achack](https://github.com/jsbaasi/achack). I thought it would be helpful for myself to condense some of my linear algebra learnings into this write-up, targeting 3d-space-to-2d-screen transformations that a game developer may use.
 
@@ -69,7 +70,8 @@ For example, I have placed my camera at (3,3,3). It is looking at the origin. It
  $$\vec{forward} = \frac{1}{\sqrt27} \begin{pmatrix} -3 \\ -3 \\ -3 \end{pmatrix}$$
 If we don't care about roll (like fps games), then we set $\vec{up}$ to $\begin{pmatrix} 0 \\ 1 \\ 0 \end{pmatrix}$, calculate the cross-product between $\vec{forward}$ and $\vec{up}$ to get $\vec{right}$ if we're in right-handed convention or $\vec{left}$ otherwise. Then calculate the cross product between $\vec{right}$ and $\vec{forward}$ to set the real $\vec{up}$ and not just some vector that occupies the up plane. We can generate these bases from:
 - the point we're looking at as I have worked through above, if you're decided on what you want the camera to look at
-- euler angles if you're starting your working out from your self, deciding what yaw, pitch and roll you have (angles rotated around the world space basis vectors) then generating the bases vectors through trigonometry from those angles
+- Euler angles if you're starting your working out from your self, deciding what yaw, pitch and roll you have (angles rotated around the world space basis vectors) then generating the bases vectors through trigonometry from those angles
+	- Imagine a cuboid that contains the direction vector as it's diagonal from bottom origin corner to top opposite-origin corner. if you move yaw and pitch then the cuboid scales and moves about (as it contains the origin vector)
 - quaternions, which I don't know much about
 - maybe some others?
 ## Deriving the transformation matrix for world-to-view
@@ -118,62 +120,25 @@ View > clip > NDC transformations are setup so we just perspective divide at thi
 Great, we made it.
 ## transformation from NDC space to Screen space
 - It's a range map from `[-1,1]` to e.g. `[0,799]` if you have 800 pixel width/height. Do this for both $x$ and $y$.
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-matrix multiplication is row by column
-
-if k x i = j and j is 0,1,0 then you use right hand rule to determine basis vectors and their directions
-
-$$
-\begin{vmatrix}
-a&b
-\\
-c&d
-\end{vmatrix}
-^{-1}
-=
-\frac{1}{ad-bc}
-\begin{vmatrix}
-d&-b
-\\
--c&a
-\end{vmatrix}
-
-$$
-rotation around x is the pitch and rotation around the y axis is the yaw
-soh cah toa
-
-imagine a cuboid that contains the direction vector as it's diagonal from bottom origin corner to top opposite-origin corner. if you move yaw and pitch then the cuboid scales and moves about (as it contains the origin vector)
-
-then do cross product of 
-direction vector x up vector
-then do cross vector of
-left vector x direction vector to get the up vector actually perpendicular as currently it only exists in the perpendicular plane
-ixj = k
-kxi = j
-
-projection matrix transformation is geometrically: objects within a frustum getting pulled in and normalised to [-1, 1], stuff further away becomes smaller.
-
-view space > projection matrix multiplication > clip space > de-homogonize > ndc
-
-projection matrix + w divide sends each 3d point to the 2d location where the ray from that 3d point to the camera origin crosses a plane perpendicular to the view axis (-z in the case of opengl) then rescales to ndc (-1, 1)
-
-# Row-major vs Column-major
+# Conclusion
+| Model space |
+      | model matrix
+      ↓
+| World space |
+      | view matrix
+      ↓
+| View space |
+      | projection matrix
+      ↓
+| Clip space |
+      | de-homogenize
+      ↓
+| NDC space |
+      | range map
+      ↓
+| Screen space |
+# Misc
+## Row-major vs Column-major
 Column-major (opengl and vulkan default) is better for shaders and row-major (directx default) is better for cpu cache line apparently
 
 $$
@@ -197,7 +162,3 @@ $$
 a,b,c,d || e,f,g,h || i,j,k,l || m,n,o,p
 $$
 glm maths library mimics glsl vec/matrix maths, [some info here](https://www.c-jump.com/bcc/common/Talk3/Math/GLM/GLM.html) and thus the api for manipulating objects is column major, e.g. mat\[0]\[3] is the same as my_matrix.first_column.w_component
-
-Good resource on the overall OpenGL 
-
-[OpenGL-transform]: https://www.songho.ca/opengl/gl_transform.html
