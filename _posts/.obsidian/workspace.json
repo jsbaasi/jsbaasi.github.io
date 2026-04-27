@@ -20,23 +20,8 @@
               "icon": "lucide-file",
               "title": "2026-03-29-world-to-screen"
             }
-          },
-          {
-            "id": "4e4f8c6ebe4572c0",
-            "type": "leaf",
-            "state": {
-              "type": "split-diff-view",
-              "state": {
-                "aFile": "_posts/2026-03-29-world-to-screen.md",
-                "bFile": "_posts/2026-03-29-world-to-screen.md",
-                "aRef": ""
-              },
-              "icon": "diff",
-              "title": "Diff: 2026-03-29-world-to-screen  (Working Tree)"
-            }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -211,7 +196,7 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "4e4f8c6ebe4572c0",
+  "active": "da38985f182ee4e7",
   "lastOpenFiles": [
     "2026-03-29-world-to-screen.md",
     "2026-03-31-pubg-axioms.md",
