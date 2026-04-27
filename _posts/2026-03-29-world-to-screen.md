@@ -151,3 +151,13 @@ $$
 a,b,c,d || e,f,g,h || i,j,k,l || m,n,o,p
 $$
 glm maths library mimics glsl vec/matrix maths, [some info here](https://www.c-jump.com/bcc/common/Talk3/Math/GLM/GLM.html) and thus the api for manipulating objects is column major, e.g. mat\[0]\[3] is the same as my_matrix.first_column.w_component
+## Radians and degrees
+GLM functions expect angles to be given in radians, so wrap your angles in `glm::radians()`
+## Pre- vs post- multiply
+GLM functions like `glm::translate(input_matrix, translation_vector)` post-multiply meaning the `translation_vector` is multiplied to the _right_ of the `input_matrix` like `input_matrix * translation_vector`. So if you wanted to apply a rotation to an object around the object's $up$ axis then I would build it like `translation_from_origin * rotation_around_up * translation_to_origin` and in GLM calls it would look like:
+```
+glm::translate(input_matrix, translation_to_origin);
+glm::translate(input_matrix, rotation_around_up);
+glm::translate(input_matrix, translation_from_origin);
+```
+Something to stay aware of.

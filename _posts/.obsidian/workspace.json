@@ -25,14 +25,14 @@
             "id": "4e4f8c6ebe4572c0",
             "type": "leaf",
             "state": {
-              "type": "markdown",
+              "type": "split-diff-view",
               "state": {
-                "file": "2026-03-29-world-to-screen.md",
-                "mode": "source",
-                "source": false
+                "aFile": "_posts/2026-03-29-world-to-screen.md",
+                "bFile": "_posts/2026-03-29-world-to-screen.md",
+                "aRef": ""
               },
-              "icon": "lucide-file",
-              "title": "2026-03-29-world-to-screen"
+              "icon": "diff",
+              "title": "Diff: 2026-03-29-world-to-screen  (Working Tree)"
             }
           }
         ],
@@ -213,8 +213,8 @@
   },
   "active": "4e4f8c6ebe4572c0",
   "lastOpenFiles": [
-    "2026-03-31-pubg-axioms.md",
     "2026-03-29-world-to-screen.md",
+    "2026-03-31-pubg-axioms.md",
     "row-major-vs-column-major.md",
     "2026-04-18-my-vim-stuff.md",
     "2026-04-25-ida-notes.md",
