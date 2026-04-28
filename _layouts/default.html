@@ -9,7 +9,15 @@
     MathJax = {
       tex: {
         inlineMath: [['$', '$']],
-        displayMath: [['$$', '$$']]
+        displayMath: [['\\[', '\\]']]
+      },
+      startup: {
+        ready() {
+          document.querySelectorAll('.post-content').forEach(function(el) {
+            el.innerHTML = el.innerHTML.replace(/\$\$([\s\S]+?)\$\$/g, '\\[$1\\]');
+          });
+          MathJax.startup.defaultReady();
+        }
       }
     };
   </script>
