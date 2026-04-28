@@ -30,6 +30,7 @@ theme: minima
 
 kramdown:
   math_engine: null
+  hard_wrap: true
 plugins:
   - jekyll-last-modified-at
 

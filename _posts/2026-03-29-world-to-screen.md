@@ -5,35 +5,33 @@ date: 2026-03-29 19:33:05 +0100
 categories: maths opengl graphics programming
 permalink: /world-to-screen/
 ---
-- [[#Pre-amble|Pre-amble]]
-	- [[#Pre-amble#Terms to parse differently than expected (maybe)|Terms to parse differently than expected (maybe)]]
-	- [[#Pre-amble#Recommended pre/post actions|Recommended pre/post actions]]
-		- [[#Recommended pre/post actions#Pre|Pre]]
-		- [[#Recommended pre/post actions#Post|Post]]
-- [[#Intro|Intro]]
-- [[#Model space|Model space]]
-- [[#Model space to World space|Model space to World space]]
-- [[#World space to View space|World space to View space]]
-	- [[#World space to View space#Deriving the transformation matrix for world-to-view|Deriving the transformation matrix for world-to-view]]
-- [[#View space to Clip space|View space to Clip space]]
-	- [[#View space to Clip space#1.|1.]]
-	- [[#View space to Clip space#2.|2.]]
-	- [[#View space to Clip space#Deriving the transformation matrix for view-to-clip|Deriving the transformation matrix for view-to-clip]]
-		- [[#Deriving the transformation matrix for view-to-clip#X and Y|X and Y]]
-		- [[#Deriving the transformation matrix for view-to-clip#Z|Z]]
-		- [[#Deriving the transformation matrix for view-to-clip#W|W]]
-- [[#Clip space to NDC space|Clip space to NDC space]]
-	- [[#Clip space to NDC space#transformation for clip-to-ndc|transformation for clip-to-ndc]]
-- [[#Screen space|Screen space]]
-	- [[#Screen space#transformation for ndc-to-screen|transformation for ndc-to-screen]]
-- [[#Conclusion|Conclusion]]
-- [[#Misc|Misc]]
-	- [[#Misc#Row-major vs Column-major|Row-major vs Column-major]]
-	- [[#Misc#Radians and degrees|Radians and degrees]]
-	- [[#Misc#Pre- vs post- multiply|Pre- vs post- multiply]]
+- [Pre-amble](#Pre-amble)
+	- [Terms to parse differently than expected (maybe)](#Terms%20to%20parse%20differently%20than%20expected%20(maybe))
+	- [Recommended pre/post actions](#Recommended%20pre/post%20actions)
+		- [Pre](#Pre)
+		- [Post](#Post)
+- [Intro](#Intro)
+- [Model space](#Model%20space)
+- [Model space to World space](#Model%20space%20to%20World%20space)
+- [World space to View space](#World%20space%20to%20View%20space)
+	- [Deriving the transformation matrix for world-to-view](#Deriving%20the%20transformation%20matrix%20for%20world-to-view)
+- [View space to Clip space](#View%20space%20to%20Clip%20space)
+	- [1.](#1.)
+	- [2.](#2.)
+	- [Deriving the transformation matrix for view-to-clip](#Deriving%20the%20transformation%20matrix%20for%20view-to-clip)
+		- [X and Y](#X%20and%20Y)
+		- [Z](#Z)
+		- [W](#W)
+- [Clip space to NDC space](#Clip%20space%20to%20NDC%20space)
+	- [transformation for clip-to-ndc](#transformation%20for%20clip-to-ndc)
+- [Screen space](#Screen%20space)
+	- [transformation for ndc-to-screen](#transformation%20for%20ndc-to-screen)
+- [Conclusion](#Conclusion)
+- [Misc](#Misc)
+	- [Row-major vs Column-major](#Row-major%20vs%20Column-major)
+	- [Radians and degrees](#Radians%20and%20degrees)
+	- [Pre- vs post- multiply](#Pre-%20vs%20post-%20multiply)
 # Pre-amble
-# hello
-
 ## Terms to parse differently than expected (maybe)
 `Space` - a set of co-ordinate axes. A point will need a change-of-basis transformation to move from one distinct space to another.
 `Origin` - (0,0,0) in a 3-dimensional co-ordinate space
