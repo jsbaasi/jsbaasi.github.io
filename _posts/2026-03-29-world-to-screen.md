@@ -23,6 +23,8 @@ permalink: /world-to-screen/
 `NDC` - these letters parse to abbreviation normalised device co-ordinates
 `Clip` - the space where we decide what's inside/outside of our field of view. When used for it's common meaning e.g. clipping a hedge, the word will be accompanied by quotation marks
 `View` - used interchangeably to mean view space, the space titled view and view, as in what's in your vision
+`Components` - components of a vector e.g. $x,y,z$ of a 3-dimensional vector
+`Position` - interchangeably used to mean vector, a point in space
 ## Recommended pre/post actions
 ### Pre
 I recommend 3blue1brown videos on linear algebra, your goal is to get an intuitive understanding of matrices, vectors and common transformations so you can imagine some of the transformations below in your head. Think of the below:
