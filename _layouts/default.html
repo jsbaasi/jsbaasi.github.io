@@ -13,8 +13,10 @@
       },
       startup: {
         ready() {
-          document.querySelectorAll('.post-content').forEach(function(el) {
-            el.innerHTML = el.innerHTML.replace(/\$\$([\s\S]+?)\$\$/g, '\\[$1\\]');
+          document.querySelectorAll('span.kdmath').forEach(function(el) {
+            const latex = el.textContent.slice(1, -1);
+            const node = document.createTextNode('\\[' + latex + '\\]');
+            el.parentNode.replaceChild(node, el);
           });
           MathJax.startup.defaultReady();
         }
