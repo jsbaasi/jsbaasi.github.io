@@ -11,19 +11,20 @@
         inlineMath: [['$', '$']],
         displayMath: [['\\[', '\\]']]
       },
-      startup: {
-        ready() {
-          document.querySelectorAll('span.kdmath').forEach(function(el) {
-            const latex = el.textContent.slice(1, -1);
-            const node = document.createTextNode('\\[' + latex + '\\]');
-            el.parentNode.replaceChild(node, el);
-          });
-          MathJax.startup.defaultReady();
-        }
-      }
+      startup: { typeset: false }
     };
   </script>
   <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      document.querySelectorAll('span.kdmath').forEach(function(el) {
+        const latex = el.textContent.slice(1, -1);
+        const node = document.createTextNode('\\[' + latex + '\\]');
+        el.parentNode.replaceChild(node, el);
+      });
+      MathJax.typesetPromise();
+    });
+  </script>
 </head>
 <body>
   <header>
