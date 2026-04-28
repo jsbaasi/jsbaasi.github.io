@@ -110,7 +110,9 @@ This one is a bit trickier but we can arrive to the optimised version that every
 ### X and Y
 - Need to determine relationship between x,y and z because of our requirement that objects further away will be smaller
 - Need to constrain $left< x < right$ and $bottom < y < top$ based on the values we chose for our projection
-- Imagine a ray travelling from the 3d point to the camera (origin point in the view space). where this ray crosses the near plane (the screen essentially) will determine the relationship between $x,y$ and $z$ e.g. for $x$: $$\frac{x_{view}}{z_{view}}=\frac{x_{ndc}}{near}$$$$x_{ndc}=\frac{near*x_{view}}{z_{view}}$$
+- Imagine a ray travelling from the 3d point to the camera (origin point in the view space). where this ray crosses the near plane (the screen essentially) will determine the relationship between $x,y$ and $z$ e.g. for $x$:
+$$\frac{x_{view}}{z_{view}}=\frac{x_{ndc}}{near}$$
+$$x_{ndc}=\frac{near*x_{view}}{z_{view}}$$
 - Objects at the far/left/bottom boundaries of the projection will be mapped to -1 on the respective axis && objects at the near/left/bottom boundaries of the projection will be mapped to -1 on the respective axis in NDC space
 - It is agreed on to split projection transform and perspective divide in world-to-screen formulae, so if we do have formulae for view > NDC then factor out the divide-by-z to get the transformation between view > clip then we can arrive at NDC at our choosing by perspective dividing (one reason we do this is that we can check if an object is outside of clip space at this point)
 - We can encapsulate all of this information by modelling it as finding the equation of a line.
