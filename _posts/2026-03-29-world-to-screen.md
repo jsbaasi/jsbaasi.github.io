@@ -5,32 +5,33 @@ date: 2026-03-29 19:33:05 +0100
 categories: maths opengl graphics programming
 permalink: /world-to-screen/
 ---
-- [Pre-amble](#Pre-amble)
-	- [Terms to parse differently than expected (maybe)](#Terms%20to%20parse%20differently%20than%20expected%20(maybe))
-	- [Recommended pre/post actions](#Recommended%20pre/post%20actions)
-		- [Pre](#Pre)
-		- [Post](#Post)
-- [Intro](#Intro)
-- [Model space](#Model%20space)
-- [Model space to World space](#Model%20space%20to%20World%20space)
-- [World space to View space](#World%20space%20to%20View%20space)
-	- [Deriving the transformation matrix for world-to-view](#Deriving%20the%20transformation%20matrix%20for%20world-to-view)
-- [View space to Clip space](#View%20space%20to%20Clip%20space)
-	- [1.](#1.)
-	- [2.](#2.)
-	- [Deriving the transformation matrix for view-to-clip](#Deriving%20the%20transformation%20matrix%20for%20view-to-clip)
-		- [X and Y](#X%20and%20Y)
-		- [Z](#Z)
-		- [W](#W)
-- [Clip space to NDC space](#Clip%20space%20to%20NDC%20space)
-	- [transformation for clip-to-ndc](#transformation%20for%20clip-to-ndc)
-- [Screen space](#Screen%20space)
-	- [transformation for ndc-to-screen](#transformation%20for%20ndc-to-screen)
-- [Conclusion](#Conclusion)
-- [Misc](#Misc)
-	- [Row-major vs Column-major](#Row-major%20vs%20Column-major)
-	- [Radians and degrees](#Radians%20and%20degrees)
-	- [Pre- vs post- multiply](#Pre-%20vs%20post-%20multiply)
+- [Pre-amble](#pre-amble)
+	- [Terms to parse differently than expected (maybe)](#terms-to-parse-differently-than-expected-maybe)
+	- [Recommended pre/post actions](#recommended-prepost-actions)
+		- [Pre](#pre)
+		- [Post](#post)
+- [Intro](#intro)
+- [Model space](#model-space)
+- [Model space to World space](#model-space-to-world-space)
+- [World space to View space](#world-space-to-view-space)
+	- [Deriving the transformation matrix for world-to-view](#deriving-the-transformation-matrix-for-world-to-view)
+- [View space to Clip space](#view-space-to-clip-space)
+	- [1.](#1)
+	- [2.](#2)
+	- [Deriving the transformation matrix for view-to-clip](#deriving-the-transformation-matrix-for-view-to-clip)
+		- [X and Y](#x-and-y)
+		- [Z](#z)
+		- [W](#w)
+- [Clip space to NDC space](#clip-space-to-ndc-space)
+	- [transformation for clip-to-ndc](#transformation-for-clip-to-ndc)
+- [Screen space](#screen-space)
+	- [transformation for ndc-to-screen](#transformation-for-ndc-to-screen)
+- [Conclusion](#conclusion)
+- [Misc](#misc)
+	- [Row-major vs Column-major](#row-major-vs-column-major)
+	- [Radians and degrees](#radians-and-degrees)
+	- [Pre- vs post- multiply](#pre--vs-post--multiply)
+
 # Pre-amble
 ## Terms to parse differently than expected (maybe)
 `Space` - a set of co-ordinate axes. A point will need a change-of-basis transformation to move from one distinct space to another.
@@ -41,6 +42,7 @@ permalink: /world-to-screen/
 - where to put items relative to each other
 - what field-of-view angle to use for our perspective viewing on objects
 - where to define the near + far + left + right + top + bottom for the perspective frustum
+
 `Translation` - could be used to mean moving between spaces but this write-up it only means moving an object's position, done through matrix multiplication ONLY by using homogeneous co-ordinates
 `NDC` - these letters parse to abbreviation normalised device co-ordinates
 `Clip` - the space where we decide what's inside/outside of our field of view. When used for it's common meaning e.g. clipping a hedge, the word will be accompanied by quotation marks
@@ -87,6 +89,7 @@ If we don't care about roll (like fps games), then we set $\vec{up}$ to $\begin{
 	- Imagine a cuboid that contains the direction vector as it's diagonal from bottom origin corner to top opposite-origin corner. if you move yaw and pitch then the cuboid scales and moves about (as it contains the origin vector)
 - quaternions, which I don't know much about
 - maybe some others?
+
 ## Deriving the transformation matrix for world-to-view
 We have the basis vectors of the camera and it's position within the world space.
 
@@ -100,6 +103,7 @@ We now have to decide:
 1. what's in our field of view
 2. if you're doing perspective projection (objects further away are smaller) as opposed to orthogonal projection (objects are same size everywhere) then what is the dimensions of each object when we've applied our perspective projection to it.
 3. what co-ordinate conventions we are living by e.g. if it's OpenGL we look down $-z$, but conventionally $z_{near}$ and $z_{far}$ are given as positive values so we must negate $z$ at some point
+
 ## 1.
 We do this by geometrically describing a box (if orthogonal) or frustum (if perspective) in the direction that the camera is facing. Objects outside of this projection are "clipped". Practically this means we compare whether the position components of the object meet the following $-w <= x,y,z <= w$ criteria after the projection matrix multiplication
 ## 2.
@@ -119,10 +123,12 @@ $$x_{ndc}=\frac{near*x_{view}}{z_{view}}$$
 - E.g. for $x$ draw a graph with $x_{ndc}$ axis, -1 to 1 and $x_{view}$ axis, far and near. With the 2 points (-1, near) and (1, far) we can determine the gradient
 - Substitute in the above relationship between $x,y$ and $z$ to get the intercept constant for the line equation. Re-arrange so we have a common denominator of z.
 	This decides our $x,y$ components of projection transform
+
 ### Z
 - $z$ has no relationship on $x,y$ to work in, just constraints placed by the frustum/box so the $(z_{view},z_{ndc})$ relation, mapping $(near,-1)$ and $(far,1)$.
 - Again we model it as a graph problem and substitute in the above points
 - We have 2 variables in our equation and we can't use $x,y$ slots, as there's no relation, but $w$ is always 1 in view space so we can use that slot as a hack. I don't think it means anything geometrically but correct me if wrong. This is what I mean by "optimised" version, there is decisions baked into this method that are counter-intuitive to suggest but can be recognised as optimal after understanding
+
 ### W
 - $z$ is needed for deciding what order the objects are seen in e.g. which object is at the front so all objects that are obscured by it don't need to be drawn, saving time in our draw loop && for perspective divide, so if we want to do this in one operation we need to save the $z$ value somehow
 - We use this row of the transformation to save the z value for the perspective divide later. So this final row is just $0,0,1,0$
@@ -135,6 +141,7 @@ View > clip > NDC transformations are setup so we just perspective divide at thi
 Great, we made it.
 ## transformation for ndc-to-screen
 - It's a range map from `[-1,1]` to e.g. `[0,799]` if you have 800 pixel width/height. Do this for both $x$ and $y$.
+
 # Conclusion
 | Model space |
       | model matrix
