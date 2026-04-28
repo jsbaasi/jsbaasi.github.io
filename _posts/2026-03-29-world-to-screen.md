@@ -65,11 +65,11 @@ https://www.songho.ca/opengl/files/gl_camera02.gif this is a visualisation of wo
 ### Post
 Implement something that touches upon every stage of this imaginary world to monitor pipeline. Camera implementation as is implemented in the OpenGL online book. Alternatively using a library like SDL or raylib to skip learning the OpenGL API for the GPU as it's quite explicit to speak and isn't relevant to the world-to-screen pipeline ideas. Here's mine https://github.com/jsbaasi/camcpu that is buggy (doesn't clip) at the time of writing.
 
-Look at other explanations of the world-to-screen pipeline to form your own _perspective_. Overall [pipeline][OpenGL-transform] as described by Song Ho Ahn, brilliant resources from them.
+Look at other explanations of the world-to-screen pipeline to form your own _perspective_. Overall [pipeline](OpenGL-transform) as described by Song Ho Ahn, brilliant resources from them.
 # Intro
 I learnt some of this stuff as part of an esp I made for assault cube, source can be found at [achack](https://github.com/jsbaasi/achack). I thought it would be helpful for myself to condense some of my linear algebra learnings into this write-up, targeting 3d-space-to-2d-screen transformations that a game developer may use.
 
-Hopefully others find this useful but, disclaimer, I am not a mathematician or a graphics programmer, just some dude. If you have any comments/questions/corrections or would like to just talk, please reach me through `jsbaasi at stormblessed dot fr` or `jsbaasi` on Discord.
+Hopefully others find this useful but, disclaimer, I am not a mathematician or a graphics programmer, just some dude. If you have any questions or would like to discuss further, please reach me through `jsbaasi at stormblessed dot fr` or `jsbaasi` on Discord. If there any corrections to make, please open an MR on [github](https://github.com/jsbaasi/jsbaasi.github.io)
 # Model space
 Our journey begins with objects in their own "space". For each object, it lives in a space whose axes describe the object as being at the origin point (0,0,0).
 
