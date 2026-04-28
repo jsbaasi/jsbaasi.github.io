@@ -101,11 +101,11 @@ So the final matrix will be the opposite of it's current position THEN the oppos
 # View space to Clip space
 We now have to decide:
 1. what's in our field of view
-2. if you're doing perspective projection (objects further away are smaller) as opposed to orthogonal projection (objects are same size everywhere) then what is the dimensions of each object when we've applied our perspective projection to it.
+2. if you're doing perspective projection (objects further away are smaller) as opposed to orthographic projection (objects are same size everywhere) then what is the dimensions of each object when we've applied our perspective projection to it.
 3. what co-ordinate conventions we are living by e.g. if it's OpenGL we look down $-z$, but conventionally $z_{near}$ and $z_{far}$ are given as positive values so we must negate $z$ at some point
 
 ## 1.
-We do this by geometrically describing a box (if orthogonal) or frustum (if perspective) in the direction that the camera is facing. Objects outside of this projection are "clipped". Practically this means we compare whether the position components of the object meet the following $-w <= x,y,z <= w$ criteria after the projection matrix multiplication
+We do this by geometrically describing a box (if orthographic) or frustum (if perspective) in the direction that the camera is facing. Objects outside of this projection are "clipped". Practically this means we compare whether the position components of the object meet the following $-w <= x,y,z <= w$ criteria after the projection matrix multiplication
 ## 2.
 We do this by geometrically describing a frustum. Objects within this frustum gets mapped to a cube co-ordinate space constrained at [-1, 1]. Thus, objects at the back of the frustum will under-go a greater compression compared to objects that are closer to the front.
 
@@ -132,7 +132,7 @@ $$x_{ndc}=\frac{near*x_{view}}{z_{view}}$$
 ### W
 - $z$ is needed for deciding what order the objects are seen in e.g. which object is at the front so all objects that are obscured by it don't need to be drawn, saving time in our draw loop && for perspective divide, so if we want to do this in one operation we need to save the $z$ value somehow
 - We use this row of the transformation to save the z value for the perspective divide later. So this final row is just $0,0,1,0$
-I recommend thinking through the above motivations and then looking at this [derivation](https://www.songho.ca/opengl/gl_projectionmatrix.html) of the projection matrices (orthogonal and perspective)
+I recommend thinking through the above motivations and then looking at this [derivation](https://www.songho.ca/opengl/gl_projectionmatrix.html) of the projection matrices (orthographic and perspective)
 # Clip space to NDC space
 Normalised device co-ordinates. By being here we have carried forward all the above transformations to our objects that make them look 2d down the forward axis. Being normalised means we're understandable by all hardware/graphics APIs, so we can pass off our work to a library at this point but as we've come so far we might as well make the next jump to screen space and decide where exactly to draw the pixel.
 ## transformation for clip-to-ndc
