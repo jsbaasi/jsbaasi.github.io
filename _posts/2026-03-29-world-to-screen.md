@@ -5,14 +5,38 @@ date: 2026-03-29 19:33:05 +0100
 categories: maths opengl graphics programming
 permalink: /world-to-screen/
 ---
-
-```table-of-contents
-
-```
+- [[#Pre-amble|Pre-amble]]
+	- [[#Pre-amble#Terms to parse differently than expected (maybe)|Terms to parse differently than expected (maybe)]]
+	- [[#Pre-amble#Recommended pre/post actions|Recommended pre/post actions]]
+		- [[#Recommended pre/post actions#Pre|Pre]]
+		- [[#Recommended pre/post actions#Post|Post]]
+- [[#Intro|Intro]]
+- [[#Model space|Model space]]
+- [[#Model space to World space|Model space to World space]]
+- [[#World space to View space|World space to View space]]
+	- [[#World space to View space#Deriving the transformation matrix for world-to-view|Deriving the transformation matrix for world-to-view]]
+- [[#View space to Clip space|View space to Clip space]]
+	- [[#View space to Clip space#1.|1.]]
+	- [[#View space to Clip space#2.|2.]]
+	- [[#View space to Clip space#Deriving the transformation matrix for view-to-clip|Deriving the transformation matrix for view-to-clip]]
+		- [[#Deriving the transformation matrix for view-to-clip#X and Y|X and Y]]
+		- [[#Deriving the transformation matrix for view-to-clip#Z|Z]]
+		- [[#Deriving the transformation matrix for view-to-clip#W|W]]
+- [[#Clip space to NDC space|Clip space to NDC space]]
+	- [[#Clip space to NDC space#transformation for clip-to-ndc|transformation for clip-to-ndc]]
+- [[#Screen space|Screen space]]
+	- [[#Screen space#transformation for ndc-to-screen|transformation for ndc-to-screen]]
+- [[#Conclusion|Conclusion]]
+- [[#Misc|Misc]]
+	- [[#Misc#Row-major vs Column-major|Row-major vs Column-major]]
+	- [[#Misc#Radians and degrees|Radians and degrees]]
+	- [[#Misc#Pre- vs post- multiply|Pre- vs post- multiply]]
 # Pre-amble
+# hello
+
 ## Terms to parse differently than expected (maybe)
 `Space` - a set of co-ordinate axes. A point will need a change-of-basis transformation to move from one distinct space to another.
-`Origin` - (0,0,0) in a co-ordinate space
+`Origin` - (0,0,0) in a 3-dimensional co-ordinate space
 `Creator` - the entity that made the choices on the following matters:
 - which co-ordinate convention to use (opengl vs directx), and thus which directions each of the conventional vectors, $\hat{i}$, $\hat{j}$, $\hat{k}$, will represent
 - where the origin point is in the world space
