@@ -5,7 +5,7 @@ date: 2026-04-12 13:00:00 +0100
 categories: social
 permalink: /movie-night/
 ---
-I think I've figured out a root cause as to why I dislike committing to movie nights: I'm not sure if they'll be a good use of my evening
+
 
 A movie night is a framework for watching movies. Enjoyment of a movie should not correlate to the quality of the framework, unless framework issues have impinged on the enjoyment of the movie
 
