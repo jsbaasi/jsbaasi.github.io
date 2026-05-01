@@ -9,6 +9,8 @@ prefix = `<C+b>`
 prefix, `d` to detach
 prefix, " to split vertically
 prefix, `%` to split horizontally
+prefix, `[` for copy-mode, a mode where you can select and move around output
+prefix, `$` rename session
 
 `tmux ls` to list all sessions
 `tmux a -t <session_name>` attach to <session_name>
