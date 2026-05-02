@@ -41,7 +41,7 @@ layout: default
   <section class="book-carousel">
     <h3>Books I've Read</h3>
     <div class="carousel">
-      {% for book in site.data.books.books | reverse %}
+      {% for book in site.data.books.books reversed %}
         {% assign b = book[1] %}
         {% if book[0] != current_key %}
         <div class="book-item" data-file="{{ book[0] }}">
