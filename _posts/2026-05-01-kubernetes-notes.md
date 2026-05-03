@@ -11,6 +11,9 @@ permalink: /kubernetes-notes/
 `kubectl describe ingress backstage -n infra-backstage` kubectl can you describe what the backstage ingress resource looks like in the infra-backstage namespace
 `kubectl rollout status <resource> <namespace> -o wide`
 if i want to check when my new backstage application state will be synced to my cluster i can do `kubectl rollout status deployment/backstage -n infra-backstage -o wide`
+
+`kubectl exec postgres-1 -n infra-postgres -- psql -c "\l+"`
+to see what databases there are in my postgres instance
 # Abbreviations
 ESO - external secrets operator
 # Past Issues
