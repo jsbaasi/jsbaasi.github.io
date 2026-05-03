@@ -9,6 +9,8 @@ permalink: /kubernetes-notes/
 `kubectl get pods -A` get pods running in the all the namespaces
 
 `kubectl describe ingress backstage -n infra-backstage` kubectl can you describe what the backstage ingress resource looks like in the infra-backstage namespace
+`kubectl rollout status <resource> <namespace> -o wide`
+if i want to check when my new backstage application state will be synced to my cluster i can do `kubectl rollout status deployment/backstage -n infra-backstage -o wide`
 # Abbreviations
 ESO - external secrets operator
 # Past Issues
