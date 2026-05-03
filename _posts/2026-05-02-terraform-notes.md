@@ -6,3 +6,4 @@ categories: development kubernetes
 permalink: /terraform-notes/
 ---
 `terraform force-unlock <remote_state_id>` will unlock the lock
+`terraform apply --auto-approve` to apply without being prompted to say `yes` to the planned changes
