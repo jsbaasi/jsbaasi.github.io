@@ -91,4 +91,4 @@ So going back to the GIF grammar,
                                Comment Extension
 ```
 
-We find the end of the header (bytes 0-5 in my case), end of logical screen descriptor (6-12), if there's a global color table then we jump to the end of that as well (probably will be in optimised GIFs). Then we insert our application extension block
+We find the end of the header (bytes 0-5 in my case), end of logical screen descriptor (6-12), if there's a global color table then we jump to the end of that as well (probably will be in optimised GIFs) (global color table size field was set to 7, so size is $3 * 2^{7+1}$, so 13-780). Then we insert our application extension block `` at 781st byte (0x30D).
