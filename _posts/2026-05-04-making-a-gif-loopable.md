@@ -76,3 +76,19 @@ The application extension is what we're looking for here, which is defined as:
     +===============+                      --+
 18  |     0x00      |  Block Terminator
 ```
+
+So going back to the GIF grammar,
+
+```
+<GIF Data Stream> ::=     Header <Logical Screen> <Data>* Trailer
+
+<Logical Screen> ::=      Logical Screen Descriptor [Global Color Table]
+
+<Data> ::=                <Graphic Block>  |
+                          <Special-Purpose Block>
+
+<Special-Purpose Block> ::=    Application Extension  |
+                               Comment Extension
+```
+
+We find the end of the logical screen descriptor, if there's a global color table then we jump to the end of that as well (probably will be in optimised GIFs). Then we insert our application extension block
