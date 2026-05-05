@@ -10,3 +10,5 @@ docker build -t bot .
 `docker run <app_name>`
 whatever you tagged your app with
 docker run bot
+`docker run --rm -it <app_name> sh`
+interactive and tty shell into image. remove after done
