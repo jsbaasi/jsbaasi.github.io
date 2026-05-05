@@ -14,6 +14,8 @@ if i want to check when my new backstage application state will be synced to my 
 
 `kubectl exec postgres-1 -n infra-postgres -- psql -c "\l+"`
 to see what databases there are in my postgres instance
+
+`kub`
 # Abbreviations
 ESO - external secrets operator
 # k3d notes
