@@ -15,7 +15,17 @@ if i want to check when my new backstage application state will be synced to my 
 `kubectl exec postgres-1 -n infra-postgres -- psql -c "\l+"`
 to see what databases there are in my postgres instance
 
-`kub`
+`kubectl run --image=<image_tag> --dry-run=client -o=yaml`
+to see the deployment
+
+```bash
+kubectl run -i --tty busybox --image=busybox:1.28 -- sh  # Run pod as interactive shell
+```
+
+```bash
+kubectl run <name> --image=<image_tag> --dry-run=client -o=yaml
+```
+for dry run
 # Abbreviations
 ESO - external secrets operator
 # k3d notes
