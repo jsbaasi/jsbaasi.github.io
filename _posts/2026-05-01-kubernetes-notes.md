@@ -16,6 +16,11 @@ if i want to check when my new backstage application state will be synced to my 
 to see what databases there are in my postgres instance
 # Abbreviations
 ESO - external secrets operator
+# k3d notes
+
+starts with `k3d cluster`
+`k3d cluster list` to ... list clusters
+`k3d cluster create ~/.kube/cluster_config.yaml` to start a cluster with the config file given as a flag
 # Past Issues
 - backstage was appearing down from the vpn, looking at the ingress resources and the backstage pod it was healthy. The problem was that the cnpg auth was configured incorrectly and wouldn't let backstage connect. 
 - `kubectl rollout restart deployment/backstage -n infra-backstage` had to do this because backstage was running with old secrets, apparently the 'env' secrets are copied into the container at start time, and are not read from the 'environment' anymore
