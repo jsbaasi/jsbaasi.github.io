@@ -26,6 +26,14 @@ kubectl run -i --tty busybox --image=busybox:1.28 -- sh  # Run pod as interactiv
 kubectl run <name> --image=<image_tag> --dry-run=client -o=yaml
 ```
 for dry run
+```bash
+kubectl get all,cm,secret,ing -A
+```
+for getting all resources in the cluster
+```bash
+kubectl -n infra-vault get $(kubectl api-resources --namespaced=true --no-headers -o name | egrep -v 'events|nodes' | paste -s -d, - ) --no-headers
+```
+to get all resources in the namespace `infra-vault`
 # Abbreviations
 ESO - external secrets operator
 # k3d notes
