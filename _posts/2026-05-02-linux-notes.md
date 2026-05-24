@@ -21,3 +21,10 @@ Host gitlab.com
 	User git
 	IdentityFile ~/.ssh/jsbaasigitlab
 ```
+
+to get logs from a running process you can do from proc filesystem, `tail -f /proc/<pid>/fd/1`
+file descriptor 1 is stdout and 2 is stderr
+```
+echo -n something | base64
+```
+if you do echo without the -n then it echos with line break

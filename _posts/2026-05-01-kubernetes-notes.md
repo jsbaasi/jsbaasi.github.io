@@ -34,6 +34,24 @@ for getting all resources in the cluster
 kubectl -n infra-vault get $(kubectl api-resources --namespaced=true --no-headers -o name | egrep -v 'events|nodes' | paste -s -d, - ) --no-headers
 ```
 to get all resources in the namespace `infra-vault`
+```bash
+kubectl exec --stdin --tty bot -- sh
+```
+get a shell to pod named `bot`, i tried to do `/bin/bash` command on the alpine image, but not recognised, sh is tho
+```bash
+kubectl describe ss vault
+```
+describe secret store kind of resource named vault
+```bash
+kubectl api-versions
+```
+annoying command
+```bash
+kubectl get secret <secret-name> -n <namespace> jsonpath='{.data}' | base64 -d
+```
+after you do jsut plain .data then see what key you want, then key into it with jsonpath and then pipe it to base64
+# helm
+`helm list`
 # Abbreviations
 ESO - external secrets operator
 # k3d notes
