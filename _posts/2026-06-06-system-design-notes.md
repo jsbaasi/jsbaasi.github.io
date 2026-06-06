@@ -24,7 +24,13 @@ permalink: /system-design-notes/
 # relational db vs nosql:
 - rdbs is known for it's ACID properties. atomicity (stores transactions to happen almost in a queue), consistency (write ahead log), isolation (constraints checked before commit), durability (file sync kernel call to the journal then kernel call to the database file. wal does this differently by queueing it) which means uhh data integrity. does this suggest that nosql doesn't have isolation or durability? i don't think  acid is necessarily where nosql fails, nosql can still have durability (replication and erasure coding)
 - nosql for changing data schemas
-# patterns
+# patterns:
 ## pushing realtime updates
+- 
 ## managing long-running tasks
-## 
+## dealing with contention
+## scaling reads
+## scaling writes
+## handling large blobs
+## multi-step processes
+## proximity based services
