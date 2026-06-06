@@ -26,8 +26,9 @@ permalink: /system-design-notes/
 - nosql for changing data schemas
 # patterns:
 ## pushing realtime updates
-- 
+- pub/sub pattern generally. clients connected on a websocket to the server, server subscribes to updates from wherever the responses will come from. data flows through the long living connections constantly, meeting the realtime property
 ## managing long-running tasks
+- client request long-running task. server acknowledges instantly and 1) responds a uid 2) creates job in the database 3) appends job to the queue. queue gets consumed by workers, workers perform work and update the job status in database/other system. server notices that work is done somehow and then follow up response is given to client
 ## dealing with contention
 ## scaling reads
 ## scaling writes
