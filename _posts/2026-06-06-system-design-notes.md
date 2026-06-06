@@ -22,5 +22,9 @@ permalink: /system-design-notes/
 - stream (streaming events)
 - distributed lock (sometimes implemented in an in-memory cache like redis. key refers to what the object is, then value is whether the lock is held. relies on the atomicity property of the cache)
 # relational db vs nosql:
-- rdbs is known for it's ACID properties. atomicity, consistency, isolation (?), durability (?) which means uhh data integrity. does this suggest that nosql doesn't have isolation or durability? i don't think  acid is necessarily where nosql fails, nosql can still have durability (replication and erasure coding)
+- rdbs is known for it's ACID properties. atomicity (stores transactions to happen almost in a queue), consistency (write ahead log), isolation (constraints checked before commit), durability (file sync kernel call to the journal then kernel call to the database file. wal does this differently by queueing it) which means uhh data integrity. does this suggest that nosql doesn't have isolation or durability? i don't think  acid is necessarily where nosql fails, nosql can still have durability (replication and erasure coding)
 - nosql for changing data schemas
+# patterns
+## pushing realtime updates
+## managing long-running tasks
+## 
