@@ -50,6 +50,10 @@ annoying command
 kubectl get secret <secret-name> -n <namespace> jsonpath='{.data}' | base64 -d
 ```
 after you do jsut plain .data then see what key you want, then key into it with jsonpath and then pipe it to base64
+```
+kubectl logs -n prod continuwuity-0
+```
+how to check logs for uhh
 # helm
 `helm list`
 # Abbreviations
