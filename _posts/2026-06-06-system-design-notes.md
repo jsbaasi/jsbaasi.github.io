@@ -34,7 +34,7 @@ permalink: /system-design-notes/
 ## scaling reads
 users are always reading more than writing, 10:1 ratio initially then becomes 100:1. first optimise db, optimise sql queries, denormalise your data (instead of having 0 duplication of data so a query could be multiple joins, have data copied to each table so reads don't have to join and are fast), THEN scale horizontally with read replicas (replication lag bad) THEN add caching considerations to the system network (cache invalidation, how to deal with a key that is particularly hot). trading off consistency for high availability. maybe redis cache for the database and then a cdn for the user
 ## scaling writes
-
+optimise data model in database. normalise our data, remove indexes that aren't required
 ## handling large blobs
 ## multi-step processes
 ## proximity based services
