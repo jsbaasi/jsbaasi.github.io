@@ -24,6 +24,8 @@ permalink: /system-design-notes/
 # relational db vs nosql:
 - rdbs is known for it's ACID properties. atomicity (stores transactions to happen almost in a queue), consistency (write ahead log), isolation (constraints checked before commit), durability (file sync kernel call to the journal then kernel call to the database file. wal does this differently by queueing it) which means uhh data integrity. does this suggest that nosql doesn't have isolation or durability? i don't think  acid is necessarily where nosql fails, nosql can still have durability (replication and erasure coding)
 - nosql for changing data schemas
+# cap theorem
+availability vs consistency. it's better if users see stale data (low consistency in accurate data) than no data at all (low availability blocked on waiting for strong consistency to occur). this is referred to as eventual consistency. when the system is network partitioned (microservices architecture), we may not be able to re
 # patterns:
 ## pushing realtime updates
 - pub/sub pattern generally. clients connected on a websocket to the server, server subscribes to updates from wherever the responses will come from. data flows through the long living connections constantly, meeting the realtime property
