@@ -32,7 +32,12 @@ permalink: /system-design-notes/
 ## dealing with contention
 - cinema booking seats. key is to start with atomicity and transactional model where everything happens in one go or doesn't happen, then transition (deadlock or too complicated) to more complex distributed synchronisation techniques (distributed lock, two phase commit protocol, queue based serialisation). make it deterministic
 ## scaling reads
-users are always reading more than writing, 10:1 ratio initially then becomes 100:1. first optimise db, optimise sql queries, denormalise your data (instead of having 0 duplication of data so a query could be multiple joins, have data copied to each table so reads don't have to join and are fast), indexes, perhaps different database technology (elasticsearch) THEN scale horizontally with read replicas (replication lag bad) THEN add caching considerations to the system network (cache invalidation, how to deal with a key that is particularly hot). trading off consistency for high availability. maybe redis cache for the database and then a cdn for the user
+users are always reading more than writing, 10:1 ratio initially then becomes 100:1. first 
+1) optimise db, optimise sql queries, denormalise your data (instead of having 0 duplication of data so a query could be multiple joins, have data copied to each table so reads don't have to join and are fast), indexes, perhaps different database technology (elasticsearch)
+2) scale horizontally with read replicas (replication lag bad) 
+3) add caching considerations to the system network (cache invalidation, how to deal with a key that is particularly hot). trading off consistency for high availability. redis cache connected to server makes 10ms read to 1ms read. cdn for users, proximity based
+### bitly (url shortener)
+i scaled the reads for this server by adding a redis cache that the server would read from first and if cache miss then go to database
 ## scaling writes
 optimise data model in database. normalise our data, remove indexes that aren't required. batching techniques for business logic THEN horizontal sharding (hash ring complexity, difficult to reverse this decision once set, but it is hard to definitively know your future needs of your system so always has to be considered carefully) THEN if there's unavoidable work to do then add a queue for the job, to be done asynchronously. cost of distributed synchronisation between workers and queue. OR add vertical partitioning, requests use a partition key to write to where their data is stored, challenging to get a good key, e.g. country is bad because it could be skewed towards one country, good is user ids, if its in 1xx range then location A, else it's 2xx then location B.
 ## handling large blobs
