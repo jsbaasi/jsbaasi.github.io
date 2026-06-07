@@ -28,6 +28,9 @@ permalink: /system-design-notes/
 availability vs consistency. it's better if users see stale data (low consistency in accurate data) than no data at all (low availability blocked on waiting for strong consistency to occur). this is referred to as eventual consistency. when the system is network partitioned (microservices architecture), we may not be able to reach another node where accurate data is stored. prio availability unless it's e.g. tickets or cinema seats being booked
 # general notes
 HTTP GET does not allow request bodies. Need to pass arguments as a path parameter or query parameter
+100M daily active users
+100ms latency
+ssl termination being done on one node (api gateway) is performant, every server doesn't need to ssl decrypt (cpu heavy), only one place to manage dns certs
 # patterns:
 ## pushing realtime updates
 - pub/sub pattern generally. clients connected on a websocket to the server, server subscribes to updates from wherever the responses will come from. data flows through the long living connections constantly, meeting the realtime property
