@@ -27,11 +27,11 @@ permalink: /system-design-notes/
 # cap theorem
 availability vs consistency. it's better if users see stale data (low consistency in accurate data) than no data at all (low availability blocked on waiting for strong consistency to occur). this is referred to as eventual consistency. when the system is network partitioned (microservices architecture), we may not be able to reach another node where accurate data is stored. prio availability unless it's e.g. tickets or cinema seats being booked
 # general notes
-HTTP GET does not allow request bodies. Need to pass arguments as a path parameter or query parameter
-100M daily active users
-100ms latency
-ssl termination being done on one node (api gateway) is performant, every server doesn't need to ssl decrypt (cpu heavy), only one place to manage dns certs
-just had a situation where i opted for complexity where it wasn't needed. in dropbox, i changed polling to event-driven. the intermediate step should've been 
+- HTTP GET does not allow request bodies. Need to pass arguments as a path parameter or query parameter
+- 100M daily active users
+- 100ms latency
+- ssl termination being done on one node (api gateway) is performant, every server doesn't need to ssl decrypt (cpu heavy), only one place to manage dns certs
+- just had a situation where i opted for complexity where it wasn't needed. in dropbox, i changed polling to event-driven. the intermediate step should've been stick to polling but switch to a smarter polling strategy taking into account client patterns, client battery power limits, time of day, 'hot' files
 # patterns:
 ## pushing realtime updates
 - pub/sub pattern generally. clients connected on a websocket to the server, server subscribes to updates from wherever the responses will come from. data flows through the long living connections constantly, meeting the realtime property
@@ -50,6 +50,8 @@ i scaled the reads for this server by adding a redis cache that the server would
 optimise data model in database. normalise our data, remove indexes that aren't required. batching techniques for business logic THEN horizontal sharding (hash ring complexity, difficult to reverse this decision once set, but it is hard to definitively know your future needs of your system so always has to be considered carefully) THEN if there's unavoidable work to do then add a queue for the job, to be done asynchronously. cost of distributed synchronisation between workers and queue. OR add vertical partitioning, requests use a partition key to write to where their data is stored, challenging to get a good key, e.g. country is bad because it could be skewed towards one country, good is user ids, if its in 1xx range then location A, else it's 2xx then location B.
 ## handling large blobs
 don't try to stream blobs through application server, will just exhause memory of the server. instead blob services like s3 (simple storage service) and gcp buckets can provide presigned urls, so client uploads directly to blob service and reads directly from blob service. system stores the metadata of the blob and it's location in the blob service, inside the system's database. challenges of this is maintaining consistency between metadata and what's in the blob, failures between client/blob service interactions. blob services anticipate this so provide an api for application servers, need to learn what's available for you to use in your system
+### dropbox
+i handled large blobs initially by splitting storage of file metadata from the raw bytes of the file. our database stores the metadata only, blob storage service is responsible for the file then. we then split the concern of upload blob/sync blob with 2 services. the client is also smart with polling strategy, 
 ## multi-step processes
 instead of state of a process stored in different places and error handling of steps stored by the step, we can pull it out into central store of process state. client interaction kicks off the process, event is started in the store and pub sub topics are populated and subscribed to. the service that manages the "contract" of the process coordinates the different topics and workers and is responsible for kicking off error handling
 ## proximity based services
