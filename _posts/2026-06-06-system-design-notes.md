@@ -31,6 +31,7 @@ HTTP GET does not allow request bodies. Need to pass arguments as a path paramet
 100M daily active users
 100ms latency
 ssl termination being done on one node (api gateway) is performant, every server doesn't need to ssl decrypt (cpu heavy), only one place to manage dns certs
+just had a situation where i opted for complexity where it wasn't needed. in dropbox, i changed polling to event-driven. the intermediate step should've been 
 # patterns:
 ## pushing realtime updates
 - pub/sub pattern generally. clients connected on a websocket to the server, server subscribes to updates from wherever the responses will come from. data flows through the long living connections constantly, meeting the realtime property
