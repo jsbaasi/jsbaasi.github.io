@@ -2,7 +2,7 @@
 layout: post
 title: System Design Notes
 date: 2026-06-06 13:38:16 +0000
-categories: development
+categories: development notes
 permalink: /system-design-notes/
 ---
 # building blocks:
@@ -32,6 +32,8 @@ availability vs consistency. it's better if users see stale data (low consistenc
 - 100ms latency
 - ssl termination being done on one node (api gateway) is performant, every server doesn't need to ssl decrypt (cpu heavy), only one place to manage dns certs
 - just had a situation where i opted for complexity where it wasn't needed. in dropbox, i changed polling to event-driven. the intermediate step should've been stick to polling but switch to a smarter polling strategy taking into account client patterns, client battery power limits, time of day, 'hot' files
+# figures:
+
 # patterns:
 ## pushing realtime updates
 - pub/sub pattern generally. clients connected on a websocket to the server, server subscribes to updates from wherever the responses will come from. data flows through the long living connections constantly, meeting the realtime property
