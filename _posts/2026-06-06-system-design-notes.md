@@ -28,12 +28,16 @@ permalink: /system-design-notes/
 availability vs consistency. it's better if users see stale data (low consistency in accurate data) than no data at all (low availability blocked on waiting for strong consistency to occur). this is referred to as eventual consistency. when the system is network partitioned (microservices architecture), we may not be able to reach another node where accurate data is stored. prio availability unless it's e.g. tickets or cinema seats being booked
 # general notes
 - HTTP GET does not allow request bodies. Need to pass arguments as a path parameter or query parameter
-- 100M daily active users
-- 100ms latency
 - ssl termination being done on one node (api gateway) is performant, every server doesn't need to ssl decrypt (cpu heavy), only one place to manage dns certs
 - just had a situation where i opted for complexity where it wasn't needed. in dropbox, i changed polling to event-driven. the intermediate step should've been stick to polling but switch to a smarter polling strategy taking into account client patterns, client battery power limits, time of day, 'hot' files
 - full text search engine vs database text search plugin: elasticsearch allows fuzzy finding and apparently the text indexes on database plugin adds maintenance cost, more so than elasticsearch?
 # figures:
+- 100ms-200ms latency
+- 100M daily active users
+- 10M concurrent requests for highest read scenario
+- redis node tops at ~100k, 1TB storage on memory optimised vps
+- sub 1ms in same availability zone (AZ), 1-2ms across AZ in same region, 50ms-150ms across AZ in different region 
+
 
 # patterns:
 ## pushing realtime updates
