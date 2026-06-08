@@ -9,6 +9,7 @@ permalink: /garden-calisthenics-equipment/
 2 x 48.3mm scaffolding tube 90-100cm - dip bars - 20GBP
 2 x 33.7mm wall clamp - 10GBP
 4 x 48.3mm wall clamp - 30GBP
+buying this off scaff shot is about 90GBP, with 30GBP constituting for delivery! B&Q unknown. this suggests i might be able to get a better price if I shop around in-person somewhere
 
 197cm height is enough for me to deadhang
 someone recommended:
