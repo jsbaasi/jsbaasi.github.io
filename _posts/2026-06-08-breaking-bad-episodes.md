@@ -12,3 +12,4 @@ permalink: /breaking-bad/
 # s3e7
 - "la familia es todo" says hector salamanca after he attempts to drown his nephew, marco, in the beer cooler.
 - hank beats the shit out of jesse, kicks off process to get jesse into meth superlab. jesse is so serious, scary!
+- just seen the same ball decoration things in walt's apartment that saul and kim were making fun of
