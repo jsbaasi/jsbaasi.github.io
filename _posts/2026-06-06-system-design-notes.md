@@ -35,7 +35,9 @@ availability vs consistency. it's better if users see stale data (low consistenc
 - 100ms-200ms latency
 - 100M daily active users
 - 10M concurrent requests for highest read scenario
-- redis node tops at ~100k, 1TB storage on memory optimised vps
+- in-memory cache node tops at ~100k, 1TB storage on memory optimised vps, <1ms read
+- database node tops at 50k transactions per second, 15-20k write tps, 64TB storage, 1-5ms cached read, 5-30ms disk, 5-15ms commit
+- server, 100k requests, 500gbish memory
 - sub 1ms in same availability zone (AZ), 1-2ms across AZ in same region, 50ms-150ms across AZ in different region 
 
 
