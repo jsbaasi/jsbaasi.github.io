@@ -12,4 +12,8 @@ permalink: /garden-calisthenics-equipment/
 
 197cm height is enough for me to deadhang
 someone recommended:
-5x5 posts, 
+5x5 posts, 3m buried 0.8m for pullup bar = 2.2m height pullup
+5x5 posts, 1.8 buried 0.6m for dip bars = 1.2m height dip
+125cm height dip bar will allow 186cm individual to dip comfortably
+
+so maybe 2 x 2.8-3m posts for pullup, then 3 x 1.8m posts for dips
