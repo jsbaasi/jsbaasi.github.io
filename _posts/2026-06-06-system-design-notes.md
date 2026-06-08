@@ -1,6 +1,6 @@
 ---
 layout: post
-title: system-design-notes
+title: System Design Notes
 date: 2026-06-06 13:38:16 +0000
 categories: development
 permalink: /system-design-notes/
