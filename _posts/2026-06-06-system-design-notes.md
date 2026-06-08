@@ -32,6 +32,7 @@ availability vs consistency. it's better if users see stale data (low consistenc
 - 100ms latency
 - ssl termination being done on one node (api gateway) is performant, every server doesn't need to ssl decrypt (cpu heavy), only one place to manage dns certs
 - just had a situation where i opted for complexity where it wasn't needed. in dropbox, i changed polling to event-driven. the intermediate step should've been stick to polling but switch to a smarter polling strategy taking into account client patterns, client battery power limits, time of day, 'hot' files
+- full text search engine vs database text search plugin: elasticsearch allows fuzzy finding 
 # figures:
 
 # patterns:
