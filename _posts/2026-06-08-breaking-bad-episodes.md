@@ -19,3 +19,5 @@ permalink: /breaking-bad/
 - this episode returns the show to the dark comedy vibe season 1 had, walt whacking jesse with the swatter lol 
 # s4e3
 - skylar offering the champagne to walt after chastising him for being irresponsible about keeping up appearances of being broke, "gotta destroy the evidence"
+# s4e4
+- walt and sky so cute, "it behooves me.." "it behooves you to be a pro.. chop chop" ... "don't chop chop me"
