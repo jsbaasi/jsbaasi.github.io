@@ -18,3 +18,5 @@ someone recommended:
 125cm height dip bar will allow 186cm individual to dip comfortably
 
 so maybe 2 x 2.8-3m posts for pullup, then 3 x 1.8m posts for dips
+
+MK Grid Plus 20A Grid Intermediate Switch White with Colour-Matched Inserts (92060)
