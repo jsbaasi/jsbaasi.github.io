@@ -17,3 +17,5 @@ permalink: /breaking-bad/
 # s3e10
 - jesse should know that "drops on cold beer" is condensation having bought 2 reflux CONDENSERS for his own cook
 - this episode returns the show to the dark comedy vibe season 1 had, walt whacking jesse with the swatter lol 
+# s4e3
+- skylar offering the champagne to walt after chastising him for being irresponsible about keeping up appearances of being broke, "gotta destroy the evidence"
