@@ -22,8 +22,11 @@ permalink: /breaking-bad/
 # s4e4
 - walt and sky so cute, "it behooves me.." "it behooves you to be a pro.. chop chop" ... "don't chop chop me"
 # s4e6
-- walt please lets stop  admit you're in danger, who are you talkng to right now, who is it you think you see, do you know how much i make a year, i mean even if i told you, you wouldn't believe it. you know what would happen if i suddenly decided to stop going to work? could 
+- walt please lets both of us stop trying to justify all this  admit you're in danger
+- who are you talkng to right now, who is it you think you see?
+- do you know how much i make a year, i mean even if i told you, you wouldn't believe it.
+- you know what would happen if i suddenly decided to stop going into work?  
 - a business, big enough that it could be listed on the nasdaq goes belly up. Disappears, it ceases to exist without me
-- you clearly don't know who you're talkng so let me clue you in
+- no, you clearly don't know who you're talkng so let me clue you in
 - i am not in danger skylar, i am the danger
-- a guy opens his door and gets shot and you think that of me? NO i am the one who knocks
+- a guy opens his door and gets shot and you think that of me? NO i am .. the one who KNOCKS
