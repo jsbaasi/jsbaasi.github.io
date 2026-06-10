@@ -21,7 +21,7 @@ permalink: /breaking-bad/
 - skylar offering the champagne to walt after chastising him for being irresponsible about keeping up appearances of being broke, "gotta destroy the evidence"
 # s4e4
 - walt and sky so cute, "it behooves me.." "it behooves you to be a pro.. chop chop" ... "don't chop chop me"
-# s4e6
+# s4e6 - cornered
 - walt please lets both of us stop trying to justify all this  admit you're in danger
 - who are you talkng to right now, who is it you think you see?
 - do you know how much i make a year, i mean even if i told you, you wouldn't believe it.
@@ -30,3 +30,4 @@ permalink: /breaking-bad/
 - no, you clearly don't know who you're talkng so let me clue you in
 - i am not in danger skylar, i am the danger
 - a guy opens his door and gets shot and you think that of me? NO i am .. the one who KNOCKS
+- this whole thing, all of it... it's all about me lmao
