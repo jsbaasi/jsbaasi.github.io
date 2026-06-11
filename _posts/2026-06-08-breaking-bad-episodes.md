@@ -31,3 +31,5 @@ permalink: /breaking-bad/
 - i am not in danger skylar, i am the danger
 - a guy opens his door and gets shot and you think that of me? NO i am .. the one who KNOCKS
 - this whole thing, all of it... it's all about me lmao
+# s4e13 - faceoff
+- marie thoughts on the proposition of hank going to the dea office to speak with hector salamanca: "it is a ridiculous idea, and there is NO way that you are going to do it, end of story" 4 seconds freeze on her face and then cuts to hank at the dea office LMAO
