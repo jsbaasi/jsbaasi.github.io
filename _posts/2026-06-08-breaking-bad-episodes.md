@@ -12,7 +12,7 @@ permalink: /breaking-bad/
 # s1e2 the cat's in the bag
 - nuh uh man NOT MY HOUSE!
 - "after we clean up this mess we will go our separate ways and never speak of this again" oh lmao
-- walt talking about cleavage of senior high school girls to distract from the phone ringing from jesse!
+- walt talking about cleavage of senior high school girls to distract from jesse phoning the home line 
 - krazy8 escapes from jesse and walt runs into him lol
 # s3e6
 - walt signs the divorce papers and hands them to skylar, she seems upset as if it's not what she wants. 
