@@ -5,6 +5,9 @@ date: 2026-06-08 15:48:45 +0000
 categories: thoughts
 permalink: /breaking-bad/
 ---
+# s1e1 pilot
+- walt wakes up, does some depressing chud exercise in the dark whilst staring at a participation award for nobel prize
+- 50th birthday, has some veggie bacon. drops off walt jr at scho
 # s3e6
 - walt signs the divorce papers and hands them to skylar, she seems upset as if it's not what she wants. 
 - walt meets gale for the first time, he's impressed with his credentials and the coffee thingamajig
