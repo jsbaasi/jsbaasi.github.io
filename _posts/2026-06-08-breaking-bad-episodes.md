@@ -16,6 +16,8 @@ permalink: /breaking-bad/
 - krazy8 escapes from jesse and walt runs into him lol
 # s2e2 grilled
 - we're going to make beaucoup bucks says tuco to walter before he gets packed off
+# s2e3 bit by a dead bee
+- "your word is bond right?" WORD IS BOND YO
 # s3e6
 - walt signs the divorce papers and hands them to skylar, she seems upset as if it's not what she wants. 
 - walt meets gale for the first time, he's impressed with his credentials and the coffee thingamajig
