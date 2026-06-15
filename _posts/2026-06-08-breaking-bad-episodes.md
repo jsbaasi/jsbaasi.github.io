@@ -18,6 +18,10 @@ permalink: /breaking-bad/
 - we're going to make beaucoup bucks says tuco to walter before he gets packed off by hank
 # s2e3 bit by a dead bee
 - "your word is bond right?" WORD IS BOND YO
+# s2e5 breakage
+- jesse gave his fake name as ... jesse jackson. he is incapable of lying, maybe the most honest person in the show?
+- walt waits until skylar won't tell him where walt jr is to bring out the cigarette pack that skylar tried to flush away. manipulative walt not made obvious to the camera
+- hank's beer starts popping caps, he flags marie with his service pistol when she comes to the garage to check as well. nearly had breakage of marie
 # s3e6
 - walt signs the divorce papers and hands them to skylar, she seems upset as if it's not what she wants. 
 - walt meets gale for the first time, he's impressed with his credentials and the coffee thingamajig
