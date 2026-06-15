@@ -24,6 +24,9 @@ permalink: /breaking-bad/
 - hank's beer starts popping caps, he flags marie with his service pistol when she comes to the garage to check as well. nearly had breakage of marie
 # s2e6 peekaboo
 - walt tells a story of the first manufactured diamond, tells a story of hall was victimised by his employer, ge, how they made great sums of money off his hard work. in this scene we can see him try to justify his actions that clearly demonstrate his intelligence and competence, by asserting his understanding of the situation on to others. in this scene it's a bunch of highschool kids, eventually it'll be jesse, his wife, all of his loved ones.
+- "it's fidc insured yo" surprising words to come out of spooge's mouth lol
+- "skank ass skank" that's more like it
+- the victim delusion comes again when walt speaks to gretchen about how her and elliot wronged him (not really)
 # s3e6
 - walt signs the divorce papers and hands them to skylar, she seems upset as if it's not what she wants. 
 - walt meets gale for the first time, he's impressed with his credentials and the coffee thingamajig
