@@ -27,6 +27,9 @@ permalink: /breaking-bad/
 - "it's fidc insured yo" surprising words to come out of spooge's mouth lol
 - "skank ass skank" that's more like it
 - the victim delusion comes again when walt speaks to gretchen about how her and elliot wronged him (not really)
+# s2e9 4 days out
+- "how are you even alive" fun wesse moment as walt inspects the nutritional information of the food that jesse bought
+- "hell yeah come high baby" wesse high five each other, moment of pure elation "haha separate rooms" as if walt had a mild expectation to be sharing rooms with jesse.
 # s3e6
 - walt signs the divorce papers and hands them to skylar, she seems upset as if it's not what she wants. 
 - walt meets gale for the first time, he's impressed with his credentials and the coffee thingamajig
