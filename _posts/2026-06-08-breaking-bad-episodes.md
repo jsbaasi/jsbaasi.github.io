@@ -31,7 +31,8 @@ permalink: /breaking-bad/
 - "how are you even alive" fun wesse moment as walt inspects the nutritional information of the food that jesse bought
 - "hell yeah come high baby" wesse high five each other, moment of pure elation "haha separate rooms" as if walt had a mild expectation to be sharing rooms with jesse.
 # s2e11 mandala
-- walt delays his 
+- walt delays his urgent surgery so that he can guarantee attending birth of holly, yet we all know how that ends up
+- *news of combo dying* "which one is he", how does walt not remember the names of his immediate dealer crew
 # s3e6
 - walt signs the divorce papers and hands them to skylar, she seems upset as if it's not what she wants. 
 - walt meets gale for the first time, he's impressed with his credentials and the coffee thingamajig
