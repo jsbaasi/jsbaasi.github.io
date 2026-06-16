@@ -33,6 +33,7 @@ permalink: /breaking-bad/
 # s2e11 mandala
 - walt delays his urgent surgery so that he can guarantee attending birth of holly, yet we all know how that ends up
 - *news of combo dying* "which one is he", how does walt not remember the names of his immediate dealer crew
+- jane goes to light up some crystal before going out for the day and jesse is seen having a moment of regret behind her back, this may be one of his biggest regrets. wouldn't say it's evil but as part of him being spineless and people-pleasing, how much pain and suffering has he caused? if jesse didn't let walt walk over him all the time... "you need me more than i need you" not sure what episode that was from
 # s3e6
 - walt signs the divorce papers and hands them to skylar, she seems upset as if it's not what she wants. 
 - walt meets gale for the first time, he's impressed with his credentials and the coffee thingamajig
