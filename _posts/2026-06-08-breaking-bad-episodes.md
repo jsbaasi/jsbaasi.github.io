@@ -60,7 +60,7 @@ permalink: /breaking-bad/
 - jesse should know that "drops on cold beer" is condensation having bought 2 reflux CONDENSERS for his own cook
 - this episode returns the show to the dark comedy vibe season 1 had, walt whacking jesse with the swatter lol
 # s3e12 half measures
-- why does hank want to stay in the hospital so bad? keeps ass
+- why does hank want to stay in the hospital so bad? keeps asserting he's not well? maybe it's because the trauma of killing tuco and then running into the cartel again has left him paralysed with fear. he sees the hospital as the safest place he could be, so perhaps it's not because of the better health services
 - wesse kill gus' top guys
 # s4e3
 - skylar offering the champagne to walt after chastising him for being irresponsible about keeping up appearances of being broke, "gotta destroy the evidence"
