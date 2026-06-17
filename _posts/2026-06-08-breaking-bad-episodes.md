@@ -58,7 +58,10 @@ permalink: /breaking-bad/
 # s3e10 fly
 - walt is stressed because he's on his last legs with gussy, is that why he goes so insane for the fly? he's not anal about the meth output but anything that could affect the yield (such as contaminant) should be taken seriously? or is it because he wants to reassert control which he is rapidly losing from balance of power with gus, could it also be comedic relief from bince, maybe it's escapism because at the end they uncharacteristically start having deep conversations. walt's emotions get re-directed by the sleeping medicine into a conversation with jesse, he hasn't had the chance to tell anyone about this before
 - jesse should know that "drops on cold beer" is condensation having bought 2 reflux CONDENSERS for his own cook
-- this episode returns the show to the dark comedy vibe season 1 had, walt whacking jesse with the swatter lol 
+- this episode returns the show to the dark comedy vibe season 1 had, walt whacking jesse with the swatter lol
+# s3e12 half measures
+- why does hank want to stay in the hospital so bad? keeps ass
+- wesse kill gus' top guys
 # s4e3
 - skylar offering the champagne to walt after chastising him for being irresponsible about keeping up appearances of being broke, "gotta destroy the evidence"
 # s4e4
