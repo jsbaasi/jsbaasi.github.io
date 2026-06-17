@@ -55,7 +55,8 @@ permalink: /breaking-bad/
 - walt and jesse split fiddy-fiddy for cooking. how it transpired is interesting, walt proposes, then jesse rejects and goes on a tirade. walt, as he's leaving, says "your meth is good, jesse, as good as mine". jesse is in tears and has nothing else to say. a phonecall as walt steps out of the car informs him of jesse's acceptance to his offer, "fifty-fifty? yes, fifty-fifty ... okay, partners ... good", walt never says partners back! jesse took a look at the 'pained' medical face by his bedside as he shut his eyes, ruminating
 # s3e9 kafkaesque
 - therapy dude tells jesse to do what he likes to do and jesse interprets that to start selling on his own, this leads him to sell to andrea, which leads him to learn about 
-# s3e10
+# s3e10 fly
+- walt is stressed because he's on his last legs with gussy
 - jesse should know that "drops on cold beer" is condensation having bought 2 reflux CONDENSERS for his own cook
 - this episode returns the show to the dark comedy vibe season 1 had, walt whacking jesse with the swatter lol 
 # s4e3
