@@ -42,6 +42,8 @@ permalink: /breaking-bad/
 # s3e2 caballo sin nombre
 - horse with no name translated to english ^ what walt is playing when he gets pulled over and then this episode when he's showering as the twins walk in with a bare axe
 - this house buying strategy that jesse used could've backfired if his parents just snitched on him for selling meth. but they were made even from the transaction and have no other incentive to get their son arrested aside from teaching him a very time-expensive lesson?
+# s3e4 green light
+- jesse sells meth to a gas station attendant, this is slightly out of character for him in my mind, i think he's acting irrationally and trying to fit the mould of a bad character and punish himself more. this would link to his behaviour in rehab how we rejects all notions of forgiving himself for the alternative
 # s3e6
 - walt signs the divorce papers and hands them to skylar, she seems upset as if it's not what she wants. 
 - walt meets gale for the first time, he's impressed with his credentials and the coffee thingamajig
