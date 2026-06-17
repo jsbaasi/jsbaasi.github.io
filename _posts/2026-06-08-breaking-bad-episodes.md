@@ -56,7 +56,7 @@ permalink: /breaking-bad/
 # s3e9 kafkaesque
 - therapy dude tells jesse to do what he likes to do and jesse interprets that to start selling on his own, this leads him to sell to andrea, which leads him to learn about 
 # s3e10 fly
-- walt is stressed because he's on his last legs with gussy
+- walt is stressed because he's on his last legs with gussy, is that why he goes so insane for the fly? he's not anal about the meth output but anything that could affect the yield (such as contaminant) should be taken seriously? or is it because he wants to reassert control which he is rapidly losing from balance of power with gus, could it also be comedic relief from bince
 - jesse should know that "drops on cold beer" is condensation having bought 2 reflux CONDENSERS for his own cook
 - this episode returns the show to the dark comedy vibe season 1 had, walt whacking jesse with the swatter lol 
 # s4e3
