@@ -1,5 +1,5 @@
 {
-    "current": "9780356517025.epub.po",
+    "current": "9781857231212.epub.po",
     "books": {
         "windandtruth": {
             "title": "Wind and Truth",
@@ -133,6 +133,14 @@
             "title": "The Dragon Reborn",
             "author": "Robert Jordan",
             "started": "2026-04-20T16:32:29",
+            "rating": null,
+            "finished": null,
+            "ttr": null
+        },
+        "9781857231212.epub.po": {
+            "title": "The Shadow Rising",
+            "author": "Robert Jordan",
+            "started": "2026-06-20T00:00:00",
             "rating": null,
             "finished": null,
             "ttr": null
