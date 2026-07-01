@@ -91,5 +91,7 @@ permalink: /breaking-bad/
 - hank repeats what he says to gus and his boss/gomey, and he lies about where he got the idea from. is he starting to lose his personality
 # s4e8 - hermanos
 - hank ignores the legalities of putting a tracker on gus' car which I would agree with but it's alterior motives
+# s4e9 - bug
+- skylar lets walt knows he doesn't have to cook anymore and find an "exit strategy"
 # s4e13 - faceoff
 - marie thoughts on the proposition of hank going to the dea office to speak with hector salamanca: "it is a ridiculous idea, and there is NO way that you are going to do it, end of story" 4 seconds freeze on her face and then cuts to hank at the dea office LMAO
