@@ -87,5 +87,7 @@ permalink: /breaking-bad/
 - a guy opens his door and gets shot and you think that of me? NO i am .. the one who KNOCKS
 - walt meets with bogdan, their interaction is interesting. it's as if walt is molting his old personality of being beholden to him. bogdan still speaks to him as if he's the boss and perhaps that's because he thinks he's ripping off walt and skylar with the deal due to the fake environmental concerns, walt re-arranges the little box on the counter that bogdan touches and then refuses him the first dollar the car wash made. gradual realisation for bogdan, though we don't see his thoughts on the matter I assume he reflects on this interactions and concludes the man has changed
 - this whole thing, all of it... it's all about me lmao
+# s4e7 - problem-dog
+- hank repeats what he says to gus and his boss/gomey, and he lies about where he got the idea from. is he starting to lose his personality
 # s4e13 - faceoff
 - marie thoughts on the proposition of hank going to the dea office to speak with hector salamanca: "it is a ridiculous idea, and there is NO way that you are going to do it, end of story" 4 seconds freeze on her face and then cuts to hank at the dea office LMAO
