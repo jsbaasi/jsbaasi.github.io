@@ -39,6 +39,11 @@ permalink: /breaking-bad/
 # s2e12 phoenix
 - "nice job wearing the pants" took walt 2 seasons to score on jesse with that one lol
 - "is new zealand part of australia?" jane "new zealand is new zealand" "right on"
+# s2e13 - abq
+- skylar beats walt's gaslighting with a massive combo of confrontations! "you have to leave" > "you told me you had a second phone" > "i asked gretchen whether you were having an affair with her" > "gretchen and elliott didn't give you a dime, they paid for NOTHING *zips bag*" > "over $100,000 thousand dollars, out of where, out of thin air?" > "but then, i called your mother *whispers in ear* yeah, thanks for that too ... she didn't even know you have cancer" > "you were gone for 4 days yet she swears that you were never there" > "lies on top of lies on top of lies" SKYLAR wins
+# s3e1 - no mas
+- in the starting sequence, the twins put up the childish drawing of walter behind the shrine to the death goddess *very* quickly lol. what is up with the childish drawing, did the twins draw it?
+- walt tries to burn his money, which is probably one of the only signs of his regret over the donald margolis plane crash situation as anywhere else he just gaslights
 # s3e2 caballo sin nombre
 - horse with no name translated to english ^ what walt is playing when he gets pulled over and then this episode when he's showering as the twins walk in with a bare axe
 - this house buying strategy that jesse used could've backfired if his parents just snitched on him for selling meth. but they were made even from the transaction and have no other incentive to get their son arrested aside from teaching him a very time-expensive lesson?
@@ -66,7 +71,12 @@ permalink: /breaking-bad/
 - skylar offering the champagne to walt after chastising him for being irresponsible about keeping up appearances of being broke, "gotta destroy the evidence"
 # s4e4
 - walt and sky so cute, "it behooves me.." "it behooves you to be a pro.. chop chop" ... "don't chop chop me"
+# s4e5 - shotgun
+- jesse sings fallacies whilst bored in the car
+- they do the fake reaction test with mike doing the drop offs, as mike is running out of the alley they do a batman style shot. very nice
+- flynn takes his coffee black, a shot into how he's growing up. it's been like a year since we first saw him i think
 # s4e6 - cornered
+- skylar builds up evidence before confronting walt, she brings up gale boetticher and the dinner conversation then the black eye then the voice message left on the landline at the end for a combo. she thinks it's the only way to get through walt's gaslighting at this point, no love talk, though unfortunately it does not work here as it did in s2e13 abq
 - walt please lets both of us stop trying to justify all this  admit you're in danger
 - who are you talkng to right now, who is it you think you see?
 - do you know how much i make a year, i mean even if i told you, you wouldn't believe it.
@@ -75,6 +85,7 @@ permalink: /breaking-bad/
 - no, you clearly don't know who you're talkng so let me clue you in
 - i am not in danger skylar, i am the danger
 - a guy opens his door and gets shot and you think that of me? NO i am .. the one who KNOCKS
+- walt meets with bogdan, their interaction is interesting. it's as if walt is molting his old personality of being beholden to him. bogdan still speaks to him as if he's the boss and perhaps that's because he thinks he's ripping off walt and skylar with the deal due to the fake environmental concerns, walt re-arranges the little box on the counter that bogdan touches and then refuses him the first dollar the car wash made. gradual realisation for bogdan, though we don't see his thoughts on the matter I assume he reflects on this interactions and concludes the man has changed
 - this whole thing, all of it... it's all about me lmao
 # s4e13 - faceoff
 - marie thoughts on the proposition of hank going to the dea office to speak with hector salamanca: "it is a ridiculous idea, and there is NO way that you are going to do it, end of story" 4 seconds freeze on her face and then cuts to hank at the dea office LMAO
