@@ -23,6 +23,24 @@ renegades:
 dungeons:
 - [ ] grasp of avarice
 raids:
+- [ ] vog title
+	- [ ] confluxes
+		- [ ] defeat wyverns with only super damage
+	- [ ] oracles
+		- [ ] arc subclass
+		- [ ] challenge, no one shoots the same oracle twice, so you group up 1+2, 3, 4, 5, 6, 7, and guardians rotate clockwise
+	- [ ] templar
+		- [ ] arc subclass
+		- [ ] never block teleport
+	- [ ] gatekeepers
+		- [ ] arc subclass
+		- [ ] relic super dmg to defeat praetorians
+		- [ ] do challenge
+	- [ ] aetheon
+		- [ ] void subclass
+		- [ ] don't kill any supplicants
+	- [ ] all
+		- [ ] same class full clear
 - [ ] crota's end
 - [ ] kingsfall
 general:
