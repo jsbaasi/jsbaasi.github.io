@@ -6,18 +6,19 @@ categories: notes
 permalink: /destiny-projects/
 ---
 final shape:
-- get all prismatic stuff unlocked for titan
+- [ ] titan prismatic all
 - unlock pale heart weapon patterns e.g. aberrant action
 edge of fate:
-- campaign
+- [ ] campaign
 renegades:
-- campaign
-- lawless frontier
-- farm praxic blade fully
+- [ ] campaign
+- [ ] lawless frontier
+- [ ] farm praxic blade fully
 dungeons:
-- complete all i haven't yet
+- [ ] grasp of avarice
 raids:
-- complete all i haven't yet
+- [ ] crota's end
+- [ ] kingsfall
 general:
-- get to max light level
-- get to paragon guardian rank
+- [ ] max light level
+- [ ] paragon guardian rank
