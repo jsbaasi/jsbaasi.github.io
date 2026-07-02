@@ -5,6 +5,12 @@ date: 2026-07-02 15:39:55 +0000
 categories: notes
 permalink: /destiny-projects/
 ---
+stuff to remember:
+- destiny recipes is goated
+- blueberry gg
+- dim
+- d2 power bars
+- 
 final shape:
 - [ ] titan prismatic all
 - unlock pale heart weapon patterns e.g. aberrant action
