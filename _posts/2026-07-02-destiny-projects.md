@@ -27,7 +27,7 @@ raids:
 	- [ ] confluxes
 		- [ ] defeat wyverns with only super damage
 	- [ ] oracles
-		- [ ] arc subclass
+		- [x] arc subclass
 		- [ ] challenge, no one shoots the same oracle twice, so you group up 1+2, 3, 4, 5, 6, 7, and guardians rotate clockwise
 	- [ ] templar
 		- [ ] arc subclass
