@@ -35,12 +35,11 @@ raids:
 	- [ ] gatekeepers
 		- [ ] arc subclass
 		- [ ] relic super dmg to defeat praetorians
-		- [ ] do challenge
+		- [ ] challenge, in both planets (points in time), kill the wyvern and minotaur at the same time. wyvern is slightly quicker so need to slow and stun and lower hp if you want to meet the time req of 5 seconds
 	- [ ] aetheon
 		- [ ] void subclass
 		- [ ] don't kill any supplicants
-	- [ ] all
-		- [ ] same class full clear
+	- [ ] same guardian class full clear
 - [ ] crota's end
 - [ ] kingsfall
 general:
