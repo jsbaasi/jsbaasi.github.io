@@ -54,6 +54,7 @@ catalysts:
 # Crota's end
 ## Bridge
 can only cross with enlightenment, sword or chalice
+can't cross until middle guy gets off
 - on plates
 - first enlightenment into bridge
 - second enlightenment into sword
