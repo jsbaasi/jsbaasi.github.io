@@ -51,3 +51,8 @@ catalysts:
 - [ ] xenophage
 - [ ] divinity
 - [ ] eyes of tomorrow
+# Crota's end
+## Bridge
+- on plates
+- first enlightenment into 
+
