@@ -12,7 +12,7 @@ stuff to remember:
 - d2 power bars
 - 
 final shape:
-- [ ] titan prismatic all
+- [ ] titan prismatic all **DOING**
 - unlock pale heart weapon patterns e.g. aberrant action
 edge of fate:
 - [ ] campaign
@@ -40,7 +40,7 @@ raids:
 		- [ ] void subclass
 		- [ ] don't kill any supplicants (eyes on atheon)
 	- [ ] same guardian class full clear (vault of class)
-- [ ] crota's end
+- [ ] crota's end **DOING**
 - [ ] kingsfall
 general:
 - [ ] max light level
