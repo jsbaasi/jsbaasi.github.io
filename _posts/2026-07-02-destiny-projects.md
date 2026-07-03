@@ -45,3 +45,9 @@ raids:
 general:
 - [ ] max light level
 - [ ] paragon guardian rank
+exotics:
+- [ ] 1k voices
+catalysts:
+- [ ] xenophage
+- [ ] divinity
+- [ ] eyes of tomorrow
