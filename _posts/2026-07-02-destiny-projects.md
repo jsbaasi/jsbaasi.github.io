@@ -53,6 +53,11 @@ catalysts:
 - [ ] eyes of tomorrow
 # Crota's end
 ## Bridge
+can only cross with enlightenment, sword or chalice
 - on plates
-- first enlightenment into 
+- first enlightenment into bridge
+- second enlightenment into sword
+- third crosses with sword person
+- third enlightens into the 
+- sword kills gatekeeper and then takes chalice off dude who crossed with
 
