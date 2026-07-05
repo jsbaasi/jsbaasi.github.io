@@ -62,3 +62,14 @@ can't cross until middle guy gets off
 - third enlightens into the 
 - sword kills gatekeeper and then takes chalice off dude who crossed with
 
+# Builds
+## Atheon
+- abilities do more damage
+- arc with thundercrash
+- grenades
+	- lightning - 309
+	- storm - 275
+	- pulse - 270
+	- skip - 65
+	- flux - 172
+	- arcbolt - 67
