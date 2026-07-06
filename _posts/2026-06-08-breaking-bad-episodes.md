@@ -25,6 +25,7 @@ permalink: /breaking-bad/
 - jesse wanted to ghost tuco and skip town, but his mind was changed by walter quite quickly, it's as if he's being fueled by just walter's validation
 # s2e1 - seven-thirty-seven
 - tuco gently puts no-doze's arm down after checking if he's dead. maybe regret!?
+- i'm confused why walt rapes skylar here. is he that desperate for control? how does this relate to his realm of lies
 # s2e2 grilled
 - we're going to make beaucoup bucks says tuco to walter before he gets packed off by hank
 # s2e3 bit by a dead bee
