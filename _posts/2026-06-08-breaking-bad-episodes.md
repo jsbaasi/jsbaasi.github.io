@@ -20,6 +20,8 @@ permalink: /breaking-bad/
 - "you bad bad liar" he is right now yeah, i think this season one of the core themes is walter diving deeper behind the veil of lies and maybe getting better at navigating this system, staying hidden from his family/law and skylar most of all
 - could be something to explore further, does walt become a better liar by the end as skylar seems to think?
 - walt gets his payday from tuco, is he more excited about validating his image or getting the money?
+# s1e7 - a-no-rough-stuff-type-deal
+- "lemme guess, you picked this place?" suggests jesse has no visibility into the walt tuco partnership at this point, and hasn't asked to be included either, yet is a big part of their business risk and revenue. it is the reason why walt likes jesse, he does what he says and trusts walter to handle things (thinking of s5 where he vouches for walt to mike). in other words he neatly slots into his world of lies
 # s2e2 grilled
 - we're going to make beaucoup bucks says tuco to walter before he gets packed off by hank
 # s2e3 bit by a dead bee
