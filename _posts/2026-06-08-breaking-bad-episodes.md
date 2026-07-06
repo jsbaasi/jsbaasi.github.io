@@ -23,6 +23,8 @@ permalink: /breaking-bad/
 # s1e7 - a-no-rough-stuff-type-deal
 - "lemme guess, you picked this place?" suggests jesse has no visibility into the walt tuco partnership at this point, and hasn't asked to be included either, yet is a big part of their business risk and revenue. it is the reason why walt likes jesse, he does what he says and trusts walter to handle things (thinking of s5 where he vouches for walt to mike). in other words he neatly slots into his world of lies
 - jesse wanted to ghost tuco and skip town, but his mind was changed by walter quite quickly, it's as if he's being fueled by just walter's validation
+# s2e1 - seven-thirty-seven
+- tuco gently puts no-doze's arm down after checking if he's dead. maybe regret!?
 # s2e2 grilled
 - we're going to make beaucoup bucks says tuco to walter before he gets packed off by hank
 # s2e3 bit by a dead bee
