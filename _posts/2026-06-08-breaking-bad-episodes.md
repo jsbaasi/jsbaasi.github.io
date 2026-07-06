@@ -19,6 +19,7 @@ permalink: /breaking-bad/
 - hank makes a big deal of hugo having weed yet doesn't make it a big deal when talking to walter jr other than it's a gateway drug. actually maybe his approach is consistent
 - "you bad bad liar" he is right now yeah, i think this season one of the core themes is walter diving deeper behind the veil of lies and maybe getting better at navigating this system, staying hidden from his family/law and skylar most of all
 - could be something to explore further, does walt become a better liar by the end as skylar seems to think?
+- walt gets his payday from tuco, is he more excited about validating his image or getting the money?
 # s2e2 grilled
 - we're going to make beaucoup bucks says tuco to walter before he gets packed off by hank
 # s2e3 bit by a dead bee
