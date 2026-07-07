@@ -23,5 +23,9 @@ Spectrogram normally shows 3 features of an audio bite. For 2D frequency and tim
 - After how much processing exactly does shazam search the database?
 - so it seems like they developed the algorithm, then decided to test it on a bunch of tracks and recorded how many true/false positives true/false negatives they got then this decided their significance level for a track. I'd assume they allowed some false positives? I'm not sure on this but I'd assume that I would want the same level
 - figures 4 and 5 show recognition rate trending towards 100% when the signal to noise ratio (snr) increases. Longer tracks needed a lower snr to be recognised 100% which makes sense logically
-- some statistics analysis on the advantages of forming pairs instead of searching using individual constellation points, this is 
+- some statistics analysis on the advantages of forming pairs instead of searching using individual constellation points, this is working out the tradeoff of spectrogram peaks surviving from the transformation between source material that plays (in our case the person speaking) to the recorded audio bite. they traded off taking 10 times as much hashing points (10 times pairs as there would've been single points) for 10000 times the speed and small loss that the spectro peak gets detected
 - but i didn't get any of this statistics analysis tbh
+# ok so what exactly am I doing?
+- have 2 modes: conversation and registration
+- in conversation you can keep talkng and if a word is not recognised then it is prompted to the user to enter registration mode and write what word it is.
+- in conversation mode we record a stream of audio and lop off the biggest match we can find so far maybe? but like "talking" could be recognised as "tall" "king", how do we avoid that? I guess we have a delay between chunk of audio stream processed and word written on screen? so the longest word really would be like 2 seconds max then 
