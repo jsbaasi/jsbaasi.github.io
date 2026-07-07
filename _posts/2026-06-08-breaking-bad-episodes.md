@@ -27,6 +27,7 @@ permalink: /breaking-bad/
 - tuco gently puts no-doze's arm down after checking if he's dead. maybe regret!?
 - i'm confused why walt rapes skylar here. is he that desperate for control? how does this relate to his realm of lies
 # s2e2 grilled
+- "every time i hit him it's gonna be like a lesson to yourself, you never never trust the people that you love!" i fucking love this dialogue
 - we're going to make beaucoup bucks says tuco to walter before he gets packed off by hank
 # s2e3 bit by a dead bee
 - "your word is bond right?" WORD IS BOND YO
