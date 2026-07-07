@@ -15,4 +15,8 @@ Fortunately Avery Wang of Shazam has published a paper on the technology behind 
 	- spectrogram peaks, peak is candidate if it has a hgiher energgy content than all its neighvbors in a region centered around the point
 	- chosen accoriding to density criteion, ensures time freq strip has reasonably unifor  coverage ?
 	- Peaks chossen are the highest amplitude peaks
+	- eq = equalisation?
+	- "gsm encoding", global system for mobile communications, because their product was intended to be on a phone. I don't need this le
 - temporally localized, translation invariant, robust and sufficiently entropic
+![[spectrogram.png]]
+Spectrogram normally shows 3 features of an audio bite. For 2D frequency and time are given as axis then amplitude is given as how deep the colour is.
