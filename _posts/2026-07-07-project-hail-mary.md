@@ -27,5 +27,8 @@ Spectrogram normally shows 3 features of an audio bite. For 2D frequency and tim
 - but i didn't get any of this statistics analysis tbh
 # ok so what exactly am I doing?
 - have 2 modes: conversation and registration
-- in conversation you can keep talkng and if a word is not recognised then it is prompted to the user to enter registration mode and write what word it is.
-- in conversation mode we record a stream of audio and lop off the biggest match we can find so far maybe? but like "talking" could be recognised as "tall" "king", how do we avoid that? I guess we have a delay between chunk of audio stream processed and word written on screen? so the longest word really would be like 2 seconds max then 
+- in conversation you can keep talking and if a word is not recognised then it is prompted to the user to enter registration mode and write what word it is.
+- in conversation mode we record a stream of audio and lop off the biggest match we can find so far maybe? but like "talking" could be recognised as "tall" "king", how do we avoid that? I guess we have a delay between chunk of audio stream processed and word written on screen? so the longest word really would be like 2 seconds max then we move a sliding window of 2 seconds, and find the longest word that could match this audio bite, lop off this word and then start the window from the earliest un-recognised portion of the audio stream, in the movie there's roughly a 1 second delay between rocky speaking and it being recognised so could work and perhaps we make some optimisations later
+- recognition algorithm:
+	- make a spectrogram by fourier transform
+	- 
