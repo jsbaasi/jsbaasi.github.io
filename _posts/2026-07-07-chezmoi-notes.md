@@ -6,4 +6,4 @@ categories: notes
 permalink: /chezmoi-notes/
 ---
 look at chezmoi templates page
-variables are like {{ .chezmoi.something }} and you can do condifi
+variables are like {{ .chezmoi.something }} and you can do conditional logic within the curly brackets as well to determine what gets copied to the relevant files
