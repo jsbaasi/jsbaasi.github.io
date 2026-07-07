@@ -20,4 +20,6 @@ Fortunately Avery Wang of Shazam has published a paper on the technology behind 
 - temporally localized, translation invariant, robust and sufficiently entropic
 ![[spectrogram.png]]
 Spectrogram normally shows 3 features of an audio bite. For 2D frequency and time are given as axis then amplitude is given as how deep the colour is.
-After how much processing exactly does shazam search the database?
+- After how much processing exactly does shazam search the database?
+- so it seems like they developed the algorithm, then decided to test it on a bunch of tracks and recorded how many true/false positives true/false negatives they got then this decided their significance level for a track. I'd assume they allowed some false positives? I'm not sure on this but I'd assume that I would want the same level
+- figures 4 and 5 show recognition rate trending towards 100% when the signal to noise ratio ()
