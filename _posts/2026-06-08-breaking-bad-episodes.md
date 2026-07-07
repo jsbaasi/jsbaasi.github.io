@@ -30,6 +30,7 @@ permalink: /breaking-bad/
 - "every time i hit him it's gonna be like a lesson to yourself, you never never trust the people that you love!" i fucking love this dialogue
 - we're going to make beaucoup bucks says tuco to walter before he gets packed off by hank
 # s2e3 bit by a dead bee
+- 10:32 is the first time I've seen them do a lens zoom in like that, pretty cool
 - "your word is bond right?" WORD IS BOND YO
 # s2e5 breakage
 - jesse gave his fake name as ... jesse jackson. he is incapable of lying, maybe the most honest person in the show?
