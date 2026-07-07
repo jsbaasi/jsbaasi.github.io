@@ -32,6 +32,7 @@ permalink: /breaking-bad/
 # s2e3 bit by a dead bee
 - 10:32 is the first time I've seen them do a lens zoom in like that, pretty cool
 - "your word is bond right?" WORD IS BOND YO
+- the whole leaving the hospital scene lowkey makes no sense, he left hospital just to hide the cash for one night? he would've been back there the next day
 # s2e5 breakage
 - jesse gave his fake name as ... jesse jackson. he is incapable of lying, maybe the most honest person in the show?
 - walt waits until skylar won't tell him where walt jr is to bring out the cigarette pack that skylar tried to flush away. manipulative walt not made obvious to the camera
