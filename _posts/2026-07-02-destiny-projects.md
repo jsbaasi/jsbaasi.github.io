@@ -73,6 +73,8 @@ can't cross until middle guy gets off
 	- skip - 65
 	- flux - 172
 	- arcbolt - 67
+	https://mobalytics.gg/destiny-2/builds/titan/arc/divide-titan-arc-thundercrash-dps
+	get critically wounded by yourself with a rocket pulse or something
 ## Tablet of ruin
 - particle reconstruction build with vex mythoclast basically from tablet of ruin
 - with unravelling orbs you get unravelling rounds for 14 seconds on orb pickup so nice synergy with vog armour there
