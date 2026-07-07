@@ -73,3 +73,7 @@ can't cross until middle guy gets off
 	- skip - 65
 	- flux - 172
 	- arcbolt - 67
+## Tablet of ruin
+- particle reconstruction build with vex mythoclast basically from tablet of ruin
+- with unravelling orbs you get unravelling rounds for 14 seconds on orb pickup so nice synergy with vog armour there
+- i think this is a nice neutral build, not really dps though, rocket launchers work nicely, so can use a nice special ammo weapon in kinetic
