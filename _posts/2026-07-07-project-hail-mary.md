@@ -16,7 +16,8 @@ Fortunately Avery Wang of Shazam has published a paper on the technology behind 
 	- chosen accoriding to density criteion, ensures time freq strip has reasonably unifor  coverage ?
 	- Peaks chossen are the highest amplitude peaks
 	- eq = equalisation?
-	- "gsm encoding", global system for mobile communications, because their product was intended to be on a phone. I don't need this le
+	- "gsm encoding", global system for mobile communications, because their product was intended to be on a phone. I don't need this level of robustness tbh, I have a bit more data to work with to produce slighly more accurate results?
 - temporally localized, translation invariant, robust and sufficiently entropic
 ![[spectrogram.png]]
 Spectrogram normally shows 3 features of an audio bite. For 2D frequency and time are given as axis then amplitude is given as how deep the colour is.
+After how much processing exactly does shazam search the database?
