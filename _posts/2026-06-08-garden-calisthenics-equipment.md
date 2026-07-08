@@ -17,6 +17,8 @@ someone recommended:
 5x5 posts, 1.8 buried 0.6m for dip bars = 1.2m height dip
 125cm height dip bar will allow 186cm individual to dip comfortably
 
+get some rock dust as well for drainage of the post at the bottom of the hole
+
 so maybe 2 x 2.8-3m posts for pullup, then 3 x 1.8m posts for dips
 
 MK Grid Plus 20A Grid Intermediate Switch White with Colour-Matched Inserts (92060) is the switch i need for my first floor (after ground floor), i have added it here as a common place of DIY stuff
