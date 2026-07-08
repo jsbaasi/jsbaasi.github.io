@@ -8,3 +8,4 @@ permalink: /omarchy-notes/
 - `hyprctl reload`
 - `SUPER + CTRL + E` for emojis
 - chezmoi should bring in most of the bindings, just need to setup the repo so get ssh and possibly download firefox
+- my common workflow, `cz add` then `cz chattr +template` then `cz edit` then `cz diff` then `cz apply`
