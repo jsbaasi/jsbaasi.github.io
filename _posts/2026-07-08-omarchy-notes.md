@@ -8,4 +8,5 @@ permalink: /omarchy-notes/
 - `hyprctl reload`
 - `SUPER + CTRL + E` for emojis
 - chezmoi should bring in most of the bindings, just need to setup the repo so get ssh and possibly download firefox
-- downloaded ghostty instead of alacritty
+- downloaded ghostty and then deleted alacritty
+- installed vesktop
