@@ -41,7 +41,9 @@ permalink: /breaking-bad/
 - walt attends the doctor appointment alone, visible signs of conflict within the marriage
 - jesse gave his fake name as ... jesse jackson. he is incapable of lying, maybe the most honest person in the show?
 - "dave said i should express that" shows marie is getting better mentally, whilst skylar is getting worse!!! there's a lot of systems of opposing forces in this show, walt's relationship with flynn vs relationship with jesse, uhh can't think of any more
+- jesse says "dbaa mofos, apply yourselves" first part he gets from jane, second part he gets from walt
 - walt waits until skylar won't tell him where walt jr is to bring out the cigarette pack that skylar tried to flush away. manipulative walt not made obvious to the camera
+- jazz playing whilst they're selling meth and then it ends in loss through spooge. lookout for cases of oxymoronic music and actions
 - hank's beer starts popping caps, he flags marie with his service pistol when she comes to the garage to check as well. nearly had breakage of marie
 # s2e6 peekaboo
 - walt tells a story of the first manufactured diamond, tells a story of hall was victimised by his employer, ge, how they made great sums of money off his hard work. in this scene we can see him try to justify his actions that clearly demonstrate his intelligence and competence, by asserting his understanding of the situation on to others. in this scene it's a bunch of highschool kids, eventually it'll be jesse, his wife, all of his loved ones.
