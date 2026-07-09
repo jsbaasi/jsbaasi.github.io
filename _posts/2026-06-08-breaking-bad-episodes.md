@@ -38,6 +38,7 @@ permalink: /breaking-bad/
 - "your half?! THERE IS NO YOUR HALF" these guys fight and then make up again a few times in this show, this is first time I'll count, (COUNT 1)
 - plays fallacies at the end (COUNT 1)
 # s2e5 breakage
+- walt attends the doctor appointment alone, visible signs of conflict within the marriage
 - jesse gave his fake name as ... jesse jackson. he is incapable of lying, maybe the most honest person in the show?
 - walt waits until skylar won't tell him where walt jr is to bring out the cigarette pack that skylar tried to flush away. manipulative walt not made obvious to the camera
 - hank's beer starts popping caps, he flags marie with his service pistol when she comes to the garage to check as well. nearly had breakage of marie
