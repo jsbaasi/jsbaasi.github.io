@@ -40,6 +40,7 @@ permalink: /breaking-bad/
 # s2e5 breakage
 - walt attends the doctor appointment alone, visible signs of conflict within the marriage
 - jesse gave his fake name as ... jesse jackson. he is incapable of lying, maybe the most honest person in the show?
+- "dave said i should express that" shows marie is getting better
 - walt waits until skylar won't tell him where walt jr is to bring out the cigarette pack that skylar tried to flush away. manipulative walt not made obvious to the camera
 - hank's beer starts popping caps, he flags marie with his service pistol when she comes to the garage to check as well. nearly had breakage of marie
 # s2e6 peekaboo
