@@ -35,6 +35,8 @@ permalink: /breaking-bad/
 - the whole leaving the hospital scene lowkey makes no sense, he left hospital just to hide the cash for one night? he would've been back there the next day
 # s2e4 - down
 - skylar tries to confront walter and get the truth out of him, at this point she realises she needs concrete proof to bring walter outside of him realm of lies
+- "your half?! THERE IS NO YOUR HALF" these guys fight and then make up again a few times in this show, this is first time I'll count, (COUNT 1)
+- plays fallacies at the end (COUNT 1)
 # s2e5 breakage
 - jesse gave his fake name as ... jesse jackson. he is incapable of lying, maybe the most honest person in the show?
 - walt waits until skylar won't tell him where walt jr is to bring out the cigarette pack that skylar tried to flush away. manipulative walt not made obvious to the camera
