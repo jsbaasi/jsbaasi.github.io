@@ -10,3 +10,5 @@ permalink: /omarchy-notes/
 - chezmoi should bring in most of the bindings, just need to setup the repo so get ssh and possibly download firefox
 - downloaded ghostty and then deleted alacritty
 - installed vesktop
+# stuff to remember
+- `CTRL + SUPER + SPACE` gives option to change backgrounds
