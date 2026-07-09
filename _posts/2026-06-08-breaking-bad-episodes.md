@@ -53,6 +53,7 @@ permalink: /breaking-bad/
 # s2e9 4 days out
 - "how are you even alive" fun wesse moment as walt inspects the nutritional information of the food that jesse bought
 - "hell yeah come high baby" wesse high five each other, moment of pure elation "haha separate rooms" as if walt had a mild expectation to be sharing rooms with jesse.
+- calls skinny pete a retard, bouncing off what walt was saying to him earlier
 # s2e11 mandala
 - walt delays his urgent surgery so that he can guarantee attending birth of holly, yet we all know how that ends up
 - *news of combo dying* "which one is he", how does walt not remember the names of his immediate dealer crew
