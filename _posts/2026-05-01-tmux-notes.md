@@ -25,3 +25,5 @@ prefix x - close pane
 prefix z - full screen pane
 alt + hjkl to move panes
 alt + shift + hjkl to move panes
+
+using CTRL-d to close a pane currently
