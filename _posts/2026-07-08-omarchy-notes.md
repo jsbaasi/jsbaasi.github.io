@@ -12,3 +12,4 @@ permalink: /omarchy-notes/
 - installed vesktop
 # stuff to remember
 - `CTRL + SUPER + SPACE` gives option to change backgrounds
+- media player is `mpv`
