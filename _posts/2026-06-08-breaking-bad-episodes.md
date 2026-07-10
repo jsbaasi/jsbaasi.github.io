@@ -63,6 +63,7 @@ permalink: /breaking-bad/
 # s2e12 phoenix
 - "nice job wearing the pants" took walt 2 seasons to score on jesse with that one lol
 - "is new zealand part of australia?" jane "new zealand is new zealand" "right on"
+- the parallels in this episode are insane, the way donald interacts with meth-addicted jane (you have to go to rehab) vs how walt deals with meth-addicted jesse (withholding his half of the deal money). another one is when walt is show putting a towel behind holly's back to prevent asphyxiation from vomit or spit and then is seen not doing that with jane
 # s2e13 - abq
 - skylar beats walt's gaslighting with a massive combo of confrontations! "you have to leave" > "you told me you had a second phone" > "i asked gretchen whether you were having an affair with her" > "gretchen and elliott didn't give you a dime, they paid for NOTHING *zips bag*" > "over $100,000 thousand dollars, out of where, out of thin air?" > "but then, i called your mother *whispers in ear* yeah, thanks for that too ... she didn't even know you have cancer" > "you were gone for 4 days yet she swears that you were never there" > "lies on top of lies on top of lies" SKYLAR wins
 # s3e1 - no mas
