@@ -83,7 +83,7 @@ permalink: /breaking-bad/
 - walt signs the divorce papers and hands them to skylar, she seems upset as if it's not what she wants. 
 - walt meets gale for the first time, he's impressed with his credentials and the coffee thingamajig
 - jesse asks badger to put in the buzzer, the situation with walt is still being remembered. despite this being his defiance towards walt, walt's influence on jesse is still felt.
-- we hear that goofy ringtone when hank is staking out jesse's place, next time we hear it is at the hospital
+- we hear that goofy ringtone when hank is staking out jesse's place, next time we hear it is at the hospital. it is a special ringtone just for marie as seen by the call made by francesca to divert from scrapyard
 - hank follows jesse to the junkyard where walt was preparing to have it disposed. brutal clash of personal life and his illicit meth manufacturing career, one of the first that remind him of the danger to real people in his life
 # s3e7
 - "la familia es todo" says hector salamanca after he attempts to drown his nephew, marco, in the beer cooler.
