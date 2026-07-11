@@ -7,7 +7,7 @@ permalink: /breaking-bad/
 ---
 # questions
 ## why did skylar sleep with ted?
-- s3e5 "as wrong as i know it is, as much as i know i'm probably doing it to make walt leave me, it is the only thing in my day where i don't feel like i'm drowning" it has nothing to do with ted tbh
+- s3e5 "as wrong as i know it is, as much as i know i'm probably doing it to make walt leave me, it is the only thing in my day where i don't feel like i'm drowning" it has nothing to do with ted I don't think
 # s1e1 pilot
 - walt wakes up, does some depressing chud exercise in the dark whilst staring at a participation award for nobel prize
 - 50th birthday, has some veggie bacon. drops off walt jr at school. talm about some chemistry is the study of matter, but it's actually the study of change. walter changes! illuminati confirmed. has lunch alone i think(?). drives home, messes around with the glove box compartment. does some work at car wash. and is late to his birthday party. he faints at some point and taken to hospital, told he has lung cancer. at birthday party, hank offers him to go on a ridealong, and after the hospital he accepts that offer. he sees emilio getting arrested and that whole arrest scene, sees jesse fall out of a window. goes to jesse house and offers to cook. he brings some lab equipment, and tells jesse to buy an rv. they drive out to the boonies, jesse talm about some cow house, where the cows live. pure science montage ensues where jesse is seen being whimsical and waltuh clutching him with an iron fist. jesse says it's pure glass grade, and plans out to sell the stuff. takes it to krazy 8 to get that shit sold.
@@ -83,6 +83,7 @@ permalink: /breaking-bad/
 - walt signs the divorce papers and hands them to skylar, she seems upset as if it's not what she wants. 
 - walt meets gale for the first time, he's impressed with his credentials and the coffee thingamajig
 - jesse asks badger to put in the buzzer, the situation with walt is still being remembered. despite this being his defiance towards walt, walt's influence on jesse is still felt.
+- we hear that goofy ringtone when hank is staking out jesse's place, next time we hear it is at the hospital
 - hank follows jesse to the junkyard where walt was preparing to have it disposed. brutal clash of personal life and his illicit meth manufacturing career, one of the first that remind him of the danger to real people in his life
 # s3e7
 - "la familia es todo" says hector salamanca after he attempts to drown his nephew, marco, in the beer cooler.
