@@ -13,6 +13,7 @@ permalink: /omarchy-notes/
 # stuff to remember
 - `CTRL + SUPER + SPACE` gives option to change backgrounds
 - media player is `mpv`
+- `SUPER + G` toggles the title of the application from showing
 # to do
 - waybar change to add more weather information
 - waybar chnage to add ram and cpu information
