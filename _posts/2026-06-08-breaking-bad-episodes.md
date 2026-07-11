@@ -79,9 +79,10 @@ permalink: /breaking-bad/
 - jesse sells meth to a gas station attendant, this is slightly out of character for him in my mind, i think he's acting irrationally and trying to fit the mould of a bad character and punish himself more. this would link to his behaviour in rehab how we rejects all notions of forgiving himself for the alternative
 # s3e5 - mas
 - jesse breaks the windshield of walt's car. he doesn't know how to express his anger?
-# s3e6
+# s3e6 - sunset
 - walt signs the divorce papers and hands them to skylar, she seems upset as if it's not what she wants. 
 - walt meets gale for the first time, he's impressed with his credentials and the coffee thingamajig
+- jesse asks badger to put in the buzzer, the situation with walt is still being remembered. despite this being his defiance towards walt, walt's influence on jesse is still felt.
 - hank follows jesse to the junkyard where walt was preparing to have it disposed. brutal clash of personal life and his illicit meth manufacturing career, one of the first that remind him of the danger to real people in his life
 # s3e7
 - "la familia es todo" says hector salamanca after he attempts to drown his nephew, marco, in the beer cooler.
