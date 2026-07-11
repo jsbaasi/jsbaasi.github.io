@@ -97,6 +97,7 @@ permalink: /breaking-bad/
 # s3e8 - i see you
 - jesse sings fallacies
 # s3e9 kafkaesque
+- in walter's meeting with fring, he doesn't shortsightedly whinge about hank being targeted, he instead leverages to try get protection for his family. pretty strategic of him
 - therapy dude tells jesse to do what he likes to do and jesse interprets that to start selling on his own, this leads him to sell to andrea, which leads him to learn about 
 # s3e10 fly
 - walt is stressed because he's on his last legs with gussy, is that why he goes so insane for the fly? he's not anal about the meth output but anything that could affect the yield (such as contaminant) should be taken seriously? or is it because he wants to reassert control which he is rapidly losing from balance of power with gus, could it also be comedic relief from bince, maybe it's escapism because at the end they uncharacteristically start having deep conversations. walt's emotions get re-directed by the sleeping medicine into a conversation with jesse, he hasn't had the chance to tell anyone about this before
