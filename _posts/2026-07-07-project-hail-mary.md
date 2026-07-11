@@ -27,8 +27,8 @@ Spectrogram normally shows 3 features of an audio bite. For 2D frequency and tim
 - but i didn't get any of this statistics analysis tbh
 - machine learning does this kind of thing by learning which features are statistically significant, we are essentially telling our algorithm which features are important to us.
 # DSP Notes
-- fourier transform what is it?
 - microphone just samples the air pressure at multiple points in time
+- fourier transform is like first imagine plotting the samples from an audio on amplitude/time graph.
 # ok so what exactly am I doing?
 - this differs from shazam as it's live audio, is there any considerations to make there?
 	- shazam works on longer audio duration, below I've suggested using 2 seconds runway but maybe we'll need more to use this algo? This algo is optimising the searching process across the database then accuracy then latency of results returned I guess, so if I was to implement it then it would be great with lots of words registered, but really I think I want accuracy first then latency then searching process? idm making all kinds of pre-computations
