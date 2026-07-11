@@ -5,6 +5,9 @@ date: 2026-06-08 15:48:45 +0000
 categories: thoughts
 permalink: /breaking-bad/
 ---
+# questions
+## why did skylar sleep with ted?
+- "as wrong as i know it is, as much as i know i'm probably doing it to make walt leave me, it is the only thing in my day where i don't feel like i'm drowning" it has nothing to do with ted tbh
 # s1e1 pilot
 - walt wakes up, does some depressing chud exercise in the dark whilst staring at a participation award for nobel prize
 - 50th birthday, has some veggie bacon. drops off walt jr at school. talm about some chemistry is the study of matter, but it's actually the study of change. walter changes! illuminati confirmed. has lunch alone i think(?). drives home, messes around with the glove box compartment. does some work at car wash. and is late to his birthday party. he faints at some point and taken to hospital, told he has lung cancer. at birthday party, hank offers him to go on a ridealong, and after the hospital he accepts that offer. he sees emilio getting arrested and that whole arrest scene, sees jesse fall out of a window. goes to jesse house and offers to cook. he brings some lab equipment, and tells jesse to buy an rv. they drive out to the boonies, jesse talm about some cow house, where the cows live. pure science montage ensues where jesse is seen being whimsical and waltuh clutching him with an iron fist. jesse says it's pure glass grade, and plans out to sell the stuff. takes it to krazy 8 to get that shit sold.
