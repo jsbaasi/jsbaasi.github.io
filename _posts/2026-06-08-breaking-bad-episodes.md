@@ -117,6 +117,7 @@ permalink: /breaking-bad/
 - they do the fake reaction test with mike doing the drop offs, as mike is running out of the alley they do a batman style shot. very nice
 - jesse kind of starts to get validation from mike instead, he tells him about how his "crew" used to do things similar to mike's method
 - flynn takes his coffee black, a shot into how he's growing up. it's been like a year since we first saw him i think
+- flynn says beaucoup bucks... is he a tuco associate?
 # s4e6 - cornered
 - skylar builds up evidence before confronting walt, she brings up gale boetticher and the dinner conversation then the black eye then the voice message left on the landline at the end for a combo. she thinks it's the only way to get through walt's gaslighting at this point, no love talk, though unfortunately it does not work here as it did in s2e13 abq
 - walt please lets both of us stop trying to justify all this  admit you're in danger
