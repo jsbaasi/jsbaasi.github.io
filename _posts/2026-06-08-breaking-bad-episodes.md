@@ -106,6 +106,8 @@ permalink: /breaking-bad/
 # s3e12 half measures
 - why does hank want to stay in the hospital so bad? keeps asserting he's not well? maybe it's because the trauma of killing tuco and then running into the cartel again has left him paralysed with fear. he sees the hospital as the safest place he could be, so perhaps it's not because of the better health services
 - wesse kill gus' top guys, which seems out of character for walt ngl
+# s3e13 - full measure
+- walt's advanced planning to kill caught mike completely off guard "just what the hell was that exactly", despite hearing the phone call. walt caught them completely off guard with his persona
 # s4e3
 - skylar offering the champagne to walt after chastising him for being irresponsible about keeping up appearances of being broke, "gotta destroy the evidence"
 # s4e4
