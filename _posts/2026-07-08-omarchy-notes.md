@@ -15,6 +15,7 @@ permalink: /omarchy-notes/
 - media player is `mpv`
 - `SUPER + G` toggles the title of the application from showing
 - `caligula` for burning images to disk
+- `pkill waybar` and `hyprctl dispatch exec waybar` to restart after changes
 # to do
 - waybar change to add more weather information
 - waybar chnage to add ram and cpu information
