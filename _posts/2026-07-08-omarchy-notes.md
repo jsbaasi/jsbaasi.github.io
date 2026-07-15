@@ -11,7 +11,7 @@ permalink: /omarchy-notes/
 - chezmoi should bring in most of the bindings, just need to setup the repo so get ssh and possibly download firefox
 - downloaded ghostty and then deleted alacritty
 - installed vesktop
-- added MODULES=(amdgpu) to `/etc/mkinitcpio.conf` and rebuilt with `sudo mkinitcpio -P` which was met by `WARNING: This does not update Limine boot entries. Use 'limine-mkinitcpio' or 'limine-update' instead.` i just agreed
+- added windows to limine with `sudo limine-scan` and it managed to find windows boot manager automagically. not sure if it's correct
 # stuff to remember
 - `CTRL + SUPER + SPACE` gives option to change backgrounds
 - media player is `mpv`
