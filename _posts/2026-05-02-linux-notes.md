@@ -29,3 +29,12 @@ echo -n something | base64
 ```
 if you do echo without the -n then it echos with line break
 `netstat -anp | find "port number"` to check if port number is occupied
+
+`killall <username> OR pkill -u <username>` to kill every process owned by a user
+
+```
+sudo -u <user> -g <group> test -w /file/to/test || {
+   echo "user cannot write the file"
+}
+```
+command to check if a user:group would be able write to a file, can use -r and -x as well
