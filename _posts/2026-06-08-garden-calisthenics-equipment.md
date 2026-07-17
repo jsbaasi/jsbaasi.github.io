@@ -24,13 +24,16 @@ so maybe 2 x 2.8-3m posts for pullup, then 3 x 1.8m posts for dips
 MK Grid Plus 20A Grid Intermediate Switch White with Colour-Matched Inserts (92060) is the switch i need for my first floor (after ground floor), i have added it here as a common place of DIY stuff
 
 # money spent
-- 107gbp 
+- 107gbp on 4x3m lengths + 2.4m length of 4x4 wood
+- 72gbp on drill
 # prep to-do
 - [x] visit hardware store and ask about whether they treat the wood
 - [x] buy the wood and walk it home
-- [ ] acquire long handed spade and dirt-grabbing-two-handed tool
-- [ ] buy drill suitable for wood screws (and hopefully more than that)
+- [x] buy drill suitable for wood screws (and hopefully more than that)
 - [ ] buy postcrete
+- [ ] buy heavy duty bin bags
+- [ ] buy spade
+- [ ] buy tubing
 # build
 - [ ] dig 2 0.8m hole
 # questions
