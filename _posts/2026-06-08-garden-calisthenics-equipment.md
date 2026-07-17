@@ -32,4 +32,4 @@ MK Grid Plus 20A Grid Intermediate Switch White with Colour-Matched Inserts (92
 # build
 - [ ] dig 2 0.8m hole
 # questions
-- can i dig on multiple days? I'd assume yes and just cover the holes with something maybe
+- can i dig on multiple days? I'd assume yes and just cover the holes with something maybe. holes will become a bit shit and affect the ground around them so no
