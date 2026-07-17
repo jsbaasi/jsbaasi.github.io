@@ -18,6 +18,7 @@ permalink: /omarchy-notes/
 - `SUPER + G` toggles the title of the application from showing
 - `caligula` for burning images to disk
 - `pkill waybar` and `hyprctl dispatch exec waybar` to restart after changes
+- walker entries are stored in `.local/share/applications` but I could also have found it from `pacman -Fl $pkg | grep -re '\.desktop$'` `sudo find / -name "*.desktop" | grep obs` found it in `/usr/share/applications`
 # to do
 - waybar change to add more weather information
 - waybar chnage to add ram and cpu information
