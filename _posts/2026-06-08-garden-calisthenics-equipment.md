@@ -26,3 +26,4 @@ MK Grid Plus 20A Grid Intermediate Switch White with Colour-Matched Inserts (92
 # to-do
 1) visit hardware store and ask about whether they treat the wood
 2) buy the wood and walk it home
+- [ ] 
