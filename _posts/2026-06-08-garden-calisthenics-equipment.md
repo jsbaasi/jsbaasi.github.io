@@ -33,7 +33,7 @@ MK Grid Plus 20A Grid Intermediate Switch White with Colour-Matched Inserts (92
 - [ ] buy postcrete
 - [ ] buy heavy duty bin bags
 - [ ] buy spade
-- [ ] buy tubing
+- [ ] buy tubing, call [scaffolding supplies limited](https://www.scaffoldingsupplies.co.uk/products/details/3380.html) (potential 50gbp), call local scaffolders
 # build
 - [ ] dig 2 0.8m hole
 # questions
