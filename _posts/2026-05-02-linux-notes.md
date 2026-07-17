@@ -40,3 +40,4 @@ sudo -u <user> -g <group> test -w /file/to/test || {
 command to check if a user:group would be able write to a file, can use -r and -x as well
 octal notation for permissions is easy rwx:
 | owner perms | group perms | anybody else |
+`strace -e openat obs` this is how to see what directories an application, in this case obs, opens
