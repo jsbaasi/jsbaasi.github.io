@@ -22,7 +22,7 @@ get some rock dust as well for drainage of the post at the bottom of the hole
 so maybe 2 x 2.8-3m posts for pullup, then 3 x 1.8m posts for dips
 
 MK Grid Plus 20A Grid Intermediate Switch White with Colour-Matched Inserts (92060) is the switch i need for my first floor (after ground floor), i have added it here as a common place of DIY stuff
-
+easy fill bonding putty to fix brick wall
 # money spent
 - 107gbp on 4x3m lengths + 2.4m length of 4x4 wood
 - 72gbp on drill
