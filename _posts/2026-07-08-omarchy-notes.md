@@ -11,7 +11,8 @@ permalink: /omarchy-notes/
 - chezmoi should bring in most of the bindings, just need to setup the repo so get ssh and possibly download firefox
 - downloaded ghostty and then deleted alacritty
 - installed vesktop
-- added windows to limine with `sudo limine-scan` and it managed to find windows boot manager automagically. not sure if it's correct
+- added windows to limine with `sudo limine-scan` and it managed to find windows boot manager automagically
+- edited `/boot/limine.conf` to add `timeout: no` to not have a timeout as opposed to 0 which is insta boot and then ran `limine-update`
 # stuff to remember
 - `CTRL + SUPER + SPACE` gives option to change backgrounds
 - media player is `mpv`
