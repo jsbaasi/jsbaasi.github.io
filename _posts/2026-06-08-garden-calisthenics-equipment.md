@@ -9,7 +9,7 @@ permalink: /garden-calisthenics-equipment/
 2 x 48.3mm scaffolding tube 90-100cm - dip bars - 20GBP
 2 x 33.7mm wall clamp - 10GBP
 4 x 48.3mm wall clamp - 30GBP
-buying this off scaff shot is about 90GBP, with 30GBP constituting for delivery! B&Q unknown. this suggests i might be able to get a better price if I shop around in-person somewhere
+buying this off scaff shot is about 100, with 35 constituting for delivery! B&Q 130. this suggests i might be able to get a better price if I shop around in-person somewhere
 
 197cm height is enough for me to deadhang
 someone recommended:
@@ -22,7 +22,19 @@ get some rock dust as well for drainage of the post at the bottom of the hole
 so maybe 2 x 2.8-3m posts for pullup, then 3 x 1.8m posts for dips
 
 MK Grid Plus 20A Grid Intermediate Switch White with Colour-Matched Inserts (92060) is the switch i need for my first floor (after ground floor), i have added it here as a common place of DIY stuff
-
-# to-do
-1) visit hardware store and ask about whether they treat the wood
-2) buy the wood and walk it home
+easy fill bonding putty to fix brick wall
+# money spent
+- 107gbp on 4x3m lengths + 2.4m length of 4x4 wood
+- 72gbp on drill
+# prep to-do
+- [x] visit hardware store and ask about whether they treat the wood
+- [x] buy the wood and walk it home
+- [x] buy drill suitable for wood screws (and hopefully more than that)
+- [ ] buy postcrete (PRIORITY 3)
+- [ ] buy heavy duty bin bags (PRIORITY 3)
+- [ ] buy spade and other digging equipment (PRIORITY 2)
+- [ ] will it thread through the post or use screws? how long will the screws last. buy tubing, call [scaffolding supplies limited](https://www.scaffoldingsupplies.co.uk/products/details/3380.html) (potential 50gbp), call local scaffolders with hi, could I buy some scaffolding tubing off you? I was looking for 1x33.7mm tubes with 2 same-size wall flange clamps, 2x48.3mm tubes with 4 same-size wall flange clamps, used would work for me (PRIORITY 1)
+# build
+- [ ] dig 2 0.8m hole
+# questions
+- can i dig on multiple days? I'd assume yes and just cover the holes with something maybe. holes will become a bit shit and affect the ground around them so no

@@ -11,14 +11,17 @@ permalink: /omarchy-notes/
 - chezmoi should bring in most of the bindings, just need to setup the repo so get ssh and possibly download firefox
 - downloaded ghostty and then deleted alacritty
 - installed vesktop
-- added windows to limine with `sudo limine-scan` and it managed to find windows boot manager automagically. not sure if it's correct
+- added windows to limine with `sudo limine-scan` and it managed to find windows boot manager automagically
+- edited `/boot/limine.conf` to add `timeout: no` to not have a timeout as opposed to 0 which is insta boot and then ran `limine-update`
 # stuff to remember
 - `CTRL + SUPER + SPACE` gives option to change backgrounds
 - media player is `mpv`
 - `SUPER + G` toggles the title of the application from showing
 - `caligula` for burning images to disk
 - `pkill waybar` and `hyprctl dispatch exec waybar` to restart after changes
+- walker entries are stored in `.local/share/applications` but I could also have found it from `pacman -Fl $pkg | grep -re '\.desktop$'` `sudo find / -name "*.desktop" | grep obs` found it in `/usr/share/applications`
+- `hyprctl globalshortcuts` to see what shortcuts you can bind to from an app
 # to do
 - waybar change to add more weather information
-- waybar chnage to add ram and cpu information
+- [x] waybar chnage to add ram and cpu information
 - waybar change to show when i'm in window resizing mode (SUPER+R)
