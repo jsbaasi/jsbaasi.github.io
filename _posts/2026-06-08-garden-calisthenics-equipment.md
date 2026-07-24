@@ -31,6 +31,8 @@ easy fill bonding putty to fix brick wall
 - [x] buy the wood and walk it home
 - [x] buy drill suitable for wood screws (and hopefully more than that)
 - [ ] buy postcrete (PRIORITY 3)
+- [ ] buy level (PRIORITY 3)
+- [ ] buy tubing (PRIORITY 3)
 - [ ] buy heavy duty bin bags (PRIORITY 3)
 - [ ] buy spade and other digging equipment (PRIORITY 2)
 - [ ] will it thread through the post or use screws? how long will the screws last. buy tubing, call [scaffolding supplies limited](https://www.scaffoldingsupplies.co.uk/products/details/3380.html) (potential 50gbp), call local scaffolders with hi, could I buy some scaffolding tubing off you? I was looking for 1x33.7mm tubes with 2 same-size wall flange clamps, 2x48.3mm tubes with 4 same-size wall flange clamps, used would work for me (PRIORITY 1)
