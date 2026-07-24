@@ -6,3 +6,7 @@ categories: notes
 permalink: /ethernet-house/
 ---
 ![[side_profile.excalidraw]]
+# options
+## 1
+## 2
+## 3
