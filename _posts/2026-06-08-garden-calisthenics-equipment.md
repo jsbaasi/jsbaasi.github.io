@@ -39,6 +39,14 @@ easy fill bonding putty to fix brick wall
 - [ ] buy spade and other digging equipment (PRIORITY 2)
 - [ ] will it thread through the post or use screws? how long will the screws last. buy tubing, call [scaffolding supplies limited](https://www.scaffoldingsupplies.co.uk/products/details/3380.html) (potential 50gbp), call local scaffolders with hi, could I buy some scaffolding tubing off you? I was looking for 1x33.7mm tubes with 2 same-size wall flange clamps, 2x48.3mm tubes with 4 same-size wall flange clamps, used would work for me (PRIORITY 1)
 # build
+- [ ] filler and sand posts
+- [ ] spray tubing
 - [ ] dig 2 0.8m hole
+- [ ] coach screw smaller cut to bigger 4x4
+- [ ] find *level* lineup for tube
+- [ ] hole saw for making the holes and then coach screw the tube in
+- [ ] lower posts into ground and postcrete them
+- [ ] repeat steps for dip posts
+- [ ] attach post toppers at some point
 # questions
 - can i dig on multiple days? I'd assume yes and just cover the holes with something maybe. holes will become a bit shit and affect the ground around them so no
