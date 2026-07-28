@@ -7,6 +7,7 @@ permalink: /ethernet-house/
 ---
 ![[side_profile.excalidraw]]
 238.3 Mbps download, 106.9 Mbps upload, Latency: 7 ms on 28th july using powerline adapters after having new broadband installed
+snake cow rabbit screwfix reference
 # options
 ## 1
 ## 2
