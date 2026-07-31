@@ -12,6 +12,8 @@ permalink: /ethernet-house/
 
 77.6 mbit download 73 upload on home server ethernet ???
 
+i did `iperf3 -s` and `iperf3 -c <server ip>` between 2 local machines and got 91.3mbit/sec retr 91
+
 snake cow rabbit screwfix reference
 orange-white orange
 blue-white blue
