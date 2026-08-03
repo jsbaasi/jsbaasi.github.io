@@ -21,6 +21,7 @@ permalink: /omarchy-notes/
 - `pkill waybar` and `hyprctl dispatch exec waybar` to restart after changes
 - walker entries are stored in `.local/share/applications` but I could also have found it from `pacman -Fl $pkg | grep -re '\.desktop$'` `sudo find / -name "*.desktop" | grep obs` found it in `/usr/share/applications`
 - `hyprctl globalshortcuts` to see what shortcuts you can bind to from an app
+- firewall is on by default so need to allow ports
 # to do
 - waybar change to add more weather information
 - [x] waybar chnage to add ram and cpu information
