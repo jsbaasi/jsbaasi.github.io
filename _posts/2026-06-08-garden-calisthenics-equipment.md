@@ -24,17 +24,29 @@ so maybe 2 x 2.8-3m posts for pullup, then 3 x 1.8m posts for dips
 MK Grid Plus 20A Grid Intermediate Switch White with Colour-Matched Inserts (92060) is the switch i need for my first floor (after ground floor), i have added it here as a common place of DIY stuff
 easy fill bonding putty to fix brick wall
 # money spent
+## materials
 - 107gbp on 4x3m lengths + 2.4m length of 4x4 wood
-- 72gbp on drill
+## tools
+- 72gbp - drill
 # prep to-do
 - [x] visit hardware store and ask about whether they treat the wood
 - [x] buy the wood and walk it home
 - [x] buy drill suitable for wood screws (and hopefully more than that)
 - [ ] buy postcrete (PRIORITY 3)
+- [ ] buy level (PRIORITY 3)
+- [ ] buy tubing (PRIORITY 3)
 - [ ] buy heavy duty bin bags (PRIORITY 3)
 - [ ] buy spade and other digging equipment (PRIORITY 2)
 - [ ] will it thread through the post or use screws? how long will the screws last. buy tubing, call [scaffolding supplies limited](https://www.scaffoldingsupplies.co.uk/products/details/3380.html) (potential 50gbp), call local scaffolders with hi, could I buy some scaffolding tubing off you? I was looking for 1x33.7mm tubes with 2 same-size wall flange clamps, 2x48.3mm tubes with 4 same-size wall flange clamps, used would work for me (PRIORITY 1)
 # build
+- [ ] filler and sand posts
+- [ ] spray tubing
 - [ ] dig 2 0.8m hole
+- [ ] coach screw smaller cut to bigger 4x4
+- [ ] find *level* lineup for tube
+- [ ] hole saw for making the holes and then coach screw the tube in
+- [ ] lower posts into ground and postcrete them
+- [ ] repeat steps for dip posts
+- [ ] attach post toppers at some point
 # questions
 - can i dig on multiple days? I'd assume yes and just cover the holes with something maybe. holes will become a bit shit and affect the ground around them so no
