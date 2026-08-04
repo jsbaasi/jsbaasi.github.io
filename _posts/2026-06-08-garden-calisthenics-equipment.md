@@ -11,7 +11,7 @@ permalink: /garden-calisthenics-equipment/
 4 x 48.3mm wall clamp - 30GBP
 buying this off scaff shot is about 100, with 35 constituting for delivery! B&Q 130. this suggests i might be able to get a better price if I shop around in-person somewhere
 
-197cm height is enough for me to deadhang
+197cm  is enough for me to deadhang
 someone recommended:
 5x5 posts, 3m buried 0.8m for pullup bar = 2.2m height pullup
 5x5 posts, 1.8 buried 0.6m for dip bars = 1.2m height dip
