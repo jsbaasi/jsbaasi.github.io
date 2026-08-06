@@ -8,6 +8,8 @@ permalink: /ethernet-house/
 ![[side_profile.excalidraw]]
 238.3 Mbps download, 106.9 Mbps upload, Latency: 7 ms on 28th july using powerline adapters after having new broadband installed
 
+Hosted by Digi UK (Luton) [96.69 km]: 12.453 ms Testing download speed................................................................................ Download: 807.01 Mbit/s Testing upload speed...................................................................................................... Upload: 106.15 Mbit/s on 6th august after installing ethernet sockets from room to router
+
 59.3 mbit download 89.17 mbit upload on home server wifi, mere centimeters away
 
 77.6 mbit download 73 upload on home server ethernet ???
