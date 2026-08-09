@@ -12,3 +12,5 @@ whatever you tagged your app with
 docker run bot
 `docker run --rm -it <app_name> sh`
 interactive and tty shell into image. remove after done
+`docker exec -it <container_name> bash`
+to get a bash shell to a running container
