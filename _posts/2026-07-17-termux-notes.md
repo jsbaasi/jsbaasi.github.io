@@ -9,4 +9,4 @@ Cleaned my git repo. To cd to "home" directory then you have to go to `/storage/
 
 keys are stored at `~/.ssh` absolute `/data/data/com.termux/files/home/.ssh`
 
-To setup again make sure you git clone the ssh version of the repo?
+~~To setup again make sure you git clone the ssh version of the repo?~~ obsidian git plugin on termux doesn't seem to recognise ssh, so have to put in a pat even if you cloned via ssh, as I found through setting up personal_notes repo
