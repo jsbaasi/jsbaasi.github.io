@@ -7,4 +7,6 @@ permalink: /termux-notes/
 ---
 Cleaned my git repo. To cd to "home" directory then you have to go to `/storage/emulated/0/` and then this website repo is stored within `Documents`
 
+keys are stored at `~/.ssh` absolute `/data/data/com.termux/files/home/.ssh`
+
 To setup again make sure you git clone the ssh version of the repo?
