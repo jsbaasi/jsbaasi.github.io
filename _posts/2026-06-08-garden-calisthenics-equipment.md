@@ -44,7 +44,7 @@ easy fill bonding putty to fix brick wall
 - [ ] dig 2 0.8m hole
 - [ ] coach screw smaller cut to bigger 4x4
 - [ ] find *level* lineup for tube
-- [ ] hole saw for making the holes and then coach screw the tube in
+- [ ] hole saw for making the holes and then ~~coach screw the tube in~~ through bolt it to the wood, need to make it all lined up, DOMT FORGET TO PUT THE WASHER ON THE BOLT
 - [ ] lower posts into ground and postcrete them
 - [ ] repeat steps for dip posts
 - [ ] attach post toppers at some point
