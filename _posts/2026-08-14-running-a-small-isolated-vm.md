@@ -12,10 +12,11 @@ permalink: /running-a-small-isolated-vm/
 5) login as root user e.g. `su`
 6) setup your distro e.g. `setup-alpine`
 For running the vm you are done, but for my motivations of writing this post:
-7) use the package manager to install `curl` e.g.
+7) use the package manager to install `curl` and `html2text` e.g.
 ```
 apk update
 apk upgrade
 apk search curl
+apk add curl html2text
 ```
-8) `curl -L https://slatestarcodex.com/2014/08/16/burdens` `-L` flag for following redirects
+8) `curl -L https://slatestarcodex.com/2014/08/16/burdens` `-L` flag for following redirects. you can also do `curl -sIL <link>` to see what redirects were happening, see `man curl` for what the flags are
