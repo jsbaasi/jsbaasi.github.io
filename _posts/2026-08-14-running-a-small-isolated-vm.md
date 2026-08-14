@@ -11,3 +11,11 @@ permalink: /running-a-small-isolated-vm/
 4) boot with `qemu-system-x86_64 -m 512 -nic user -boot once=d -cdrom alpine-standard-3.24.1-x86_64.iso -drive file=alpine.qcow2 -display gtk` and optionally `-enable-kvm` flag if it's supported on your machine
 5) login as root user e.g. `su`
 6) setup your distro e.g. `setup-alpine`
+For running the vm you are done, but for my motivations of writing this post:
+7) use the package manager to install `curl` e.g.
+```
+apk update
+apk upgrade
+apk search curl
+```
+8) `curl -L https://slatestarcodex.com/2014/08/16/burdens` `-L` flag for following redirects
