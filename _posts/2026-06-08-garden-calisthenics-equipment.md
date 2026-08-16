@@ -43,6 +43,7 @@ Two parallel lines, drawn with a speed square or compass whatever, diagonal line
 
 3.1cm on the pull post, 6.5cm hopefully on the dip post, maybe 6 at least
 # concrete
+## pricing
 Ballast, 22.5kg major bag
 Wickes
 £4.10 (£0.18/kg)  (Wickes)
@@ -58,6 +59,7 @@ Wickes
 Your job costed up
 Postcrete, 20 bags at shed price: £150. At a fencing/timber merchant (~£6/bag): ~£120.
 Cement + ballast: 15 Wickes ballast bags (£61.50) + 3 B&Q cement (£22.50) = £84. All from Wickes: £87.
+## strat
 got 4 holes left after doing one of the posts with postcrete, using ~4.5 bags leaving it recessed
 ## hole type 1
 70cm depth 30cm diameter 4x4 post
@@ -75,27 +77,6 @@ mult by post # (3) = 0.12744m^3
 taking midpoints where necessary:
 total = 0.04248 x 3 + 0.0545 + 0.0075
 total = 0.18944m^3
->>>>>>> origin/main
-=======
-# concrete
-got 4 holes left after doing one of the posts with postcrete, using ~4.5 bags leaving it recessed
-## hole type 1
-70cm depth 30cm diameter 4x4 post
-concrete vol = hole vol - post vol
-= 15750pi - 7000
-= 42480cm^3
-= 0.04248m^3 (divided by a million)
-mult by post # (3) = 0.12744m^3
-## hole type 2
-90cm depth
-~0.053 - 0.056m^3
-## collar for crete'd post
-~0.0075m^3
-## total
-taking midpoints where necessary:
-total = 0.04248 x 3 + 0.0545 + 0.0075
-total = 0.18944m^3
->>>>>>> origin/main
 # build
 - [ ] filler and sand posts
 - [ ] spray tubing
