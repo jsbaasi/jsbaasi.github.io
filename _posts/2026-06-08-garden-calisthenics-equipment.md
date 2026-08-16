@@ -59,11 +59,10 @@ Wickes
 Your job costed up
 Postcrete, 20 bags at shed price: £150. At a fencing/timber merchant (~£6/bag): ~£120.
 Cement + ballast: 15 Wickes ballast bags (£61.50) + 3 B&Q cement (£22.50) = £84. All from Wickes: £87.
-## strat
-got 4 holes left after doing one of the posts with postcrete, using ~4.5 bags leaving it recessed
 ## hole type 1
 70cm depth 30cm diameter 4x4 post
 concrete vol = hole vol - post vol
+<<<<<<< HEAD
 = 15750pi - 7000
 = 42480cm^3
 = 0.04248m^3 (divided by a million)
