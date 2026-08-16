@@ -39,7 +39,8 @@ easy fill bonding putty to fix brick wall
 - [ ] buy spade and other digging equipment (PRIORITY 2)
 - [ ] will it thread through the post or use screws? how long will the screws last. buy tubing, call [scaffolding supplies limited](https://www.scaffoldingsupplies.co.uk/products/details/3380.html) (potential 50gbp), call local scaffolders with hi, could I buy some scaffolding tubing off you? I was looking for 1x33.7mm tubes with 2 same-size wall flange clamps, 2x48.3mm tubes with 4 same-size wall flange clamps, used would work for me (PRIORITY 1)
 # tube hole strat
-Two parallel lines, drawn with a speed square or compass whatever, diagonal lines to find the centre, compass feom teh centre set to the radius of the tube to find the cut outline, in my case do not cut pass the on or beyond the pencil line **only** within the pencil line. Took some measurements and i think i will need 41mm hole roughly, thinking of using 8mm brad bit around yhe edges then 
+Two parallel lines, drawn with a speed square or compass whatever, diagonal lines to find the centre, compass feom teh centre set to the radius of the tube to find the cut outline, in my case do not cut pass the on or beyond the pencil line **only** within the pencil line. Took some measurements and i think i will need 41mm hole roughly, thinking of using 8mm brad bit around yhe edges then spade bit in the middle.
+# concrete 
 # build
 - [ ] filler and sand posts
 - [ ] spray tubing
