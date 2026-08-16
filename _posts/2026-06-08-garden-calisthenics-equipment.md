@@ -62,7 +62,6 @@ Cement + ballast: 15 Wickes ballast bags (£61.50) + 3 B&Q cement (£22.50) = £
 ## hole type 1
 70cm depth 30cm diameter 4x4 post
 concrete vol = hole vol - post vol
-<<<<<<< HEAD
 = 15750pi - 7000
 = 42480cm^3
 = 0.04248m^3 (divided by a million)
