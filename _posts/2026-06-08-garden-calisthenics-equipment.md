@@ -75,6 +75,10 @@ mult by post # (3) = 0.12744m^3
 taking midpoints where necessary:
 total = 0.04248 x 3 + 0.0545 + 0.0075
 total = 0.18944m^3
+wickes probably cheapest
+15 22.5kg ballast bags (4.10 ea) for 61.50 total
+3 mastercrete (8.40ea) 25.20total
+86.7 all in + 2.50 on fuel
 # build
 - [ ] filler and sand posts
 - [ ] spray tubing
