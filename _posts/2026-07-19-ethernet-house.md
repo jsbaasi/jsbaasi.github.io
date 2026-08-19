@@ -27,3 +27,6 @@ brown-white brown
 ## 3
 
 blinds are on 171-172cm track hook style blinds, 89mm width vanes, centre open
+
+# lighting
+when 
