@@ -42,6 +42,10 @@ easy fill bonding putty to fix brick wall
 Two parallel lines, drawn with a speed square or compass whatever, diagonal lines to find the centre, compass feom teh centre set to the radius of the tube to find the cut outline, in my case do not cut pass the on or beyond the pencil line **only** within the pencil line. Took some measurements and i think i will need 41mm hole roughly, thinking of using 8mm brad bit around yhe edges then spade bit in the middle.
 
 3.1cm on the pull post, 6.5cm hopefully on the dip post, maybe 6 at least
+
+Washer centre 24mm deeper than hole opening for shallow mating
+
+
 # concrete
 ## pricing
 Ballast, 22.5kg major bag
