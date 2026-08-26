@@ -11,4 +11,4 @@ permalink: /chezmoi-notes/
 - install chezmoi, ideally through some kind of package manager
 - `chezmoi init git@github.com:jsbaasi/dotfiles.git`
 - config should be in `~/.local/share/chezmoi`
-- `cz diff` and tweak the templates so you don't have your existing config overwritten (see top of )
+- `cz diff` and tweak the templates so you don't have your existing config overwritten (see top of page to make and edit templates)
