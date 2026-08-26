@@ -1,0 +1,13 @@
+---
+layout: post
+title: Project Thoughts
+date: 2026-08-26 19:09:37 +0000
+categories: development
+permalink: /project-thoughts/
+---
+# fleeting
+- automation to get me into the kitchen
+- turn the tv on automation
+# long-term
+- windowing manager for mac
+- module of audio playing, takes input from an auth sdk and outputs frames that hardware can make use of
