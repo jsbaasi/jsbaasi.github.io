@@ -8,6 +8,7 @@ permalink: /project-thoughts/
 # fleeting
 - automation to get me into the kitchen
 - turn the tv on automation
+- setup tmux on mac (why lol)
 # long-term
 - windowing manager for mac
 - module of audio playing, takes input from an auth sdk and outputs frames that hardware can make use of
