@@ -83,6 +83,15 @@ wickes probably cheapest
 15 22.5kg ballast bags (4.10 ea) for 61.50 total
 3 mastercrete (8.40ea) 25.20total
 86.7 all in + 2.50 on fuel
+
+Bought half a bag cement + 2 bag ballast extra. 
+1 2 3
+4 5
+1) joint on top, postcrete was given way too much water and didn't set on top. Think because it was nighttime and I was rushing. Dome is bad as well
+2) postcrete pour, bit bad cus ill have to do a joint
+3) post wobbles a bit, I'm not sure what i did wrong there, it was 90cm and on top of that is 2 4x4 joint together. It was my first concrete pour and I didn't tamp at first + didn't mix properly
+4) post not centred + rushed
+5) in hindsight maybe the best one then. Full concrete
 # build
 - [ ] filler and sand posts
 - [ ] spray tubing
