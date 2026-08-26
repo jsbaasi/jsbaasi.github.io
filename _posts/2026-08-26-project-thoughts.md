@@ -11,4 +11,5 @@ permalink: /project-thoughts/
 - setup tmux on mac (why lol)
 # long-term
 - windowing manager for mac
+- cli for jira, for me
 - module of audio playing, takes input from an auth sdk and outputs frames that hardware can make use of
