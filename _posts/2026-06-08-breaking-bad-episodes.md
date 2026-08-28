@@ -136,5 +136,7 @@ permalink: /breaking-bad/
 - hank ignores the legalities of putting a tracker on gus' car which I would agree with but it's alterior motives
 # s4e9 - bug
 - skylar lets walt knows he doesn't have to cook anymore and find an "exit strategy"
+# s4e11 - crawl space
+- ted has little stumble over *the* rug whilst answering the door to skylar that is there at ted's request to discuss the money that skylar gave him
 # s4e13 - faceoff
 - marie thoughts on the proposition of hank going to the dea office to speak with hector salamanca: "it is a ridiculous idea, and there is NO way that you are going to do it, end of story" 4 seconds freeze on her face and then cuts to hank at the dea office LMAO
