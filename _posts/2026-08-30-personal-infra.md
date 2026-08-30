@@ -12,6 +12,8 @@ Going to be moving to docker compose for my vps infra. Kubernetes is a bit too e
 - argocd
 # what i want
 - redis, postgres db, prometheus, grafana configured for you through annotations
+# steps:
+- setup docker repo in my package manager and then install from it
 
 In Compose that boilerplate doesn't exist, because Traefik, Prometheus and Alloy all discover things from container labels and the Docker socket. A whole service becomes:
 
