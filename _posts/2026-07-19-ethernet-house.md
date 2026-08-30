@@ -29,4 +29,9 @@ brown-white brown
 blinds are on 171-172cm track hook style blinds, 89mm width vanes, centre open
 
 # lighting
-when 
+writing a mqtt message, need to forward port with `ssh -L 1883:192.168.0.115:1883 jjhome`
+```
+mosquitto_pub -t 'zigbee2mqtt/bridge/request/device/bind' -m '{ "from":"jj_ceiling_relay","to":"jj_ceiling_light"}'
+```
+which added two bindings, one for the light source endpoint 11 destination coordinator endpoint 1
+then for the relay source endpoint `1` destination light endpoint 11
