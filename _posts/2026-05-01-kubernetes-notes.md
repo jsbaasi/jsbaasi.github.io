@@ -56,7 +56,9 @@ kubectl logs -n prod continuwuity-0
 how to check logs for uhh
 # copying stuff
 ``kubectl exec postgres-1 -n infra-postgres -- pg_dump fulb > fulb.back
-`kubectl cp infra-postgres/post`
+`kubectl cp infra-postgres/postgres-1:fulb.back ./fulb.back`
+`createdb -h localhost -U postgres -T template0 <db_name>`
+`psql -h localhost -U postgres <db_name> < <db_backup>`
 # helm
 `helm list`
 # Abbreviations
