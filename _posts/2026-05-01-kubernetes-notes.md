@@ -54,6 +54,9 @@ after you do jsut plain .data then see what key you want, then key into it with 
 kubectl logs -n prod continuwuity-0
 ```
 how to check logs for uhh
+# copying stuff
+``kubectl exec postgres-1 -n infra-postgres -- pg_dump fulb > fulb.back
+`kubectl cp infra-postgres/post`
 # helm
 `helm list`
 # Abbreviations
@@ -66,3 +69,4 @@ starts with `k3d cluster`, and tbh you can figure it out from the help command
 # Past Issues
 - backstage was appearing down from the vpn, looking at the ingress resources and the backstage pod it was healthy. The problem was that the cnpg auth was configured incorrectly and wouldn't let backstage connect. 
 - `kubectl rollout restart deployment/backstage -n infra-backstage` had to do this because backstage was running with old secrets, apparently the 'env' secrets are copied into the container at start time, and are not read from the 'environment' anymore
+
