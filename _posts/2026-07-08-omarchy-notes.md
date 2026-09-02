@@ -41,3 +41,7 @@ cmdline in `/etc/default/limine`
 @home	/home
 @log	/var/log
 @pkg	/var/cache/pacman/pkg
+Manual config of disks, first delete the root and the boot partition. Setup btrfs and its 4 subvolumes and then the boot partition. Then do encryption. Do limine bootloader. Aet the language stuff correctly. Set the pipewire
+Make sue to connect wifi before the script and also install iwctl iwd as packages anyways
+sudo umount /boot
+sudo mount -o fmask=0022,dmask=0022 /boot
