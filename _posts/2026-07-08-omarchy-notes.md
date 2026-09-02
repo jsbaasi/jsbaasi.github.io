@@ -37,3 +37,7 @@ net.ifnames=0 so my interface is named eth0 instead of some gobbldygook
 had to remove plymouth from my mkinitcpio hooks, which omarchy already had, and also removed splash from my 
 cmdline in `/etc/default/limine`
 `su` for changing user
+@	/
+@home	/home
+@log	/var/log
+@pkg	/var/cache/pacman/pkg
