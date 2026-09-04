@@ -12,3 +12,5 @@ permalink: /chezmoi-notes/
 - `chezmoi init git@github.com:jsbaasi/dotfiles.git`
 - config should be in `~/.local/share/chezmoi`
 - `cz diff` and tweak the templates so you don't have your existing config overwritten (see top of page to make and edit templates)
+# i made edits outside of chezmoi edit?
+- use chezmoi add to add your local file. it may lose template attributes so not sure how to get around that
