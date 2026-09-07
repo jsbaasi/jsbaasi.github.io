@@ -22,3 +22,5 @@ permalink: /project-thoughts/
 	- some website i guess
 	- needs to speak to ghe and jira at least
 - office cupboards moving
+- personal infra
+	- do something about jellyfin lagging on my tv please
