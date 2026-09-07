@@ -26,3 +26,22 @@ permalink: /omarchy-notes/
 - waybar change to add more weather information
 - [x] waybar chnage to add ram and cpu information
 - waybar change to show when i'm in window resizing mode (SUPER+R)
+# manual stuff
+`cryptsetup open /dev/sdc2 root` to unlock the drive with my password, and open it as "root"
+`mount /dev/mapper/root /mnt -o subvol=@` to see more of the directories
+`arch-chroot /mnt`
+replaced encrypt hook with encryptssh hook in /etc/mkinicpio.conf
+`lspci` to get my ethernet interface driver, r8169
+`/etc/default/limine` this is where limine-snapper-sync generates the limine.conf config to which i added
+net.ifnames=0 so my interface is named eth0 instead of some gobbldygook
+had to remove plymouth from my mkinitcpio hooks, which omarchy already had, and also removed splash from my 
+cmdline in `/etc/default/limine`
+`su` for changing user
+@	/
+@home	/home
+@log	/var/log
+@pkg	/var/cache/pacman/pkg
+Manual config of disks, first delete the root and the boot partition. Setup btrfs and its 4 subvolumes and then the boot partition. Then do encryption. Do limine bootloader. Aet the language stuff correctly. Set the pipewire
+Make sue to connect wifi before the script and also install iwctl iwd as packages anyways
+sudo umount /boot
+sudo mount -o fmask=0022,dmask=0022 /boot

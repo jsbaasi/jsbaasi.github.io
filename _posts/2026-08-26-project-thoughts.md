@@ -10,11 +10,17 @@ permalink: /project-thoughts/
 - turn the tv on automation
 - setup tmux on mac (why lol)
 # long-term
-- windowing manager for mac
+- git stuff: `git pull <x> <y>` figure out what is x and y
+- windowing manager for mac: make it work for second monitor??
+- sidekick plugin for nvim
 - cli for jira, for me
+	- fix the clone command
 - module of audio playing, takes input from an auth sdk and outputs frames that hardware can make use of
 - some sort of assistant tooling that gives me better noise:signal ratio
 	- should be viewable from phone
 	- could be something kdeconnect, or maybe it's a system that kdeconnect can also speak to
 	- some website i guess
 	- needs to speak to ghe and jira at least
+- office cupboards moving
+- personal infra
+	- do something about jellyfin lagging on my tv please
