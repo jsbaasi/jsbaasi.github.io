@@ -12,8 +12,15 @@ Going to be moving to docker compose for my vps infra. Kubernetes is a bit too e
 - argocd
 # what i want
 - redis, postgres db, prometheus, grafana configured for you through annotations
+```
+kubectl exec postgres-1 -n infra-postgres -- pg_dump fulb > fulb.back kubectl cp infra-postgres/postgres-1:fulb.back ./fulb.back ls kubectl exec postgres-1 -n infra-postgres -- pg_dump fudbot > fudbot.back kubectl cp infra-postgres/postgres-1:fudbot.back ./fudbot.back
+
+mv *.back ../../../../../services-monorepo/
+psql -c "\l+" psql -c "\l+" -h localhost -U postgres -W postgres psql -h localhost -U postgres createdb -T template0 fulb createdb createdb -T template0 createdb -h localhost -U postgres -T template0 fulb createdb -h localhost -U postgres -T template0 fudbot psql -h localhost -U postgres fulb < fulb.back ls ls -la psql -h localhost -U postgres fulb < fulb.back psql -h localhost -U postgres fudbot.back < fudbot.back psql -h localhost -U postgres fudbot < fudbot.back
+```
 # steps:
-- setup docker repo in my package manager and then install from it
+- [x] setup docker repo in my package manager and then install from it
+- [ ] migrate redis database for fulb
 
 In Compose that boilerplate doesn't exist, because Traefik, Prometheus and Alloy all discover things from container labels and the Docker socket. A whole service becomes:
 
