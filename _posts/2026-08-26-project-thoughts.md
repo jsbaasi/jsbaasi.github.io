@@ -21,4 +21,3 @@ permalink: /project-thoughts/
 	- some website i guess
 	- needs to speak to ghe and jira at least
 - office cupboards moving
-- call ring to get ring solo refund
