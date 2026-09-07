@@ -10,7 +10,8 @@ permalink: /project-thoughts/
 - turn the tv on automation
 - setup tmux on mac (why lol)
 # long-term
-- windowing manager for mac
+- git stuff: `git pull <x> <y>` figure out what is x and y
+- windowing manager for mac: make it work for second monitor??
 - sidekick plugin for nvim
 - cli for jira, for me
 	- fix the clone command
