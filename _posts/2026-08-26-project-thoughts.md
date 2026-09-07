@@ -11,7 +11,9 @@ permalink: /project-thoughts/
 - setup tmux on mac (why lol)
 # long-term
 - windowing manager for mac
+- sidekick plugin for nvim
 - cli for jira, for me
+	- fix the clone command
 - module of audio playing, takes input from an auth sdk and outputs frames that hardware can make use of
 - some sort of assistant tooling that gives me better noise:signal ratio
 	- should be viewable from phone
