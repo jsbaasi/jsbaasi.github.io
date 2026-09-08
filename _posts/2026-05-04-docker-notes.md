@@ -14,3 +14,4 @@ docker run bot
 interactive and tty shell into image. remove after done
 `docker exec -it <container_name> bash`
 to get a bash shell to a running container
+# how to see wher
