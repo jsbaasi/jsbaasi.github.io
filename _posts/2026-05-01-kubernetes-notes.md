@@ -59,6 +59,12 @@ how to check logs for uhh
 `kubectl cp infra-postgres/postgres-1:fulb.back ./fulb.back`
 `createdb -h localhost -U postgres -T template0 <db_name>`
 `psql -h localhost -U postgres <db_name> < <db_backup>`
+# how to get a shell to a container that doesn't have a shell
+`kubectl debug -it <pod_name> -n <namespace> --image=busybox --target=<application_target, same name as pod> -- sh`
+# how to copy stuff out of container that doesn't have a shell
+```
+kubectl exec -n <namespace> <pod_name> -c <debugger_name> -- tar cf - <path> > <output>
+```
 # helm
 `helm list`
 # Abbreviations
