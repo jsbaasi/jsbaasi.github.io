@@ -7,11 +7,19 @@ permalink: /project-thoughts/
 ---
 # fleeting
 - automation to get me into the kitchen
-- turn the tv on automation
+- [x] turn the tv on automation
 - setup tmux on mac (why lol)
 # long-term
 - git stuff: `git pull <x> <y>` figure out what is x and y
 - windowing manager for mac: make it work for second monitor??
+- hooks:
+	- interface
+		- `hook <description> <time> [w/p]`
+	- impl
+		- makes api call to google calendar
+- todo:
+	- interface
+		- `todo <description> <tag>`
 - sidekick plugin for nvim
 - cli for jira, for me
 	- fix the clone command
