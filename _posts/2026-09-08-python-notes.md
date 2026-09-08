@@ -33,6 +33,7 @@ with Path("log.txt").open("a") as f:   # "a" = append
 ```
 p = Path("some/dir/file.txt")
 
+p.resolve()       # full path
 p.exists()        # bool
 p.is_file()       # bool
 p.is_dir()        # bool
