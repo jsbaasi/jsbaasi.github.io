@@ -16,4 +16,4 @@ interactive and tty shell into image. remove after done
 to get a bash shell to a running container
 # how to see where a volume is stored on host
 `docker volume ls`
-`docker volume inspect myapp_dbdata`
+`docker volume izzzzzzzzzzzzzzzzzzzzeTTnspect myapp_dbdata`
