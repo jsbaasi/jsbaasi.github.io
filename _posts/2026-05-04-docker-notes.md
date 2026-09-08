@@ -17,3 +17,8 @@ to get a bash shell to a running container
 # how to see where a volume is stored on host
 `docker volume ls`
 `docker volume inspect myapp_dbdata`
+# fixing permission errors
+```
+docker exec <container> id
+sudo chown -R <UID>:<GID>
+```
