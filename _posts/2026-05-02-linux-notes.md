@@ -45,3 +45,5 @@ octal notation for permissions is easy rwx:
 `journalctl -xeu` x for mathcing messages to a catalogue defined by the developer, e for pager end shorthand, u for unit
 # how do i check if a port is open
 with `nmap -p <port> <hostname>`
+# how do i change my bash prompt
+`set PS1='<prompt>'`
