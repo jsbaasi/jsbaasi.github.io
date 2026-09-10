@@ -14,3 +14,10 @@ and then subtitles with same title
 -r flag for recursive so you can copy the entire directory
 scp -r <path_to_movie_directory> jelly:/var/lib/jellyfin/media/<library>
 ```
+
+# fixing lag
+## devices i stream on:
+- samsung smart tv, jellyfin tv tizen os
+- jellyfin web on computer
+- jellyfin web on android
+- iphone and ipad but they're super compatible so doesn't matter
