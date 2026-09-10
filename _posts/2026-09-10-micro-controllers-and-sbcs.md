@@ -11,3 +11,4 @@ permalink: /micro-controllers-and-sbcs/
 - screen to show whatever i want, with microcontroller
 - water moisture sensor for my olive tree
 - communication system from kitchen to my room
+- clock
