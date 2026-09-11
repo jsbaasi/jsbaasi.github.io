@@ -29,6 +29,8 @@ brown-white brown
 blinds are on 171-172cm track hook style blinds, 89mm width vanes, centre open
 https://www.aliexpress.com/item/1005007635141665.html
 zemismart track, 2m, can cut down to size, 
+
+sylvana luxline plus 36w t8
 # lighting
 writing a mqtt message, need to forward port with `ssh -L 1883:192.168.0.115:1883 jjhome`
 ```
