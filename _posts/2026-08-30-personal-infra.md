@@ -6,6 +6,10 @@ categories: development
 permalink: /personal-infra/
 ---
 Going to be moving to docker compose for my vps infra. Kubernetes is a bit too expensive for my 8gb box and at the moment I don't really need anything bigger. Mostly focusing on stuff other than wan-accessible services.
+
+```
+sudo security add-trusted-cert -d -r trustRoot -k /Library/Keychains/System.keychain ~/caddy-root.crt
+```
 # Getting rid of
 - kubernetes
 - backstage
