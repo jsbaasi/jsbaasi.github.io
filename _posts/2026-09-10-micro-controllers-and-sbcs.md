@@ -12,3 +12,4 @@ permalink: /micro-controllers-and-sbcs/
 - 1 x water moisture sensor for my olive tree
 - communication system from kitchen to my room
 - clock
+- wearable identifier for automations
