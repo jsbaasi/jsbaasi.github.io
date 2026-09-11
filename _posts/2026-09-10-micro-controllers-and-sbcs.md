@@ -13,3 +13,4 @@ permalink: /micro-controllers-and-sbcs/
 - communication system from kitchen to my room
 - clock
 - wearable identifier for automations
+- automated blinds
