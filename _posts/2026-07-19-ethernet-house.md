@@ -38,3 +38,8 @@ mosquitto_pub -t 'zigbee2mqtt/bridge/request/device/bind' -m '{ "from":"jj_ceili
 ```
 which added two bindings, one for the light source endpoint `11` destination `coordinator` endpoint `1`
 then for the relay source endpoint `1` destination `light` endpoint `11`
+```
+docker run -it --rm --network host vitalets/tizen-webos-sdk bash
+sdb connect 192.168.0.239:26101
+sdb -s 192.168.0.239:26101 shell 0 vd_applist
+```
