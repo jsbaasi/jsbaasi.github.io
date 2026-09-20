@@ -14,6 +14,13 @@ permalink: /omarchy-notes/
 - `Omarchy Settings > Style > Theme > Osaka Jade`
 - add windows bootloader with `limine-scan`
 - ~~edited `/boot/limine.conf` to add `timeout: no` to not have a timeout as opposed to 0 which is insta boot and then ran `limine-update`
+- auth to my servers,
+```
+ssh-keygen -f ~/.ssh/<keyname>
+
+cat ~/.ssh/id_rsa.pub | ssh USER@HOST "mkdir -p ~/.ssh && cat >> ~/.ssh/authorized_keys"
+```
+- setup kdeconnect `sudo ufw allow 1714:1764/udp; sudo ufw allow 1714:1764/tcp; sudo ufw reload`
 # stuff to remember
 - `CTRL + SUPER + SPACE` gives option to change backgrounds
 - media player is `mpv`
