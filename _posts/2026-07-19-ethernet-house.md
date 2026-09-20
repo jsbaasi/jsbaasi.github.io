@@ -42,4 +42,6 @@ then for the relay source endpoint `1` destination `light` endpoint `11`
 docker run -it --rm --network host vitalets/tizen-webos-sdk bash
 sdb connect 192.168.0.239:26101
 sdb -s 192.168.0.239:26101 shell 0 vd_applist
+# docker images
+# docker rmi vitalets/tizen-webos-sdk
 ```
