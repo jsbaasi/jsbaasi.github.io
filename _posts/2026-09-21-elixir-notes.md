@@ -9,3 +9,10 @@ permalink: /elixir-notes/
 ```
 mix run --no-halt
 ```
+
+# how to test my redis connection?
+```
+children = [
+  {Redix, {"redis://default:<passwd>@redis:6380/", [name: :redix]}}
+]
+```
