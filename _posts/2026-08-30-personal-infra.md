@@ -19,7 +19,8 @@ sudo security add-trusted-cert -d -r trustRoot -k /Library/Keychains/System.keyc
 # migration notes
 - to move redis database i had to copy it to the host folder that gets mounted as a docker volume *before* redis is launches, as when if you move it into the live container, redis-server shuts down and saves over the rdb file
 - connecting to localhost works but connecting to redis doesn't, it's application code fault, redis was binding to 127.0.0.1 instead of just 0.0.0.0
-- when exactly does docker restart the container if i do `docker compose up` and when does it j
+- when exactly does docker restart the container if i do `docker compose up` and when does it just keep running
+- wasn't able to create the bind on the ipv6 all interface address, i think i can only do ipv4
 
 ```
 kubectl exec postgres-1 -n infra-postgres -- pg_dump fulb > fulb.back kubectl cp infra-postgres/postgres-1:fulb.back ./fulb.back ls kubectl exec postgres-1 -n infra-postgres -- pg_dump fudbot > fudbot.back kubectl cp infra-postgres/postgres-1:fudbot.back ./fudbot.back
