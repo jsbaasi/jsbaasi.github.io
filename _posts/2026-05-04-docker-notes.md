@@ -22,3 +22,5 @@ to get a bash shell to a running container
 docker exec <container> id
 sudo chown -R <UID>:<GID>
 ```
+# how to get a shell in a stripped down image?
+`docker debug` that is all
