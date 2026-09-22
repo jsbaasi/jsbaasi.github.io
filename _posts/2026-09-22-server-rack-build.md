@@ -14,3 +14,4 @@ parts list:
 - [x] bigger clamps
 - [ ] case fans
 - [x] psu
+- [ ] 
