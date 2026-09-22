@@ -10,7 +10,7 @@ tools list:
 parts list:
 - [x] wood, but i think the offcuts in the shed will work
 - [ ] rails that i can screw into the wood
-- [ ] dowels
-- [ ] bigger clamps
+- [x] dowels
+- [x] bigger clamps
 - [ ] case fans
 - [ ] psu
