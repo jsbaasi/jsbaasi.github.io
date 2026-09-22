@@ -8,7 +8,7 @@ permalink: /server-rack-build/
 tools list:
 - [ ] orbital sander
 parts list:
-- [ ] wood, but i think the offcuts in the shed will work
+- [x] wood, but i think the offcuts in the shed will work
 - [ ] rails that i can screw into the wood
 - [ ] dowels
 - [ ] bigger clamps
