@@ -34,3 +34,5 @@ sources of confusion:
 > [!info]
 > i think this is because i was looking at the wrong layers? the top "layer" on dive was the os one and the one at the bottom (the one with the most delta from the base image) is the finished one
 3) i'm getting a linking error from my `cmake build` command in the `build` layer, i think this is from the lack of dpp `.so` libraries to link with? though I have copied them in from `dependencies` layer?
+`nm --demangle` on the dpp dynamic library shows that it has the symbol that my binary is asking for
+I didn't copy in the cmake folder that contained the `FindDPP.cmake` file so it wasn't configuring the paths properly, and it wasn't printing them until I did --debug-find on the cmake configure command. WHY THE FUCK didn't it tell me that it couldn't find dpp
