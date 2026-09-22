@@ -28,5 +28,9 @@ sudo chown -R <UID>:<GID>
 my image name: `stormblessed/fudbot`
 sources of confusion:
 1) in `dive stormblessed/fudbot` the commands that separate layers doesn't make sense, they don't appear in my dockerfile at all
+> [!info]
+> i'm guessing buildkit backend compiles those commands into intermediate commands as per it's graph view
 2) the files that i copy across are not seen in the dive layer images? like where is dpp_source or the app directory that I supposedly build my source code in?
+> [!info]
+> i think this is because i was looking at the wrong layers? the top "layer" on dive was the os one and the one at the bottom (the one with the most delta from the base image) is the finished one
 3) i'm getting a linking error from my `cmake build` command in the `build` layer, i think this is from the lack of dpp `.so` libraries to link with? though I have copied them in from `dependencies` layer?
