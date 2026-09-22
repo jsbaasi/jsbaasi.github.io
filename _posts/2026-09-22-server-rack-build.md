@@ -14,4 +14,4 @@ parts list:
 - [x] bigger clamps
 - [ ] case fans
 - [ ] psu
-- [ ] refunded the psu thank god. sata to usb adapter cables for 4 then 4 of those rolex pin plugs i gues
+- [ ] refunded the psu thank god. sata to usb adapter cables for 4 then 4 of those rolex pin plugs i gues∑
