@@ -13,5 +13,5 @@ parts list:
 - [x] dowels
 - [x] bigger clamps
 - [ ] case fans
-- [x] psu
-- [ ] some way to get data from the drives, they are powered already. if i power them with the usb port it won't be enough, they 
+- [ ] psu
+- [ ] refunded the psu thank god. sata to usb adapter cables for 4 then 4 of those rolex pin plugs i gues
