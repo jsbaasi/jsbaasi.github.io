@@ -50,3 +50,7 @@ octal notation for permissions is easy rwx:
 with `nmap -p <port> <hostname>`
 # how do i change my bash prompt
 `set PS1='<prompt>'`
+# how to forward a port?
+`ssh -L LOCAL_PORT:localhost:REMOTE_PORT user@remote-machine`
+so for my psql
+`ssh -L 5432:localhost:5432 jjvps`
