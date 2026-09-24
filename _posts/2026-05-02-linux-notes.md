@@ -9,6 +9,9 @@ permalink: /linux-notes/
 e.g I want to find all files that start with index in the current directory
 `find . -name index*`
 
+# keybind for clearing terminal
+cmd + k, ghostty mac
+
 `~/.ssh/config` can contain shortcuts for vps connection but also specify what commands to run when landing there with:
 ```
 RequestTTY yes
