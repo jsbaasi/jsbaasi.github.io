@@ -5,6 +5,9 @@ date: 2026-05-04 22:36:54 +0000
 categories: development docker
 permalink: /docker-notes/
 ---
+# networking
+bridge networks allow you define a default address that containers expose to if they expose ports when you declare a  `ports` key. without this:
+`com.docker.network.bridge.host_binding_ipv4: "127.0.0.1"` you get ports exposed to all interfaces `0.0.0.0` by default
 # how should I build my Dockerfile
 `docker build -t <image_tag_name> <path_to_dockerfile>`
 `docker run <app_name>`
