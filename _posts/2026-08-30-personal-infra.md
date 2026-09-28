@@ -5,6 +5,22 @@ date: 2026-08-30 21:45:02 +0000
 categories: development
 permalink: /personal-infra/
 ---
+- [Getting rid of](#getting-rid-of)
+- [what i want](#what-i-want)
+- [migration notes](#migration-notes)
+- [steps:](#steps)
+- [platform/fragments.yaml](#platformfragmentsyaml)
+- [apps/fulb/compose.yaml](#appsfulbcomposeyaml)
+- [devex improvements?](#devex-improvements)
+	- [Tiltfile](#tiltfile)
+	- [the real image — off by default, flip it on to test what ships](#the-real-image--off-by-default-flip-it-on-to-test-what-ships)
+	- [dev vs prod stuff?](#dev-vs-prod-stuff)
+		- [compose.override.yaml](#composeoverrideyaml)
+- [Opinion 4: your testing gap is tests, not tooling](#opinion-4-your-testing-gap-is-tests-not-tooling)
+- [Opinion 5: small things that punch above their weight](#opinion-5-small-things-that-punch-above-their-weight)
+- [.envrc — committed, fake values only](#envrc--committed-fake-values-only)
+	- [.sops.yaml at the repo root](#sopsyaml-at-the-repo-root)
+
 Going to be moving to docker compose for my vps infra. Kubernetes is a bit too expensive for my 8gb box and at the moment I don't really need anything bigger. Mostly focusing on stuff other than wan-accessible services.
 
 ```
@@ -262,19 +278,6 @@ One command, top of the README
 
 git clone && direnv allow && tilt up
 
-
-
-
-❯ what is direnv? tell me more about secrets, how are they managed then? more opinions, on local and prod, whats easiest for me and i dont need some usa governemtn area 51 security, no one is ever getting into my vps probbly
-
-Let me check one thing that's directly relevant to the Vault argument.
-
-  Read 1 file, ran 1 shell command
-
-Working directory drifted to fuservice. Let me re-read with absolute paths.
-
-  Ran 1 shell command
-
 direnv, quickly
 
 It's a shell hook. You drop a .envrc in a directory; when you cd in, direnv exports those variables into your shell, and when you cd out it unloads them. That's the whole product.
@@ -296,19 +299,6 @@ First time you enter, direnv refuses and tells you to run direnv allow — it wo
 .envrc you haven't explicitly silently run something in your
 for you: mix phx.server just works, with no wrapper script and no remembering to export things. That committed-defaults + gitignored-overrides pattern is the whole local secrets story.
 
-Your Vault isn't doing what you think it is
-
-Not a lecture, just what's in your repo. podstates/infra/vault/:
-
-- standalone, file storage, tls_disable = 1
-- unseal keys sit in a plain Kubernetes Secret called vault-unseal-keys
-- a CronJob runs every 10 minutes, reads those keys, and unseals it
-
-So the lock is opened automatit to it holding all three keys,in the same cluster, over plain HTTP. Whatever Vault is providing, it isn't confidentiality-at-rest — it's an encrypted-on-disk KV store whose decryption key lives beside it. For that you're paying Vault 94Mi + ESO's three pods at 93Mi + an unseal CronJob
-+ a ClusterSecretStore + a perchart.tgres, apps/fulb/prod, apps/fudbot/prod. Delete Backstage and ArgoCD and it's about six.
-
-Your instinct is right. This one's easy.
-
 What I'd do: SOPS + age
 
 And here's my actual reasoning, which is not security — you're correct that nobody's coming for your VPS.
@@ -322,7 +312,7 @@ Setup, once, about ten minutes:
 
 age-keygen -o ~/.config/sops/age/keys.txt      # prints your public key, age1...
 
-# .sops.yaml at the repo root
+## .sops.yaml at the repo root
 creation_rules:
   - path_regex: \.enc\.env$
     age: age1qz...your-public-key
@@ -358,16 +348,3 @@ deploy:
           sops -d --input-type dotenv --output-type dotenv "$$d/secrets.enc.env" > "$$d/.en
       done      docker compose up -d --r
       docker image prune -af --filter until=168h
-
-chmod 600 the outputs if you like, but be clear-eyed that it buys little: anything in a container's environment is vis anything that can reach the
-e on that 1Gi PVC is the only copy of several of those values. Get them out before you tear anything down:
-
-for p in infra/registry gitlab-oauth gandi alerting monitoring postgres \
-         apps/fulb/prod apps/fudbot/prod; do
-  vault kv get -format=json "secret/$p" | jq -r '.data.data'
-done
-
-Dump to plaintext first, verif the values you extracted, thenSOPS-encrypt and then delete Vault. Don't do it in one step. And check the Gandi token and Discord webhook specifically — those two aren't recoverable from anywhere else without re-issuing.
-
-
-The two failure modes that are actually likely for you are pasting a token into a public commit (the risk there is a scraper bot abusing your Discord token within minutes — not a targeted attack) and losing the only copy of something. The gitignore rule handles the first. SOPS-in-git handles the second. That's proportionate, and it's less machinery than you're running today.
