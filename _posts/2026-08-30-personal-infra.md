@@ -23,6 +23,11 @@ sudo security add-trusted-cert -d -r trustRoot -k /Library/Keychains/System.keyc
 - wasn't able to create the bind on the ipv6 all interface address, i think i can only do ipv4
 
 - migrating fudbot. when i submit my score, it doesn't do anything on the fulb side, need to instrument the apps i guess
+- networking simply is bind the containers/apps to all interfaces because they're in a container and we want them to be reachable by other containers in the docker network. then we make decisions based on docker networks, and make changes to our caddyfile. note, docker networks will all be binded to localhost regardless, and only accessible by caddy from outside. if we want it to be reachable by internet then we do a caddy reverse proxy
+
+
+
+
 
 ```
 kubectl exec postgres-1 -n infra-postgres -- pg_dump fulb > fulb.back kubectl cp infra-postgres/postgres-1:fulb.back ./fulb.back ls kubectl exec postgres-1 -n infra-postgres -- pg_dump fudbot > fudbot.back kubectl cp infra-postgres/postgres-1:fudbot.back ./fudbot.back
