@@ -165,54 +165,18 @@ Logs: move to Alloy. Promtail is deprecated in favour of Grafana Alloy and is at
 
 Drop the dev environment from tv and prod branches on one 8GBbox. Dev should be docker compose up on your laptop — same files, no --profile prod. That's both cheaper and a better loop than pushing to a branch and waiting for a sync.
 
-Backstage: delete, don't replace. A make new-service NAME=foo that copies a template directory is the honest version at four services.
-
-Keep: Traefik (you know the label syntax, and its gandiv5 DNS provider does your DNS-01 natively), Postgres, Redis, Loki, Prometheus, Grafana.
-
-The bill
-
-┌──────────────────┬────────────────────┬───────────────────────────┐
-│                  │        now         │           after           │
-├──────────────────┼────────────────────┼───────────────────────────┤
 │ orchestrator     │ k3s 1443Mi         │ dockerd+containerd ~250Mi │
-├──────────────────┼────────────────────┼───────────────────────────┤
-│ GitOps           │ ArgoCD 633Mi       │ systemd timer, 0          │
-├──────────────────┼────────────────────┼───────────────────────────┤
-│ portal           │ Backstage 323Mi    │ 0                         │
-├──────────────────┼────────────────────┼───────────────────────────┤
-│ secrets          │ Vault+ESO 203Mi    │ SOPS, 0                   │
-├──────────────────┼────────────────────┼───────────────────────────┤
-│ DB operators     │ CNPG 58Mi          │ 0                         │
-├──────────────────┼────────────────────┼───────────────────────────┤
-│ LB               │ MetalLB 118Mi      │ 0                         │
-├──────────────────┼────────────────────┼───────────────────────────┤
-│ TLS              │ cert-manager 128Mi │ in Traefik                │
-├──────────────────┼────────────────────┼───────────────────────────┤
-│ ingress          │ 2× Traefik 100Mi   │ 1× ~50Mi                  │
-├──────────────────┼────────────────────┼───────────────────────────┤
+│ GitOps           systemd timer, 0          │
+│ secrets          SOPS
 │ Prometheus       │ 614Mi              │ ~200Mi                    │
-├──────────────────┼────────────────────┼───────────────────────────┤
 │ Grafana          │ 302Mi              │ ~150Mi                    │
-├──────────────────┼────────────────────┼───────────────────────────┤
 │ Loki + logs      │ 239Mi              │ ~250Mi                    │
-├──────────────────┼────────────────────┼───────────────────────────┤
 │ Postgres + Redis │ 188Mi              │ ~190Mi                    │
-├──────────────────┼────────────────────┼───────────────────────────┤
 │ your apps        │ 223Mi              │ 223Mi                     │
-├──────────────────┼────────────────────┼───────────────────────────┤
 │ total            │ ~5.9Gi             │ ~1.3Gi                    │
-└──────────────────┴────────────────────┴───────────────────────────┘
 
-Roughly 4.5Gi back on a 7.75Gi box, and the per-service surface goes from a values.yaml against a schema to about fifteen lines of Compose.
-re the risk is. The risk is that you have 721M of Postgres on a single local-path volume with no backups, and that's true today and would be true after. Fix that first, before or during — a pg_dump to object storage on a nightly timer is the highest-value hour in this whole plan.
-
-Want me to build the stack/ skeleton — platform compose, prometheus config, provision script, and the three apps ported — so you can diff it against what's running?
-
-
-Good — that clears things up. fuservice is fulb: Phoenix 1.8.3, Ecto + Postgrex, Redix, and Phoenix.CodeReloader in listeners:. And you already have Ecto.Adapters.SQL.Sandbox and a precommit alias. The testing infrastructure is in decent shape.
-
+# devex improvements?
 The thing that unlocks this: Tilt speaks Compose natively
-
 You don't give up Tilt. docker_compose() is a first-class Tilt primitive — docker_build, live_update, the UI, log multiplexing, resource deps all work against Compose services. So "move to Compose" and "keep Tilt" aren't in tension at all.
 
 Opinion 1: don't containerize the thing you're currently editing
@@ -222,13 +186,13 @@ This is the big one. For a Phoenix app, live_update file-syncing into a containe
 The right split is: dependencies in Compose, the app you're working on native, Tilt supervising both. Tilt's local_resource(serve_cmd=...) runs and supervises
 non-containerized processes, sle thing.
 
-# Tiltfile
+## Tiltfile
 docker_compose(['platform/compose.yaml', 'apps/fulb/compose.yaml'])
 
 dc_resource('postgres', labels=['deps'])
 dc_resource('redis',    labels=['deps'])
 
-# the real image — off by default, flip it on to test what ships
+## the real image — off by default, flip it on to test what ships
 dc_resource('fulb', auto_init=False, labels=['containerized'])
 docker_build('registry.gitlab.com/jsbaasi/engineering/fulb', '.')
 
@@ -255,15 +219,13 @@ tilt up → Postgres and Redis in Docker, Phoenix native with hot reload, mix te
 
 Note this Tiltfile actually woate one — that's still the stock tilt init scaffold pointing at a ./app directory and a codegen.sh that don't exist, plus it installs external-secrets via Helm locally. Whatever you build, don't port that.
 
-Opinion 2: compose.override.yanches
-st valuable Compose idiom, and it directly kills a pattern I'd call a bug in your current setup — you have dev and prod branches that your own docs say "are not in sync with each other." Divergent branches as an environment mechanism means dev drift is invisible until you promote.
-
+## dev vs prod stuff?
 apps/fulb/
 ├── compose.yaml            # base — the truth, shared
 ├── compose.override.yaml   # dev — auto-loaded locally, NEVER in prod
 └── secrets.env
 
-# compose.override.yaml
+### compose.override.yaml
 services:
   fulb:
     build: .
@@ -273,10 +235,6 @@ services:
       PHX_HOST: localhost
 e up locally picks up the override automatically. Production runs docker compose -f compose.yaml up, which doesn't. Same file, same commit, one branch. Dev/prod difference becomes a diff you can read in one screen instead of a branch comparison.
 
-Opinion 3: per-app, be honest about what each one needs
-
-fulb — native, as above. Phoenix already ships phoenix_live_dashboard; at /dev/dashboard you get request timings, Ecto query logs, BEAM memory and process counts for free. Don't run Prometheus/Grafana locally by default. Put the obs stack behind --profile obs and only start it when you're specifically working on dashboards or alert rules. LiveDashboard beats Grafana for the inner loop.
-
 fudbot — C++/DPP is the opposiis the problem: it git clones
 and compiles DPP from source onutes. Two fixes, do both:
 
@@ -285,7 +243,7 @@ and compiles DPP from source onutes. Two fixes, do both:
 
 continuwuity — third-party image. docker compose up. Nothing to develop.
 
-Opinion 4: your testing gap is tests, not tooling
+# Opinion 4: your testing gap is tests, not tooling
 
 Being blunt because you asked for opinions: you have one test file, error_json_test.exs, which is the one mix phx.new generated. Everything around it is set up correctly — Sandbox in manual mode, test: ["ecto.create --quiet", "ecto.migrate --quiet", "test"], a precommit alias that compiles with --warnings-as-errors. You have a well-built harness with nothing in it.
 
@@ -293,33 +251,19 @@ So: skip Testcontainers. Peoplation, and
 Ecto.Adapters.SQL.Sandbox alresolation per test — that's thesame problem, solved better, already installed. Point MIX_ENV=test at the same Compose Postgres on a fulb_test database and you're done. Add Testcontainers only if you later need parallel CI runs against separate engines.
 against real Postgres and Redis. You have conn_case.ex and data_case.ex sitting there unused.
 
-Opinion 5: small things that punch above their weight
+# Opinion 5: small things that punch above their weight
 
 *.localhost needs no config. Linux, macOS and Chrome all resolve anything.localhost to 127.0.0.1. Run Traefik locally with the same routing labels as prod, just Host(\fulb.localhost`)and no TLS resolver. You test your actual routing config without/etc/hosts` edits or certs.
 
 direnv. A committed .envrc with fake-but-valid dev values means cd into the repo and your shell is configured. This is what replaces Vault locally — dev secrets should be fake and
 committed, not fetched.
 
-Make the DB reset trivial. You already have mix ecto.reset wired to
-drop/create/migrate/seed. Makeduces a genuinely usabledataset, not an empty schema. A fast path back to known-good state is most of what "great local testing" feels like day to day.
-
 One command, top of the README
 
 git clone && direnv allow && tilt up
 
-If that isn't the whole onboarding, something in the chain is wrong.
 
-Why this is better than what you have
 
-Your current local story requires rendering the Helm chart with vault.enabled=false, serviceMonitor.enabled=false, pullPolicy=IfNotPresent — local runs a materially different artifact than prod, because you can't reasonably run k3s + ArgoCD + Vault + cert-manager + ESO on a laptop. That divergence is inherent to the platform, not a thing you configured
-badly.
-
-With Compose, local is prod minus an override file and a couple of profiles. The dev
-environment isn't a simulatione definition with the expensiveparts switched off.
-
-Want me to write the actual Tiltfile, compose.yaml + compose.override.yaml for fulb, and the DPP base-image split for fudbot? That's the concrete starting point and I can have it diffable against what's running.
-
-✻ Worked for 2m 12s · done 8:50
 
 ❯ what is direnv? tell me more about secrets, how are they managed then? more opinions, on local and prod, whats easiest for me and i dont need some usa governemtn area 51 security, no one is ever getting into my vps probbly
 
