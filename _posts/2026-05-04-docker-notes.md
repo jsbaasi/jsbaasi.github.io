@@ -36,3 +36,12 @@ sources of confusion:
 3) i'm getting a linking error from my `cmake build` command in the `build` layer, i think this is from the lack of dpp `.so` libraries to link with? though I have copied them in from `dependencies` layer?
 `nm --demangle` on the dpp dynamic library shows that it has the symbol that my binary is asking for
 I didn't copy in the cmake folder that contained the `FindDPP.cmake` file so it wasn't configuring the paths properly, and it wasn't printing them until I did --debug-find on the cmake configure command. WHY THE FUCK didn't it tell me that it couldn't find dpp
+# compose file types
+## mapping
+```
+my_mapping:
+	key1: val1
+```
+it's mappings need to have a space between the colon and the values
+## string
+just anything flanked by apostrophes
