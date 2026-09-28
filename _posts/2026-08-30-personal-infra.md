@@ -21,11 +21,9 @@ sudo security add-trusted-cert -d -r trustRoot -k /Library/Keychains/System.keyc
 - connecting to localhost works but connecting to redis doesn't, it's application code fault, redis was binding to 127.0.0.1 instead of just 0.0.0.0. even though i won't be able to access it from outside of the docker network, so the interfaces it binds to is still all of them, it's just that i don't have an interface into that network? i do have an interface because it's binded to my local address, but the port isn't binded e.g. <host_port>:<container_port> hmmm
 - when exactly does docker restart the container if i do `docker compose up` and when does it just keep running
 - wasn't able to create the bind on the ipv6 all interface address, i think i can only do ipv4
-
-- migrating fudbot. when i submit my score, it doesn't do anything on the fulb side, need to instrument the apps i guess
 - networking simply is bind the containers/apps to all interfaces because they're in a container and we want them to be reachable by other containers in the docker network. then we make decisions based on docker networks, and make changes to our caddyfile. note, docker networks will all be binded to localhost regardless, and only accessible by caddy from outside. if we want it to be reachable by internet then we do a caddy reverse proxy
-
-
+- migrating fudbot. when i submit my score, it doesn't do anything on the fulb side, need to instrument the apps i guess. i made some progress, there's a failure in :api and :api_auth pipeline. so i'll take a look
+- "丅瑲屒僚紻充巼涕氿糋蔬刖抪覣脋蓵暙比犫淃夋繛籢蟰赫围倳訜仴蘓登戨瑮剩揨剃章" trying with this code
 
 
 
