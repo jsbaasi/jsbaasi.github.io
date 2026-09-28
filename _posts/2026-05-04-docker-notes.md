@@ -41,6 +41,11 @@ I didn't copy in the cmake folder that contained the `FindDPP.cmake` file so it 
 ```
 my_mapping:
 	key1: val1
+
+OR
+
+my_mapping:
+	- lmao=yoyo
 ```
 it's mappings need to have a space between the colon and the values
 ## string
