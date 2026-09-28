@@ -54,3 +54,26 @@ with `nmap -p <port> <hostname>`
 `ssh -L LOCAL_PORT:localhost:REMOTE_PORT user@remote-machine`
 so for my psql
 `ssh -L 5432:localhost:5432 jjvps`
+# how to write a systemd unit file?
+```
+[Unit]                                                                             Description=Elixir service for flagup                                              After=network.target
+                                                               [Service]
+ExecStart=/opt/fuservice/bin/lbs start                                             Restart=always
+
+User=deploy
+Group=deploy
+
+Environment=PATH=/usr/bin:/usr/local/bin
+Environment=PHX_SERVER=true
+Environment=DATABASE_PATH=/var/lib/fuservice_data/lbs.sqlite3
+Environment=SECRET_KEY_BASE=FzzgfzaVgvdO2+F8yvpBKyxoga4Ksa7QQYdoi2bA375EZxouyNRqKXHLovSHxz9b
+Environment=PORT=54001
+Environment=API_KEY_FILE=/var/lib/fuservice_data/api_keys.txt
+Environment=RELEASE_DISTRIBUTION=none
+
+WorkingDirectory=/opt/fuservice
+
+[Install]
+WantedBy=multi-user.target
+```
+reverse engineer this
