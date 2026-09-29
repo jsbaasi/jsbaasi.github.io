@@ -39,7 +39,7 @@ sudo security add-trusted-cert -d -r trustRoot -k /Library/Keychains/System.keyc
 - wasn't able to create the bind on the ipv6 all interface address, i think i can only do ipv4
 - networking simply is bind the containers/apps to all interfaces because they're in a container and we want them to be reachable by other containers in the docker network. then we make decisions based on docker networks, and make changes to our caddyfile. note, docker networks will all be binded to localhost regardless, and only accessible by caddy from outside. if we want it to be reachable by internet then we do a caddy reverse proxy
 - migrating fudbot. when i submit my score, it doesn't do anything on the fulb side, need to instrument the apps i guess. i made some progress, there's a failure in :api and :api_auth pipeline. fixed it by adding my token to an environment variable that the pipeline wanted and the flow works now
-- migrating to arch, i did a few installs, setup chezmoi, setup the monorepo. had difficulty with caddy container, required special volume structure, needs to bind to all interfaces, and I don't think my dns is setup correctly
+- migrating to arch, i did a few installs, setup chezmoi, setup the monorepo. had difficulty with caddy container, required special volume structure, needs to bind to all interfaces, and I don't think my dns is setup correctly. after this i edited `/etc/systemd/resolved.conf` to add my dns servers there in the `systemd-resolved` way. 
 
 
 
