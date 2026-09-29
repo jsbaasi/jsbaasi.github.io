@@ -20,7 +20,21 @@ ssh-keygen -f ~/.ssh/<keyname>
 
 cat ~/.ssh/id_rsa.pub | ssh USER@HOST "mkdir -p ~/.ssh && cat >> ~/.ssh/authorized_keys"
 ```
-- setup kdeconnect `sudo ufw allow 1714:1764/udp; sudo ufw allow 1714:1764/tcp; sudo ufw reload`
+- allow kdeconnect through firewall
+```
+sudo ufw allow 1714:1764/udp
+sudo ufw allow 1714:1764/tcp
+sudo ufw reload
+```
+- tweak dhcp
+```
+# info about network management program
+systemctl status NetworkManager iwd systemd-networkd wpa_supplicant
+
+ip link show
+sudo ip link set <interface> down
+sudo ip link set <interface> up
+```
 # stuff to remember
 - `CTRL + SUPER + SPACE` gives option to change backgrounds
 - media player is `mpv`
@@ -30,6 +44,7 @@ cat ~/.ssh/id_rsa.pub | ssh USER@HOST "mkdir -p ~/.ssh && cat >> ~/.ssh/authoriz
 - walker entries are stored in `.local/share/applications` but I could also have found it from `pacman -Fl $pkg | grep -re '\.desktop$'` `sudo find / -name "*.desktop" | grep obs` found it in `/usr/share/applications`
 - `hyprctl globalshortcuts` to see what shortcuts you can bind to from an app
 - firewall is on by default so need to allow ports
+- networking is handled by `NetworkManager`
 # to do
 - waybar change to add more weather information
 - [x] waybar chnage to add ram and cpu information
