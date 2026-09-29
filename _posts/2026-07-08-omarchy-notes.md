@@ -8,10 +8,12 @@ permalink: /omarchy-notes/
 # setup
 - `hyprctl reload`
 - `SUPER + CTRL + E` for emojis
-- download firefox, `ssh-keygen` a key, authorise it with github through settings, `pacman -Syu chezmoi` (sometimes the database is corrupted) and then `chezmoi init git@github.com:jsbaasi/dotfiles`
+- `sudo pacman -Syu chezmoi which`
+- download firefox, `ssh-keygen` a key, authorise it with github through settings, `chezmoi init`
 - downloaded ghostty and then deleted alacritty
 - `Omarchy Settings > Remove > Preinstalls`
 - `Omarchy Settings > Style > Theme > Osaka Jade`
+- `Omarchy Settings > Defaults > Browser > Firefox` (something to do with xdg i think)
 - add windows bootloader with `limine-scan`
 - ~~edited `/boot/limine.conf` to add `timeout: no` to not have a timeout as opposed to 0 which is insta boot and then ran `limine-update`
 - auth to my servers,

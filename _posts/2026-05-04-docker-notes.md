@@ -5,8 +5,11 @@ date: 2026-05-04 22:36:54 +0000
 categories: development docker
 permalink: /docker-notes/
 ---
-`docker build -t <app_name> <path_to_working_directory>`
-docker build -t bot .
+# networking
+bridge networks allow you define a default address that containers expose to if they expose ports when you declare a  `ports` key. without this:
+`com.docker.network.bridge.host_binding_ipv4: "127.0.0.1"` you get ports exposed to all interfaces `0.0.0.0` by default
+# how should I build my Dockerfile
+`docker build -t <image_tag_name> <path_to_dockerfile>`
 `docker run <app_name>`
 whatever you tagged your app with
 docker run bot
@@ -22,3 +25,31 @@ to get a bash shell to a running container
 docker exec <container> id
 sudo chown -R <UID>:<GID>
 ```
+# how to get a shell in a stripped down image?
+`docker debug` that is all
+# compose file types
+## mapping
+```
+my_mapping:
+	key1: val1
+
+OR
+
+my_mapping:
+	- lmao=yoyo
+```
+it's mappings need to have a space between the colon and the values
+## string
+just anything flanked by apostrophes
+# confused about docker layers
+my image name: `stormblessed/fudbot`
+sources of confusion:
+1) in `dive stormblessed/fudbot` the commands that separate layers doesn't make sense, they don't appear in my dockerfile at all
+> [!info]
+> i'm guessing buildkit backend compiles those commands into intermediate commands as per it's graph view
+2) the files that i copy across are not seen in the dive layer images? like where is dpp_source or the app directory that I supposedly build my source code in?
+> [!info]
+> i think this is because i was looking at the wrong layers? the top "layer" on dive was the os one and the one at the bottom (the one with the most delta from the base image) is the finished one
+3) i'm getting a linking error from my `cmake build` command in the `build` layer, i think this is from the lack of dpp `.so` libraries to link with? though I have copied them in from `dependencies` layer?
+`nm --demangle` on the dpp dynamic library shows that it has the symbol that my binary is asking for
+I didn't copy in the cmake folder that contained the `FindDPP.cmake` file so it wasn't configuring the paths properly, and it wasn't printing them until I did --debug-find on the cmake configure command. WHY THE FUCK didn't it tell me that it couldn't find dpp

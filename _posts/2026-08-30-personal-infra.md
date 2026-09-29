@@ -5,6 +5,22 @@ date: 2026-08-30 21:45:02 +0000
 categories: development
 permalink: /personal-infra/
 ---
+- [Getting rid of](#getting-rid-of)
+- [what i want](#what-i-want)
+- [migration notes](#migration-notes)
+- [steps:](#steps)
+- [platform/fragments.yaml](#platformfragmentsyaml)
+- [apps/fulb/compose.yaml](#appsfulbcomposeyaml)
+- [devex improvements?](#devex-improvements)
+	- [Tiltfile](#tiltfile)
+	- [the real image — off by default, flip it on to test what ships](#the-real-image--off-by-default-flip-it-on-to-test-what-ships)
+	- [dev vs prod stuff?](#dev-vs-prod-stuff)
+		- [compose.override.yaml](#composeoverrideyaml)
+- [Opinion 4: your testing gap is tests, not tooling](#opinion-4-your-testing-gap-is-tests-not-tooling)
+- [Opinion 5: small things that punch above their weight](#opinion-5-small-things-that-punch-above-their-weight)
+- [.envrc — committed, fake values only](#envrc--committed-fake-values-only)
+	- [.sops.yaml at the repo root](#sopsyaml-at-the-repo-root)
+
 Going to be moving to docker compose for my vps infra. Kubernetes is a bit too expensive for my 8gb box and at the moment I don't really need anything bigger. Mostly focusing on stuff other than wan-accessible services.
 
 ```
@@ -16,6 +32,17 @@ sudo security add-trusted-cert -d -r trustRoot -k /Library/Keychains/System.keyc
 - argocd
 # what i want
 - redis, postgres db, prometheus, grafana configured for you through annotations
+# migration notes
+- to move redis database i had to copy it to the host folder that gets mounted as a docker volume *before* redis is launches, as when if you move it into the live container, redis-server shuts down and saves over the rdb file
+- connecting to localhost works but connecting to redis doesn't, it's application code fault, redis was binding to 127.0.0.1 instead of just 0.0.0.0. even though i won't be able to access it from outside of the docker network, so the interfaces it binds to is still all of them, it's just that i don't have an interface into that network? i do have an interface because it's binded to my local address, but the port isn't binded e.g. <host_port>:<container_port> hmmm
+- when exactly does docker restart the container if i do `docker compose up` and when does it just keep running
+- wasn't able to create the bind on the ipv6 all interface address, i think i can only do ipv4
+- networking simply is bind the containers/apps to all interfaces because they're in a container and we want them to be reachable by other containers in the docker network. then we make decisions based on docker networks, and make changes to our caddyfile. note, docker networks will all be binded to localhost regardless, and only accessible by caddy from outside. if we want it to be reachable by internet then we do a caddy reverse proxy
+- migrating fudbot. when i submit my score, it doesn't do anything on the fulb side, need to instrument the apps i guess. i made some progress, there's a failure in :api and :api_auth pipeline. fixed it by adding my token to an environment variable that the pipeline wanted and the flow works now
+- migrating to arch, i did a few installs, setup chezmoi, setup the monorepo. had difficulty with caddy container, required special volume structure, needs to bind to all interfaces, and I don't think my dns is setup correctly. after this i edited `/etc/systemd/resolved.conf` to add my dns servers there in the `systemd-resolved` way. 
+
+
+
 ```
 kubectl exec postgres-1 -n infra-postgres -- pg_dump fulb > fulb.back kubectl cp infra-postgres/postgres-1:fulb.back ./fulb.back ls kubectl exec postgres-1 -n infra-postgres -- pg_dump fudbot > fudbot.back kubectl cp infra-postgres/postgres-1:fudbot.back ./fudbot.back
 
@@ -155,54 +182,18 @@ Logs: move to Alloy. Promtail is deprecated in favour of Grafana Alloy and is at
 
 Drop the dev environment from tv and prod branches on one 8GBbox. Dev should be docker compose up on your laptop — same files, no --profile prod. That's both cheaper and a better loop than pushing to a branch and waiting for a sync.
 
-Backstage: delete, don't replace. A make new-service NAME=foo that copies a template directory is the honest version at four services.
-
-Keep: Traefik (you know the label syntax, and its gandiv5 DNS provider does your DNS-01 natively), Postgres, Redis, Loki, Prometheus, Grafana.
-
-The bill
-
-┌──────────────────┬────────────────────┬───────────────────────────┐
-│                  │        now         │           after           │
-├──────────────────┼────────────────────┼───────────────────────────┤
 │ orchestrator     │ k3s 1443Mi         │ dockerd+containerd ~250Mi │
-├──────────────────┼────────────────────┼───────────────────────────┤
-│ GitOps           │ ArgoCD 633Mi       │ systemd timer, 0          │
-├──────────────────┼────────────────────┼───────────────────────────┤
-│ portal           │ Backstage 323Mi    │ 0                         │
-├──────────────────┼────────────────────┼───────────────────────────┤
-│ secrets          │ Vault+ESO 203Mi    │ SOPS, 0                   │
-├──────────────────┼────────────────────┼───────────────────────────┤
-│ DB operators     │ CNPG 58Mi          │ 0                         │
-├──────────────────┼────────────────────┼───────────────────────────┤
-│ LB               │ MetalLB 118Mi      │ 0                         │
-├──────────────────┼────────────────────┼───────────────────────────┤
-│ TLS              │ cert-manager 128Mi │ in Traefik                │
-├──────────────────┼────────────────────┼───────────────────────────┤
-│ ingress          │ 2× Traefik 100Mi   │ 1× ~50Mi                  │
-├──────────────────┼────────────────────┼───────────────────────────┤
+│ GitOps           systemd timer, 0          │
+│ secrets          SOPS
 │ Prometheus       │ 614Mi              │ ~200Mi                    │
-├──────────────────┼────────────────────┼───────────────────────────┤
 │ Grafana          │ 302Mi              │ ~150Mi                    │
-├──────────────────┼────────────────────┼───────────────────────────┤
 │ Loki + logs      │ 239Mi              │ ~250Mi                    │
-├──────────────────┼────────────────────┼───────────────────────────┤
 │ Postgres + Redis │ 188Mi              │ ~190Mi                    │
-├──────────────────┼────────────────────┼───────────────────────────┤
 │ your apps        │ 223Mi              │ 223Mi                     │
-├──────────────────┼────────────────────┼───────────────────────────┤
 │ total            │ ~5.9Gi             │ ~1.3Gi                    │
-└──────────────────┴────────────────────┴───────────────────────────┘
 
-Roughly 4.5Gi back on a 7.75Gi box, and the per-service surface goes from a values.yaml against a schema to about fifteen lines of Compose.
-re the risk is. The risk is that you have 721M of Postgres on a single local-path volume with no backups, and that's true today and would be true after. Fix that first, before or during — a pg_dump to object storage on a nightly timer is the highest-value hour in this whole plan.
-
-Want me to build the stack/ skeleton — platform compose, prometheus config, provision script, and the three apps ported — so you can diff it against what's running?
-
-
-Good — that clears things up. fuservice is fulb: Phoenix 1.8.3, Ecto + Postgrex, Redix, and Phoenix.CodeReloader in listeners:. And you already have Ecto.Adapters.SQL.Sandbox and a precommit alias. The testing infrastructure is in decent shape.
-
+# devex improvements?
 The thing that unlocks this: Tilt speaks Compose natively
-
 You don't give up Tilt. docker_compose() is a first-class Tilt primitive — docker_build, live_update, the UI, log multiplexing, resource deps all work against Compose services. So "move to Compose" and "keep Tilt" aren't in tension at all.
 
 Opinion 1: don't containerize the thing you're currently editing
@@ -212,13 +203,13 @@ This is the big one. For a Phoenix app, live_update file-syncing into a containe
 The right split is: dependencies in Compose, the app you're working on native, Tilt supervising both. Tilt's local_resource(serve_cmd=...) runs and supervises
 non-containerized processes, sle thing.
 
-# Tiltfile
+## Tiltfile
 docker_compose(['platform/compose.yaml', 'apps/fulb/compose.yaml'])
 
 dc_resource('postgres', labels=['deps'])
 dc_resource('redis',    labels=['deps'])
 
-# the real image — off by default, flip it on to test what ships
+## the real image — off by default, flip it on to test what ships
 dc_resource('fulb', auto_init=False, labels=['containerized'])
 docker_build('registry.gitlab.com/jsbaasi/engineering/fulb', '.')
 
@@ -245,15 +236,13 @@ tilt up → Postgres and Redis in Docker, Phoenix native with hot reload, mix te
 
 Note this Tiltfile actually woate one — that's still the stock tilt init scaffold pointing at a ./app directory and a codegen.sh that don't exist, plus it installs external-secrets via Helm locally. Whatever you build, don't port that.
 
-Opinion 2: compose.override.yanches
-st valuable Compose idiom, and it directly kills a pattern I'd call a bug in your current setup — you have dev and prod branches that your own docs say "are not in sync with each other." Divergent branches as an environment mechanism means dev drift is invisible until you promote.
-
+## dev vs prod stuff?
 apps/fulb/
 ├── compose.yaml            # base — the truth, shared
 ├── compose.override.yaml   # dev — auto-loaded locally, NEVER in prod
 └── secrets.env
 
-# compose.override.yaml
+### compose.override.yaml
 services:
   fulb:
     build: .
@@ -263,10 +252,6 @@ services:
       PHX_HOST: localhost
 e up locally picks up the override automatically. Production runs docker compose -f compose.yaml up, which doesn't. Same file, same commit, one branch. Dev/prod difference becomes a diff you can read in one screen instead of a branch comparison.
 
-Opinion 3: per-app, be honest about what each one needs
-
-fulb — native, as above. Phoenix already ships phoenix_live_dashboard; at /dev/dashboard you get request timings, Ecto query logs, BEAM memory and process counts for free. Don't run Prometheus/Grafana locally by default. Put the obs stack behind --profile obs and only start it when you're specifically working on dashboards or alert rules. LiveDashboard beats Grafana for the inner loop.
-
 fudbot — C++/DPP is the opposiis the problem: it git clones
 and compiles DPP from source onutes. Two fixes, do both:
 
@@ -275,7 +260,7 @@ and compiles DPP from source onutes. Two fixes, do both:
 
 continuwuity — third-party image. docker compose up. Nothing to develop.
 
-Opinion 4: your testing gap is tests, not tooling
+# Opinion 4: your testing gap is tests, not tooling
 
 Being blunt because you asked for opinions: you have one test file, error_json_test.exs, which is the one mix phx.new generated. Everything around it is set up correctly — Sandbox in manual mode, test: ["ecto.create --quiet", "ecto.migrate --quiet", "test"], a precommit alias that compiles with --warnings-as-errors. You have a well-built harness with nothing in it.
 
@@ -283,43 +268,16 @@ So: skip Testcontainers. Peoplation, and
 Ecto.Adapters.SQL.Sandbox alresolation per test — that's thesame problem, solved better, already installed. Point MIX_ENV=test at the same Compose Postgres on a fulb_test database and you're done. Add Testcontainers only if you later need parallel CI runs against separate engines.
 against real Postgres and Redis. You have conn_case.ex and data_case.ex sitting there unused.
 
-Opinion 5: small things that punch above their weight
+# Opinion 5: small things that punch above their weight
 
 *.localhost needs no config. Linux, macOS and Chrome all resolve anything.localhost to 127.0.0.1. Run Traefik locally with the same routing labels as prod, just Host(\fulb.localhost`)and no TLS resolver. You test your actual routing config without/etc/hosts` edits or certs.
 
 direnv. A committed .envrc with fake-but-valid dev values means cd into the repo and your shell is configured. This is what replaces Vault locally — dev secrets should be fake and
 committed, not fetched.
 
-Make the DB reset trivial. You already have mix ecto.reset wired to
-drop/create/migrate/seed. Makeduces a genuinely usabledataset, not an empty schema. A fast path back to known-good state is most of what "great local testing" feels like day to day.
-
 One command, top of the README
 
 git clone && direnv allow && tilt up
-
-If that isn't the whole onboarding, something in the chain is wrong.
-
-Why this is better than what you have
-
-Your current local story requires rendering the Helm chart with vault.enabled=false, serviceMonitor.enabled=false, pullPolicy=IfNotPresent — local runs a materially different artifact than prod, because you can't reasonably run k3s + ArgoCD + Vault + cert-manager + ESO on a laptop. That divergence is inherent to the platform, not a thing you configured
-badly.
-
-With Compose, local is prod minus an override file and a couple of profiles. The dev
-environment isn't a simulatione definition with the expensiveparts switched off.
-
-Want me to write the actual Tiltfile, compose.yaml + compose.override.yaml for fulb, and the DPP base-image split for fudbot? That's the concrete starting point and I can have it diffable against what's running.
-
-✻ Worked for 2m 12s · done 8:50
-
-❯ what is direnv? tell me more about secrets, how are they managed then? more opinions, on local and prod, whats easiest for me and i dont need some usa governemtn area 51 security, no one is ever getting into my vps probbly
-
-Let me check one thing that's directly relevant to the Vault argument.
-
-  Read 1 file, ran 1 shell command
-
-Working directory drifted to fuservice. Let me re-read with absolute paths.
-
-  Ran 1 shell command
 
 direnv, quickly
 
@@ -342,19 +300,6 @@ First time you enter, direnv refuses and tells you to run direnv allow — it wo
 .envrc you haven't explicitly silently run something in your
 for you: mix phx.server just works, with no wrapper script and no remembering to export things. That committed-defaults + gitignored-overrides pattern is the whole local secrets story.
 
-Your Vault isn't doing what you think it is
-
-Not a lecture, just what's in your repo. podstates/infra/vault/:
-
-- standalone, file storage, tls_disable = 1
-- unseal keys sit in a plain Kubernetes Secret called vault-unseal-keys
-- a CronJob runs every 10 minutes, reads those keys, and unseals it
-
-So the lock is opened automatit to it holding all three keys,in the same cluster, over plain HTTP. Whatever Vault is providing, it isn't confidentiality-at-rest — it's an encrypted-on-disk KV store whose decryption key lives beside it. For that you're paying Vault 94Mi + ESO's three pods at 93Mi + an unseal CronJob
-+ a ClusterSecretStore + a perchart.tgres, apps/fulb/prod, apps/fudbot/prod. Delete Backstage and ArgoCD and it's about six.
-
-Your instinct is right. This one's easy.
-
 What I'd do: SOPS + age
 
 And here's my actual reasoning, which is not security — you're correct that nobody's coming for your VPS.
@@ -368,7 +313,7 @@ Setup, once, about ten minutes:
 
 age-keygen -o ~/.config/sops/age/keys.txt      # prints your public key, age1...
 
-# .sops.yaml at the repo root
+## .sops.yaml at the repo root
 creation_rules:
   - path_regex: \.enc\.env$
     age: age1qz...your-public-key
@@ -404,16 +349,3 @@ deploy:
           sops -d --input-type dotenv --output-type dotenv "$$d/secrets.enc.env" > "$$d/.en
       done      docker compose up -d --r
       docker image prune -af --filter until=168h
-
-chmod 600 the outputs if you like, but be clear-eyed that it buys little: anything in a container's environment is vis anything that can reach the
-e on that 1Gi PVC is the only copy of several of those values. Get them out before you tear anything down:
-
-for p in infra/registry gitlab-oauth gandi alerting monitoring postgres \
-         apps/fulb/prod apps/fudbot/prod; do
-  vault kv get -format=json "secret/$p" | jq -r '.data.data'
-done
-
-Dump to plaintext first, verif the values you extracted, thenSOPS-encrypt and then delete Vault. Don't do it in one step. And check the Gandi token and Discord webhook specifically — those two aren't recoverable from anywhere else without re-issuing.
-
-
-The two failure modes that are actually likely for you are pasting a token into a public commit (the risk there is a scraper bot abusing your Discord token within minutes — not a targeted attack) and losing the only copy of something. The gitignore rule handles the first. SOPS-in-git handles the second. That's proportionate, and it's less machinery than you're running today.
