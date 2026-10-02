@@ -77,3 +77,5 @@ WorkingDirectory=/opt/fuservice
 WantedBy=multi-user.target
 ```
 reverse engineer this
+# how to generate a random string for a secret token?
+`openssl rand -hex 32`
