@@ -79,3 +79,5 @@ WantedBy=multi-user.target
 reverse engineer this
 # how to generate a random string for a secret token?
 `openssl rand -hex 32`
+# how to change mode of a file?
+`sudo chmod u=rwx,g=r,o=r <my_file>` this gives the owning user read, write and execute and then group and others the read flag on `<my_file>`
